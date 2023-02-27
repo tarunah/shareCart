@@ -1,0 +1,25 @@
+.icon {
+  position: relative;
+}
+
+.Image1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px ~colors.white solid;
+}
+
+.Image2 {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border: 1px ~colors.white solid;
+}
+
+.Image3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border: 1px ~colors.white solid;
+  opacity: 0.5;
+}

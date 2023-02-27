@@ -1,0 +1,65 @@
+.header {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_80;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.content {
+  padding-bottom: 12px;
+  position: relative;
+  border-bottom: 1px solid ~colors.grey_10;
+  padding-left: 36px;
+}
+
+.logIn {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}
+
+.logIn:hover {
+  color: ~colors.watermelon;
+}
+
+.label {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  line-height: 16px;
+  padding: 7px 0px;
+}
+
+.label.applied {
+  padding: 0px;
+}
+
+.couponMessage {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+  margin-top: 10px;
+}
+
+.discountMessage {
+  font-size: ~fontSize.small;
+  color: ~colors.mynt;
+}
+
+.disabledCouponMessage {
+  padding: 5px 0px 0px;
+}
+
+.rupeeIcon {
+  fill: ~colors.mynt;
+  height: 8px;
+}
+
+.rupeeIconLogin {
+  height: 9px;
+}
+
+.couponIcon {
+  position: absolute;
+  left: 0px;
+  top: 7px;
+}

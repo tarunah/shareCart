@@ -1,0 +1,147 @@
+.activeTab {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: ~colors.white;
+  color: ~colors.watermelon;
+  border-bottom: 2px solid ~colors.watermelon;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  transition: background-color 0.5s ease-out;
+  padding-bottom: 14px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.nonActiveTab {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: ~colors.white;
+  position: relative;
+  padding-bottom: 14px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.hideContent {
+  display: none;
+}
+
+.tabSpacing {
+  margin-left: 20px;
+}
+
+.dashedLine {
+  position: absolute;
+  border-bottom: 1px solid ~colors.grey_5;
+  width: 100%;
+  z-index: 4;
+  margin-top: 0px;
+  left: -3px;
+}
+
+.heading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding: 8px 0px 34px 0px;
+}
+
+.mainContainer {
+  color: ~colors.blueberry;
+}
+
+.contentContainer {
+  margin-top: 24px;
+}
+
+.greenContainer {
+  background-color: rgba(3, 166, 133, 0.1);
+  padding: 12px 0px 12px 12px;
+  margin-bottom: 24px;
+}
+
+.subHeading {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.steps {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 16px;
+}
+
+.steps:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: ~colors.blueberry_20;
+  top: 5px;
+  left: -4px;
+}
+
+.steps:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  border-left: 1px dashed ~colors.blueberry_20;
+  height: 100%;
+  width: 1px;
+  top: 5px;
+}
+
+.lastStep {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 16px;
+}
+
+.lastStep:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: ~colors.blueberry_20;
+  top: 5px;
+  left: -4px;
+}
+
+.desc {
+  font-size: ~fontSize.medium;
+  padding: 8px 0px 24px 0px;
+  width: 85%;
+}
+
+.mainDesc {
+  font-size: ~fontSize.medium;
+  padding: 8px 0px 32px 0px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.noteHeading {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.salmon;
+}
+
+.iconHeading {
+  padding-top: 4px;
+}
+
+.alignHeading {
+  position: relative;
+  padding-left: 17px;
+  top: -8px;
+}
+
+.descSpacing {
+  padding: 8px 16px 24px 42px;
+}

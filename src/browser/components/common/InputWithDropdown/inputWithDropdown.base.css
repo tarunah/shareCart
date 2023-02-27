@@ -1,0 +1,114 @@
+.input {
+  height: 40px;
+  border: 1px solid ~colors.blueberry_30;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+
+.inputFull {
+  width: 100%;
+}
+
+.inputWithDropdown {
+  width: 65%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inputWithDropdownContainer .inputError {
+  border-color: ~colors.red;
+}
+
+.inputError {
+  border-color: ~colors.red;
+}
+
+.error {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.red;
+  margin-top: 4px;
+}
+
+.entriesDropdown {
+  width: 35%;
+  height: 40px;
+  border: 1px solid ~colors.blueberry_30;
+  border-radius: 4px;
+  padding: 10px 12px;
+  float: right;
+  cursor: pointer;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.entryName {
+  overflow: hidden;
+  display: inline-block;
+  width: 90%;
+}
+
+.dropdownIcon {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+}
+
+.dropDown {
+  margin: 0;
+  top: 42px;
+  right: 0;
+  width: 35%;
+}
+
+.dropdownEntry {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.selectedEntry {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.modal {
+  width: 100%;
+  padding: 40px 16px 16px;
+}
+
+.closeIcon {
+  top: 21px;
+  right: 21px;
+}
+
+.modalEntry {
+  padding-bottom: 12px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+  margin-bottom: 12px;
+}
+
+.modalEntry:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.entryRadioIcon {
+  margin-right: 7px;
+  vertical-align: sub;
+}
+
+.radioIconSelected {
+  fill: ~colors.watermelon;
+}
+
+@media (max-width: 480px) {
+  .inputWithDropdown {
+    width: 60%;
+  }
+
+  .entriesDropdown {
+    width: 40%;
+  }
+}

@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  background: ~colors.white;
+  margin-bottom: 8px;
+}
+
+.desktopContainer {
+  height: 120px;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.innerContainer {
+  position: relative;
+  padding: 9px 0px 9px 0px;
+  text-align: center;
+}
+
+.content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.trustIcon {
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+}
+
+.desktopContainer .trustIcon {
+  position: unset;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.textContainer {
+  display: inline-block;
+}
+
+.heading {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  line-height: 16px;
+  margin: 3px 0px;
+}
+
+.desktopContainer .heading {
+  margin: 0px 0px 3px 0px;
+}
+
+.subText {
+  font-size: ~fontSize.small;
+  margin-left: 9px;
+}
+
+.desktopContainer .subText {
+  margin: unset;
+}

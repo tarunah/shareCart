@@ -1,0 +1,72 @@
+/*Plain Card*/
+.cardContents {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.cardContents a:last-child {
+  padding-right: 12px;
+}
+
+/*Cover Card*/
+.coverCardContainer {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.coverBgStyle {
+  background-color: ~colors.lightmintgreen;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coverTitle {
+  position: absolute;
+  width: 80px;
+  left: 45px;
+  display: block;
+  top: 42%;
+}
+
+.coverSubTitle {
+  color: ~colors.white;
+  font-size: ~fontSize.xl;
+  font-weight: ~fontWeight.bold;
+  font-style: normal;
+}
+
+.coverTitleHeader {
+  display: block;
+  color: ~colors.white;
+  font-size: ~fontSize.large;
+}
+
+.whiteBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: ~colors.white;
+  opacity: 0;
+}
+
+.coverCardContents {
+  z-index: 4;
+  display: flex;
+  padding: 12px 12px 12px 0;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.coverLeftPadding {
+  padding-left: 165px;
+}
+
+.coverCardContents a {
+  z-index: 2;
+}
+
+.coverCardContents a:last-child {
+  padding-right: 12px;
+}

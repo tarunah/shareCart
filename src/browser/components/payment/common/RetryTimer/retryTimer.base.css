@@ -1,0 +1,39 @@
+.retryTimerContainer {
+  display: flex;
+  padding: 12px;
+  color: white;
+  align-items: center;
+}
+
+.mobileContainer {
+  justify-content: space-between;
+}
+
+.desktopContainer {
+  justify-content: center;
+}
+
+.timerEnabled {
+  background-color: ~colors.mynt;
+}
+
+.timerDisabled {
+  background-color: ~colors.salmon;
+}
+
+.retryTextBlock {
+  display: flex;
+  margin-right: 4px;
+}
+
+.retryText {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  margin-left: 12px;
+  vertical-align: super;
+}
+
+.timer {
+  color: ~colors.white;
+  text-align: right;
+}

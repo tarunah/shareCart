@@ -1,0 +1,144 @@
+b {
+  font-weight: ~fontWeight.bold;
+}
+
+.checkedTier,
+.tierDetails,
+.uncheckedTier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkedTier {
+  height: 19px;
+  width: 19px;
+}
+
+.tierContainer {
+  display: flex;
+  width: calc(100% + 22px);
+  justify-content: space-between;
+  align-items: start;
+  margin: 16px -11px 0 -11px;
+  position: relative;
+}
+
+.insiderLogo > * {
+  fill: ~colors.blueberry_10;
+}
+
+.progressContainer {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  right: 20px;
+  height: 8px;
+  background-color: ~colors.blueberry_10;
+  display: flex;
+  align-items: center;
+}
+
+.currentProgressBar {
+  background: linear-gradient(
+    to left,
+    ~colors.golden_yellow_20 32.28%,
+    ~colors.off_yellow_10 169.14%
+  );
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: inherit;
+  width: 0px;
+}
+
+.purchaseProgressBar {
+  background-color: ~colors.blueberry_90;
+  height: inherit;
+  width: 0px;
+  margin-left: -4px;
+  border-radius: 0px 250px 250px 0px;
+}
+
+.currentProgressBar.animate {
+  transition: width 1.3s ease-out 0.1s;
+}
+
+.purchaseProgressBar.animate {
+  transition: width 1.3s ease-out 1.4s;
+}
+
+.progressPoint {
+  width: 8px;
+  height: 8px;
+  background-color: ~colors.white;
+  margin-left: -4px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.tierDetails {
+  flex-direction: column;
+  z-index: 1;
+  width: 40px;
+}
+
+.tierDetails > svg {
+  position: absolute;
+  top: -21px;
+  margin-left: -1px;
+  z-index: -1;
+}
+
+.uncheckedTier {
+  height: 16px;
+  width: 16px;
+  background: ~colors.yellow_70;
+  border-radius: 50%;
+  border: 4px solid ~colors.white;
+  box-shadow: 0 0 0 1px ~colors.blueberry_alpha10;
+  margin: 2px 0 1px 0;
+}
+
+.upgradedTier {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px ~colors.white_alpha35,
+    0 0 0 3px ~colors.blueberry_90_alpha35;
+}
+
+.tierName {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.light;
+  margin-top: 6px;
+  color: ~colors.grey_50;
+  line-height: ~fontSize.large;
+}
+
+.firstTier > .tierName {
+  margin-left: 12px;
+}
+
+.upgradeTierName {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_90;
+}
+
+.checkedTierName {
+  color: ~colors.blueberry;
+}
+
+.upgradeAmtText {
+  white-space: nowrap;
+  color: ~colors.blueberry;
+  text-align: center;
+  font-size: ~fontSize.small;
+  line-height: ~fontSize.large;
+}
+
+.lastTier > .upgradeAmtText {
+  text-align: right;
+  margin-right: 45px;
+}
+
+.upgradeAmtRupee {
+  fill: ~colors.blueberry;
+  height: 8px;
+}

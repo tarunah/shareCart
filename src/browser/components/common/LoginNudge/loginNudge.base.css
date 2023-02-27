@@ -1,0 +1,62 @@
+.mainContainer {
+  background: ~colors.white;
+  border: 1px solid ~colors.blueberry_10;
+  padding: 9px 0px 9px 12px;
+  border-radius: 4px;
+  margin-top: 24px;
+  display: flex;
+}
+
+.mobileContainer {
+  border: none;
+  border-radius: 0px;
+}
+
+.messageIcon {
+  padding: 0px;
+  margin-right: 10px;
+  width: 140px;
+  height: 60px;
+}
+
+.messageContainer {
+  margin-right: 12px;
+  width: 100%;
+}
+
+.mobileContainer .messageContainer {
+  margin-right: 18px;
+  margin-left: 5px;
+}
+
+.message {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin-top: 20px;
+}
+
+.mobileContainer .message {
+  margin-top: 1px;
+  font-weight: unset;
+  line-height: normal;
+}
+
+.loginCTA {
+  float: right;
+  color: ~colors.watermelon;
+  font-size: ~fontSize.small;
+  margin-top: 22px;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}
+
+.loginCTA:hover {
+  color: ~colors.watermelon;
+}
+
+.mobileContainer .loginCTA {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+}

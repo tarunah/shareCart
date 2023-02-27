@@ -1,0 +1,36 @@
+.savingsStrip {
+  text-align: center;
+  padding: 0px 16px 16px;
+  background: ~colors.white;
+}
+
+.savingsStripText {
+  background: ~colors.mynt_10;
+  margin: auto;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: ~fontSize.medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.savings {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+}
+
+.rupeeIcon {
+  fill: ~colors.mynt;
+}
+
+.rupeeCircleContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #00ae80;
+  justify-content: center;
+}

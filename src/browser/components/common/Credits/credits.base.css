@@ -1,0 +1,236 @@
+.creditsContainer {
+  margin: 16px 0 10px;
+}
+
+.desktopCreditsContainer {
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+}
+
+.creditBlock {
+  position: relative;
+  padding: 16px 16px 16px 20px;
+}
+
+.creditBlockMainArea {
+  position: relative;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: ~colors.blueberry_10;
+}
+
+.toggleArea {
+  display: inline-block;
+}
+
+.checkbox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checkboxSelected {
+  fill: ~colors.watermelon;
+}
+
+.headerText {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin-left: 32px;
+  margin-bottom: 2px;
+  vertical-align: text-bottom;
+}
+
+.scIcon svg {
+  height: 12px;
+}
+
+.newTag {
+  text-transform: uppercase;
+  color: ~colors.white;
+  background-color: ~colors.watermelon;
+  border-radius: 8px;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: ~fontSize.tiny_xl;
+}
+
+.balanceText {
+  margin-left: 32px;
+}
+
+.appliedAmount {
+  color: ~colors.mynt;
+}
+
+.appliedAmount .rupeeIcon {
+  height: 9px;
+  fill: ~colors.mynt;
+  margin-right: 1px;
+}
+
+.rightBlock {
+  font-weight: ~fontWeight.bold;
+  display: inline-block;
+  float: right;
+  font-size: ~fontSize.medium;
+  text-align: right;
+}
+
+.showBalanceButton {
+  color: ~colors.blue;
+  cursor: pointer;
+}
+
+.disabled {
+  fill: ~colors.blueberry_20;
+}
+
+.lpTooltip {
+  margin-left: 4px;
+}
+
+.lpTooltipText {
+  padding: 10px;
+  width: 150px;
+}
+
+.mfuV1Text {
+  width: 150px;
+}
+
+.mfuV2Text {
+  width: 200px;
+}
+
+.mfuTextContainer {
+  font-size: ~fontSize.small;
+}
+
+.mfuHeading {
+  margin-bottom: 8px;
+  font-weight: ~fontWeight.bold;
+}
+
+.mfuDesc {
+  margin-bottom: 12px;
+}
+
+.mfuConversion {
+  border-top: 1px solid ~colors.blueberry_60;
+  padding-top: 8px;
+}
+
+.lpTooltipIcon {
+  position: relative;
+  top: 2px;
+}
+
+.note {
+  margin-left: 32px;
+  margin-top: 6px;
+  font-size: ~fontSize.small;
+}
+
+.note span {
+  color: ~colors.salmon;
+  font-weight: ~fontWeight.bold;
+}
+
+.rupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.balanceRupeeIcon {
+  height: 9px;
+}
+
+.usageInfo {
+  font-weight: ~fontWeight.light;
+  font-size: ~fontSize.small;
+  margin-bottom: 4px;
+}
+
+.mfuCoin {
+  margin-right: 3px;
+}
+.scNote {
+  margin-top: 0;
+}
+.mobileModal {
+  width: 100%;
+  color: ~colors.blueberry;
+  cursor: default;
+}
+.modalHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding: 22px;
+}
+.conversionContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: ~fontSize.medium;
+}
+.scConversion {
+  text-align: right;
+  margin-right: 15px;
+}
+.mcConversion {
+  margin-left: 15px;
+}
+.size {
+  font-size: ~fontSize.large_xl;
+  margin-left: 2px;
+}
+.arrow path {
+  fill: ~colors.grey_60;
+}
+.modalNoteText {
+  background: ~colors.yellow_20;
+  font-size: ~fontSize.medium;
+  padding: 8px 22px;
+}
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+.modalBtnContainer {
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 0 8px ~colors.blueberry_10;
+  justify-content: space-around;
+}
+.modalBtn {
+  width: 45%;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  border-radius: 2px;
+  border-width: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btnConfirm {
+  background-color: ~colors.watermelon;
+  color: ~colors.white;
+}
+
+.btnCancel {
+  background: ~colors.white;
+  border: 1px solid ~colors.grey_25;
+  color: ~colors.blueberry;
+}
+
+@media (max-width: 480px) {
+  .creditBlock {
+    background: ~colors.white;
+  }
+}

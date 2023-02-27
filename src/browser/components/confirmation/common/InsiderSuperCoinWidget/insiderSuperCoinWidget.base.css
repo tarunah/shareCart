@@ -1,0 +1,77 @@
+.superCoinLoader {
+  height: 300px;
+  position: relative;
+  z-index: 3;
+}
+
+.insiderSuperCoinContainer {
+  padding: 12px 0;
+  background: ~colors.midnight_black;
+  color: ~colors.white;
+}
+
+.goldenAccent,
+.goldenAccentTop {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  background-image: linear-gradient(
+      90.01deg,
+      ~colors.gold_primary 0.42%,
+      ~colors.gold_secondary 22.95%,
+      ~colors.gold_tertiary 46.23%,
+      ~colors.gold_secondary 83.54%,
+      ~colors.gold_primary 98.9%
+    ),
+    linear-gradient(
+      90.01deg,
+      ~colors.gold_primary 0.42%,
+      ~colors.gold_secondary 22.95%,
+      ~colors.gold_tertiary 46.23%,
+      ~colors.gold_secondary 83.54%,
+      ~colors.gold_primary 98.9%
+    ),
+    linear-gradient(
+      90.01deg,
+      ~colors.gold_primary 0.42%,
+      ~colors.gold_secondary 22.95%,
+      ~colors.gold_tertiary 46.23%,
+      ~colors.gold_secondary 83.54%,
+      ~colors.gold_primary 98.9%
+    ),
+    linear-gradient(
+      90.01deg,
+      ~colors.gold_primary 0.42%,
+      ~colors.gold_secondary 22.95%,
+      ~colors.gold_tertiary 46.23%,
+      ~colors.gold_secondary 83.54%,
+      ~colors.gold_primary 98.9%
+    );
+  background-origin: border-box;
+  background-size: 100% 4px, 0px 100%, 100% 4px, 0px 100%;
+  background-position: top left, top right, bottom right, bottom left;
+  background-repeat: no-repeat;
+}
+
+.goldenAccentTop {
+  border-bottom: none;
+  position: relative;
+  top: -12px;
+}
+
+.allRewardsCtaContainer {
+  padding: 0 16px;
+}
+
+.allRewardsCtaContainerText {
+  color: ~colors.watermelon;
+  display: flex;
+  align-items: center;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+}
+
+.allRewardsCtaContainerChevron {
+  fill: ~colors.watermelon;
+  margin-left: 4px;
+  height: 8px;
+}

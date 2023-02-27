@@ -1,0 +1,157 @@
+.cartFillerProduct {
+  display: inline-block;
+  overflow: hidden;
+  width: 172px;
+  background: ~colors.white;
+  margin: 0px 10px 10px 0px;
+  border: 1px solid ~colors.blueberry_10;
+}
+
+.imageWrapper {
+  min-height: 229px;
+  position: relative;
+}
+
+.imageShimmer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: visibility 0.3s ease-in;
+}
+
+.imageVisible {
+  visibility: visible;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.sizeSelector {
+  max-height: 85%;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  bottom: -200px;
+  background-color: ~colors.white;
+  transition: bottom 0.6s ease-out;
+}
+
+.visible {
+  bottom: 0px;
+  z-index: 1;
+}
+
+.header {
+  padding: 7px 5px;
+  font-weight: ~fontWeight.bold;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.closeIcon {
+  float: right;
+  font-size: 15px;
+}
+
+.sizeWrapper {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.size {
+  display: inline-block;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 20px;
+  min-width: 34px;
+  min-height: 34px;
+  padding: 7px;
+  border: 1px solid ~colors.blueberry_90;
+  text-align: center;
+  font-weight: ~fontWeight.bold;
+}
+
+.size:hover {
+  border: 1px solid ~colors.watermelon;
+  color: ~colors.watermelon;
+}
+
+.selected {
+  border: 1px solid ~colors.watermelon;
+  color: ~colors.watermelon;
+}
+
+.info {
+  border-top: 1px solid ~colors.blueberry_10;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  background: ~colors.white;
+}
+
+.brandName {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productDescription {
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry_60;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: ~fontSize.small;
+  min-height: 16px;
+}
+
+.priceInfo {
+  margin: 5px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rupeeIcon {
+  height: 9px;
+}
+
+.boldtext {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  padding-right: 5px;
+  font-size: ~fontSize.icon;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: ~colors.blueberry_30;
+  fill: ~colors.blueberry_30;
+  font-size: ~fontSize.icon;
+}
+
+.discountLabel {
+  color: ~colors.watermelon;
+  padding-left: 2px;
+}
+
+.discountLabel div {
+  display: inline-block;
+}
+
+.button {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  text-transform: uppercase;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  padding: 12px 12px 20px 16px;
+  border-top: 16px solid ~colors.blueberry_5;
+}
+
+.textContainer {
+  margin-left: 18px;
+}
+
+.textHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+}
+
+.textDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 12px;
+}
+
+.updateButton {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+}

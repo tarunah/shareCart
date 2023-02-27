@@ -1,0 +1,133 @@
+.container {
+  padding: 16px;
+  font-size: ~fontSize.medium;
+}
+
+.header {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 12px;
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.ratingBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.rattingBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  background-color: ~colors.orange_70;
+  border-radius: 50%;
+  position: relative;
+}
+
+.rating4 {
+  background-color: ~colors.yellow_60;
+}
+
+.rating5 {
+  background-color: ~colors.mynt;
+}
+
+.selectedRating::before {
+  content: '';
+  border: 1px solid ~colors.black;
+  position: absolute;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 50%;
+}
+
+.ratingFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: ~fontSize.small;
+  width: 100%;
+  padding: 12px 13px 0;
+  color: ~colors.black;
+}
+
+.reviewContainer {
+  border-top: 1px solid ~colors.grey_5;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 24px;
+  resize: none;
+  border: 1px solid ~colors.grey_5;
+}
+
+.textarea:focus {
+  border-color: ~colors.blueberry;
+}
+
+.textarea::placeholder {
+  color: ~colors.grey_80;
+}
+
+.optionContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option {
+  padding: 8px 16px;
+  margin: 12px 12px 0 0;
+  line-height: 14px;
+  border-radius: 16px;
+  border: 1px solid ~colors.grey_5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectedOption {
+  border-color: ~colors.watermelon;
+  color: ~colors.watermelon;
+}
+
+.optionIcon {
+  fill: ~colors.watermelon;
+  margin-right: 8px;
+  width: 10px;
+}
+
+.submitBtn {
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.successBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  line-height: 20px;
+}
+
+.thumbsupIcon {
+  margin-left: 20px;
+}

@@ -1,0 +1,290 @@
+.item {
+  background: white;
+  font-size: ~fontSize.medium;
+  padding: 12px 8px 1px 8px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.itemMargin {
+  margin-bottom: 8px;
+}
+
+.itemMargin:last-child {
+  margin-bottom: 0px;
+}
+
+.item:last-child {
+  margin-bottom: 0px;
+}
+
+.itemLeft {
+  float: left;
+}
+
+.itemRight {
+  margin-left: 111px;
+  padding-left: 12px;
+  position: relative;
+  min-height: 148px;
+  margin-bottom: 12px;
+}
+
+.itemName,
+.brand,
+.itemLink {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 16px;
+}
+
+.brand {
+  margin-bottom: 4px;
+}
+
+.details,
+.itemLink {
+  text-decoration: none;
+  padding-bottom: 0;
+  margin-right: 15px;
+}
+
+.itemLink {
+  display: block;
+}
+
+.details {
+  margin-bottom: 10px;
+}
+
+.editModal {
+  width: 35%;
+  top: 25%;
+}
+
+.infoModal {
+  width: 100%;
+}
+
+.sizeAndQtyFomo {
+  display: inline-block;
+  background-color: ~colors.orange_100;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.sizeAndQty {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 8px;
+}
+
+.sizeAndQtyContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.brand {
+  font-weight: ~fontWeight.bold;
+  font-size: 13px;
+}
+
+.comboOfferComplete {
+  margin-bottom: 8px;
+  padding: 12px 8px 8px;
+  background: ~colors.mynt_10;
+}
+
+.comboOfferInComplete {
+  margin-bottom: 8px;
+  padding: 12px 8px 8px;
+  background: ~colors.salmon_50;
+}
+
+.comboOfferComplete .item,
+.comboOfferInComplete .item {
+  border-radius: 4px;
+}
+
+.comboOfferComplete:last-child,
+.comboOfferInComplete:last-child {
+  margin-bottom: 0px;
+}
+
+.comboOffer:first-child {
+  margin-top: 0px;
+}
+
+.comboText {
+  font-size: ~fontSize.large;
+}
+
+.priceDropIcon,
+.priceIncIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: -4px;
+}
+
+.priceDropIcon {
+  fill: ~colors.mynt;
+}
+
+.priceIncIcon {
+  fill: ~colors.salmon;
+  transform: rotate(180deg);
+}
+
+.price {
+  padding-right: 5px;
+  margin-top: 12px;
+  color: ~colors.blueberry;
+  line-height: 18px;
+}
+
+.disabledItem {
+  border: 1px solid ~colors.salmon;
+  border-radius: 4px;
+  margin: auto 4px;
+}
+
+.bankOfferText {
+  font-weight: ~fontWeight.bold;
+}
+
+.dropDown {
+  fill: ~colors.blueberry;
+  cursor: pointer;
+  position: relative;
+  margin-left: 4px;
+  top: -1px;
+}
+
+.price .gray {
+  color: ~colors.blueberry_50;
+}
+
+.taxInclusive {
+  font-size: 11px;
+}
+
+.discountExperimentStrikedAmount {
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.medium;
+}
+
+.discountExperimentRupeeIcon {
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.small;
+}
+
+.selectionIndicator {
+  position: absolute;
+}
+
+.toolTipText {
+  white-space: pre-wrap;
+}
+
+.toolTipIcon {
+  fill: ~colors.blueberry_50;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+}
+
+.priceChangeTooltip {
+  padding: 12px;
+  font-size: 12px;
+  left: -95px !important;
+  width: 125px;
+  font-size: ~fontSize.small;
+}
+
+.tipStyle {
+  top: -8px !important;
+  left: 0px !important;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 12px;
+  right: 11px;
+  width: 10px;
+  height: 10px;
+}
+
+.oldPriceTooltip {
+  left: -61px;
+  padding: 4px;
+}
+
+.oldPriceTooltipStyle {
+  left: -1px !important;
+  top: 3px !important;
+}
+
+.tooltipRupeeIcon {
+  font-size: ~fontSize.small;
+  fill: ~colors.white;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.oldPrice {
+  display: inline-block;
+}
+
+.strikedAmount {
+  padding: 0px !important;
+}
+
+.oosGiftItemContainer {
+  width: 39px;
+  height: 42px;
+  background-image: linear-gradient(
+    to bottom right,
+    ~colors.red 50%,
+    ~colors.transparent 50%
+  );
+  margin: auto 5px;
+}
+
+.giftItemContainer {
+  width: 39px;
+  height: 42px;
+  background-image: linear-gradient(
+    to bottom right,
+    ~colors.mynt 50%,
+    ~colors.transparent 50%
+  );
+}
+
+.buttonContainer {
+  border-top: 1px solid ~colors.blueberry_10;
+  text-align: center;
+}
+
+.button {
+  background: ~colors.white;
+  color: ~colors.blueberry_80;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  letter-spacing: 0.22px;
+  padding: 15px 0;
+  line-height: 14px;
+}
+
+.discountInfo {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(2, minmax(40px, max-content)) auto;
+}

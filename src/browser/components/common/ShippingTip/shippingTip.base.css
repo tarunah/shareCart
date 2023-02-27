@@ -1,0 +1,86 @@
+.deliveryTip {
+  padding: 8px;
+  margin-bottom: 12px;
+  background: ~colors.white;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+  .deliveryTip {
+    border: none;
+    border-radius: 0px;
+  }
+}
+
+.deliveryTipContainer {
+  padding: 8px;
+  margin-top: 16px;
+  border-radius: 4px;
+  background-color: ~colors.salmon_05;
+  display: flex;
+}
+
+.free {
+  background-color: ~colors.mynt_5;
+}
+
+.messageContainer {
+  color: ~colors.blueberry_90;
+  font-size: ~fontSize.medium;
+  margin-top: 3px;
+  width: 80%;
+}
+
+.tipIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.minPrice {
+  display: inline-block;
+  margin: 0px 1px;
+}
+
+.tipMessage {
+  display: inline-block;
+  vertical-align: middle;
+  color: ~colors.blueberry_90;
+  font-size: ~fontSize.medium;
+  margin-top: 5px;
+  width: 80%;
+}
+
+.tipBold {
+  display: inline-block;
+  margin-left: 1px;
+  color: ~colors.blueberry_80;
+  font-weight: ~fontWeight.bold;
+}
+
+.tipRed {
+  display: inline-block;
+  color: ~colors.red;
+  font-weight: ~fontWeight.bold;
+}
+
+.rupeeIconRed {
+  display: inline-block;
+  fill: ~colors.red;
+  height: 9px;
+}
+
+.highlightedText {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+}
+
+.strikedPrice {
+  text-decoration: line-through;
+}
+
+.message {
+  vertical-align: middle;
+  display: inline-block;
+}

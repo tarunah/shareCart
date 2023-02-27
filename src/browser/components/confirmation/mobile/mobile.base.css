@@ -1,0 +1,49 @@
+html {
+  /* only for firefox to hide scrollbar*/
+  scrollbar-width: none;
+}
+
+.confirmationCardContainer {
+  background-color: ~colors.white;
+}
+
+.confirmationCard {
+  margin-top: 0;
+}
+
+.slideUp {
+  animation: slideUp 2s;
+  animation-delay: 1s;
+}
+
+.cardBorder {
+  border-top: 12px solid ~colors.blueberry_5;
+}
+
+.modalContainer {
+  padding: 26px 16px;
+  width: 100%;
+}
+
+.modalHeader {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 20px;
+  color: ~colors.blueberry;
+}
+
+.modalDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 17px;
+  color: ~colors.blueberry;
+}
+
+@keyframes slideUp {
+  from {
+    margin-top: 4000px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}

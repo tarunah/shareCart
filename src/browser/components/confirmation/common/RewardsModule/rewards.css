@@ -1,0 +1,146 @@
+.modalWrapper {
+  background: rgba(14, 15, 23, 0.97);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  top: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.transitionWrapper {
+  transition: opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1) 1.5s;
+}
+
+.modalWrapper.animateWrapper {
+  opacity: 1;
+}
+
+.crossIcon {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  opacity: 0;
+}
+
+.crossAnimate {
+  transition: opacity 0.3s cubic-bezier(0.65, 0, 0.35, 1) 3s;
+}
+
+.crossIcon.reveal {
+  opacity: 1;
+}
+
+.stopScroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.scratchWrapper {
+  margin: 120px auto;
+  width: 320px;
+  height: 320px;
+  position: relative;
+}
+
+.mobileToast {
+  top: 80px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 280px;
+  background-color: ~colors.blueberry_80;
+}
+
+.modalFooter {
+  max-width: 310px;
+  margin-bottom: 90px;
+  margin-top: 60px;
+}
+
+.scratchInfo {
+  transform: translateY(600px);
+  opacity: 1;
+  transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 2.5s;
+}
+
+.scratchInfo.slideUp {
+  transform: translateY(0);
+}
+
+.scratchInfo.disappear {
+  transition: opacity 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  opacity: 0;
+}
+
+.scrubText {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in 3.5s;
+}
+
+.scrubText.fadeText {
+  opacity: 1;
+}
+
+.scrubText.disappear {
+  transition-delay: 1s;
+  opacity: 0;
+}
+
+.modalDescription {
+  font-size: ~fontSize.large;
+  color: ~colors.white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.unScratchedHeading {
+  font-size: ~fontSize.icon_enlarged;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+  color: ~colors.white;
+  margin-bottom: 25px;
+}
+
+.fontBold {
+  font-weight: ~fontWeight.bold;
+}
+
+.marginTopButton {
+  margin-top: 25px;
+}
+
+.rupeeIcon {
+  height: 10px;
+  stroke: ~colors.white;
+  margin-right: 2px;
+}
+
+.primary {
+  padding: 10px 16px;
+  text-align: center;
+  background: ~colors.watermelon;
+  border-radius: 2px;
+  font-size: ~fontSize.medium;
+  color: ~colors.white;
+  border: 0;
+  width: 100%;
+}
+
+.modalFooter .secondary {
+  padding: 10px 16px;
+  text-align: center;
+  background: transparent;
+  border-radius: 2px;
+  font-size: ~fontSize.medium;
+  color: ~colors.white;
+  border: 1px solid ~colors.white;
+  width: 100%;
+}

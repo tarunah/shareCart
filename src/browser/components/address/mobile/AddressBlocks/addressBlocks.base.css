@@ -1,0 +1,95 @@
+.finalAddress {
+  background: white;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.changeOrAddBtn {
+  border: 1px solid ~colors.blueberry;
+  background: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+  display: block;
+  padding: 9px 16px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: ~colors.blueberry;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.btns {
+  margin-left: 28px;
+}
+
+.btns > * {
+  border: 1px solid ~colors.blueberry;
+  background: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-right: 16px;
+  color: ~colors.blueberry;
+  text-transform: uppercase;
+}
+
+.block {
+  padding: 16px;
+  background: white;
+  position: relative;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.addBlockDiv {
+  background-color: ~colors.white;
+  padding: 8px;
+}
+
+.addBlockAnchor {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  border-radius: 4px;
+  display: block;
+  border: 1px solid ~colors.blueberry;
+  color: ~colors.blueberry;
+  text-align: center;
+  padding: 9px;
+  text-transform: uppercase;
+}
+
+.block:nth-child(2) {
+  margin-top: 0px;
+}
+
+.details {
+  margin-left: 28px;
+}
+
+.addressDetail {
+  margin-top: 8px;
+}
+
+.serviceable > .radioIcon {
+  fill: ~colors.watermelon;
+}
+
+.notServiceable > .radioIcon {
+  fill: ~colors.salmon;
+}
+
+.radioIcon {
+  position: absolute;
+  left: 16px;
+  top: 17px;
+}
+
+.error {
+  color: ~colors.orange;
+  font-size: ~fontSize.small;
+  margin-bottom: 16px;
+  font-weight: ~fontWeight.bold;
+}

@@ -1,0 +1,106 @@
+.container {
+  padding: 16px;
+  background: ~colors.white;
+  margin-top: 12px;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+}
+
+.desktopContainer {
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+}
+
+.header {
+  color: ~colors.blueberry_50;
+  border-bottom: 1px solid ~colors.blueberry_10;
+  padding-bottom: 16px;
+}
+
+.title {
+  color: ~colors.blueberry;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+}
+
+.body {
+  padding: 16px 0;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+.nameContainer {
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.name {
+  max-width: calc(100% - 100px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid ~colors.blueberry_10;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.footer {
+  padding-top: 16px;
+  border-top: 1px solid ~colors.blueberry_10;
+  display: flex;
+  align-items: center;
+  color: ~colors.blueberry_50;
+}
+
+.infoIcon {
+  margin-right: 8px;
+  fill: ~colors.salmon;
+}
+
+.knowMore {
+  color: ~colors.watermelon;
+  margin-left: 4px;
+  font-weight: ~fontWeight.bold;
+}
+
+.modalContainer {
+  width: 100%;
+}
+
+.desktopModal {
+  max-width: 420px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+}
+
+.modalHeader {
+  padding: 16px;
+  font-size: ~fontSize.large_xl;
+  font-weight: ~fontWeight.bold;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.modalBody {
+  padding: 16px;
+  font-size: ~fontSize.large;
+  white-space: pre-line;
+}
+
+.modalFooter {
+  padding: 16px;
+  border-top: 1px solid ~colors.blueberry_10;
+}
+
+.buttonStyle {
+  border-radius: 4px;
+}
+
+.landmark {
+  word-break: break-word;
+}

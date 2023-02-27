@@ -1,0 +1,203 @@
+.details {
+  width: 100%;
+}
+
+.detailsUpi {
+  width: calc(100% - 42px);
+}
+
+.expired {
+  padding: 16px;
+  color: ~colors.blueberry_40;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line:first-child {
+  margin-bottom: 8px;
+}
+
+.bankName {
+  font-weight: ~fontWeight.bold;
+  display: flex;
+}
+
+.subLine {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.rightSubLine {
+  width: 110px;
+  text-align: right;
+}
+
+.cvvInput {
+  width: 61px;
+  height: 40px;
+  padding: 5px 10px 5px 15px;
+  border: 1px solid ~colors.blueberry;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.cvvError {
+  border-color: ~colors.salmon;
+}
+
+.expiredText {
+  color: ~colors.salmon;
+  margin-left: 12px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.maestroCard {
+  color: ~colors.salmon;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin-right: 4px;
+}
+
+.toolTipText {
+  padding: 12px;
+  font-size: ~fontSize.small;
+  width: 178px;
+}
+
+.tooltipInfoIcon {
+  position: relative;
+  top: 2px;
+}
+
+.infoIcon {
+  vertical-align: sub;
+  font-size: ~fontSize.icon_large;
+  top: -3px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.ctaContainer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed ~colors.blueberry_20;
+  display: flex;
+  justify-content: center;
+}
+
+.ctaBtn {
+  color: ~colors.watermelon;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}
+
+.warningMsg {
+  margin-top: 12px;
+}
+
+.disabledName {
+  color: ~colors.blueberry_40;
+}
+
+.disabledSprite {
+  opacity: 0.5;
+}
+
+.selectedCheckboxIcon {
+  position: relative;
+  font-size: 20px;
+  top: 4px;
+  fill: ~colors.watermelon;
+}
+
+.checkboxIcon {
+  position: relative;
+  font-size: 20px;
+  top: 4px;
+}
+
+.autoConsentCheckbox {
+  margin-top: 21px;
+  margin-bottom: 4px;
+}
+
+.saveCardLabel {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.savedInfoIcon {
+  position: relative;
+  top: 2px;
+  color: ~colors.blue;
+  margin-left: 4px;
+}
+
+.consentDisabledText {
+  font-size: ~fontSize.small;
+  line-height: 16px;
+  margin-top: 15px;
+  color: ~colors.grey_60;
+}
+
+.secured {
+  font-size: ~fontSize.small;
+  color: ~colors.mynt;
+  margin-left: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.securedDesktop {
+  margin-left: unset;
+  margin-top: 5px;
+}
+
+.securedText {
+  font-weight: ~fontWeight.bold;
+  margin-left: 5px;
+}
+
+.tickIconWrapper {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: ~colors.mynt;
+}
+
+.tickIcon {
+  position: relative;
+  transform: scaleX(-1) rotate(-45deg);
+  font-size: 9px;
+  color: ~colors.white;
+  top: -3.5px;
+  right: 3px;
+}
+
+/* for cvv */
+input[id^='cvv'] {
+  -webkit-text-security: disc;
+}
+
+.inlineOffer {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  line-height: 16px;
+  color: ~colors.mynt;
+  margin-left: 8px;
+}

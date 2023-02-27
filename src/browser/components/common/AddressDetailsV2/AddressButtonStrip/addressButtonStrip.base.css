@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonContainer {
+  margin-right: 17px;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  min-height: 32px;
+  line-height: 1px;
+  letter-spacing: 0px;
+}
+
+.disabledButton {
+  background-color: ~colors.grey_5;
+  color: ~colors.blueberry;
+}
+
+.fadeInContainer {
+  position: absolute;
+}
+
+.deleteButtonContainer {
+  margin-left: auto;
+}
+
+.confirmDelete {
+  color: ~colors.white;
+  fill: ~colors.white;
+}
+
+.cancelButtonContainer {
+  width: 30%;
+}
+
+.deleteButton {
+  padding: 7px 13px;
+}
+
+.confirmTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.deleteIcon {
+  margin-right: 13px;
+}
+
+.secondary {
+  background-color: ~colors.white;
+  min-width: 40px;
+  color: ~colors.blueberry;
+  border: 1px ~colors.blueberry solid;
+}
+
+.fadedContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.grow {
+  width: 60%;
+  transition: all, 0.25s;
+  direction: ltr;
+}
+
+.shrink {
+  width: 10%;
+  transition: all, 0.25s;
+  direction: rtl;
+}
+
+.buttonText {
+  white-space: nowrap;
+}

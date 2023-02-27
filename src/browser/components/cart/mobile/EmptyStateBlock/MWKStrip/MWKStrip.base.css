@@ -1,0 +1,47 @@
+.continueContainer {
+  text-align: center;
+}
+
+.continueContainer.continue {
+  background-color: transparent;
+}
+
+.continueContainer.shopMore {
+  background-color: ~colors.white;
+  border-top: 14px solid ~colors.grey_10;
+  border-bottom: 14px solid ~colors.grey_10;
+}
+
+.continueButton {
+  text-align: center;
+  padding-bottom: 28px;
+  background-color: ~colors.grey_10;
+  display: flex;
+  justify-content: center;
+}
+
+.continueShopPills {
+  margin: 8px;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: ~colors.blueberry_90;
+  border: 1px solid ~colors.blueberry_20;
+  border-radius: 16px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  padding: 6px 20px 6px 20px;
+  white-space: nowrap;
+}
+
+.contents {
+  display: flex;
+  overflow-x: auto;
+}
+.continueButton .mwkContinueShopping {
+  background: ~colors.white;
+  border: 1px solid ~colors.watermelon;
+  color: ~colors.watermelon;
+  text-transform: none;
+  width: 160px;
+}

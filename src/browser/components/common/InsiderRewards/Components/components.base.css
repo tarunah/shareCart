@@ -1,0 +1,215 @@
+.tooltipInfoIcon {
+  top: 2px;
+  margin-left: 5px;
+  position: relative;
+}
+
+div.toolTipText {
+  padding: 9px 14px;
+  width: 220px;
+  font-weight: ~fontWeight.light;
+  font-size: ~fontSize.small;
+  left: inherit;
+  bottom: 23px;
+  white-space: initial;
+}
+
+.toolTipInsider {
+  right: -10px;
+}
+
+.textGreen {
+  color: ~colors.mynt;
+  margin-left: 2px;
+}
+
+.privilegeContainer {
+  font-weight: ~fontWeight.light;
+  margin-left: 4px;
+}
+
+.coinMultiplier {
+  border-right: 1px dashed ~colors.grey_5;
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  margin-right: 11px;
+}
+
+.coinMultiplier:empty {
+  display: none;
+}
+
+.rewardsText {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px 0;
+}
+
+.rewardsTextContainer {
+  display: flex;
+  flex-flow: row;
+  background: ~colors.white;
+  padding: 10px 10px 10px 14px;
+}
+
+.privilegeHeader {
+  color: ~colors.grey_60;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 8px;
+  line-height: 15px;
+  margin-top: 3px;
+}
+
+.title {
+  color: ~colors.grey_60;
+  font-weight: ~fontWeight.bold;
+  margin-top: 5px;
+}
+
+.privilegeText {
+  color: ~colors.dark_yellow;
+  margin-right: 2px;
+}
+
+.privilegeTextGold {
+  color: ~colors.dark_yellow;
+  font-size: ~fontSize.medium;
+  line-height: ~fontSize.xl;
+}
+
+.privilegeTextGrey {
+  color: ~colors.grey_60;
+  font-size: ~fontSize.small;
+  line-height: ~fontSize.large;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.privilegeEarnText {
+  margin-right: 4px;
+}
+
+.insiderInfoText {
+  display: flex;
+  align-items: center;
+  font-size: ~fontSize.medium;
+  margin-top: 3px;
+  flex-wrap: wrap;
+}
+
+.coinsEarnedText {
+  display: flex;
+  align-items: center;
+  font-size: ~fontSize.large;
+  line-height: ~fontSize.icon_large;
+  color: ~colors.blueberry;
+  margin: 2px 0 0 4px;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+}
+
+.insiderEarnText {
+  margin-right: 4px;
+}
+
+.superCoin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.1));
+  margin: 0 1px 0 4px;
+}
+
+.insiderPointsText {
+  margin-left: 1px;
+  margin-right: 2px;
+}
+
+.insiderPurchaseText {
+  margin-left: 2px;
+}
+
+.insiderTooltip {
+  margin-left: 1px;
+}
+
+.insiderSaveText {
+  margin-left: 2px;
+}
+
+.EarlyAccessText {
+  font-weight: ~fontWeight.bold;
+  width: 100%;
+  background: ~colors.white;
+  font-size: ~fontSize.medium;
+  line-height: ~fontSize.large_xl;
+  padding: 9px 0 9px 16px;
+  margin-top: 1px;
+}
+
+.EarlyAccessSaveText {
+  color: ~colors.mynt;
+}
+
+.flexBreak {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.insiderCrown {
+  margin-right: 4px;
+  position: relative;
+}
+
+.strikedPoints {
+  text-decoration: line-through;
+}
+
+.insiderTrialUserProgressContainer {
+  display: flex;
+  background: ~colors.white;
+  padding: 0 16px 10px;
+  font-size: ~fontSize.small;
+}
+
+.insiderTrialColorGreen {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+}
+
+.requiredAmountToEndTrial {
+  color: ~colors.yellow_70;
+  font-weight: ~fontWeight.bold;
+}
+
+.progressBarTrial {
+  position: relative;
+  background: ~colors.golden_yellow_30;
+  border-radius: 999px;
+  color: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  overflow: hidden;
+}
+
+.progressBarTrialAmount {
+  position: relative;
+  background: transparent;
+  color: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  padding: 2px 20px;
+}
+
+.progressBarFilled {
+  position: absolute;
+  background: ~colors.golden_yellow_dark;
+  border-radius: 999px;
+  height: 100%;
+}
+
+.shopMoreMessage {
+  margin-right: 8px;
+}

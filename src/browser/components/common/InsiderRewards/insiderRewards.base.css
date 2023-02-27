@@ -1,0 +1,51 @@
+.borderContainer {
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+}
+.rewardsContainer {
+  position: relative;
+  background: ~colors.white;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: ~fontSize.medium;
+  display: flex;
+}
+
+.insiderInfo {
+  display: flex;
+}
+
+.textGreen {
+  color: ~colors.mynt;
+}
+
+.insiderCrown {
+  margin-right: 4px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.insiderRewards {
+  margin-top: 10px;
+}
+
+.iconRewards {
+  border-width: 2px 0;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      ~colors.yellow_80 0.42%,
+      ~colors.yellow_40 22.95%,
+      ~colors.golden_yellow_10 46.23%,
+      ~colors.yellow_40 83.54%,
+      ~colors.yellow_80 98.9%
+    )
+    1;
+}
+
+.insiderRewardsText {
+  margin-top: 10px;
+}

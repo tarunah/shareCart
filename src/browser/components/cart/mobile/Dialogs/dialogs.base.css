@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+}
+
+.price {
+  margin-top: 16px;
+}
+
+.header {
+  margin: 16px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.selected {
+  color: ~colors.watermelon;
+  border-color: ~colors.watermelon !important;
+}
+
+.list {
+  overflow: scroll;
+  white-space: nowrap;
+  margin-left: 16px;
+  padding-bottom: 24px;
+  overflow-y: hidden;
+}
+
+.item {
+  position: relative;
+  padding: 10px 12px;
+  border: 1px solid ~colors.blueberry_80;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.display {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  min-width: 18px;
+  text-align: center;
+}
+
+.disabled {
+  border: 1px solid ~colors.blueberry_40;
+  color: ~colors.blueberry_40;
+}
+
+.strike {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: ~colors.blueberry_40;
+}
+
+.closeIcon {
+  right: 16px !important;
+  top: 16px !important;
+  cursor: pointer;
+}
+
+.moreSeller {
+  margin: 0 0 14px 16px;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.small;
+}
+
+.sellerCount {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.warningContainer {
+  padding: 8px;
+  margin: 0px 16px;
+  margin-bottom: 12px;
+  background-color: ~colors.salmon_05;
+  display: flex;
+  border-radius: 4px;
+}
+
+.warningIcon {
+  display: inline-block;
+  height: 24px;
+  width: 30px;
+  background-position: -115px -185px;
+  margin-top: 5px;
+  margin-right: 12px;
+}
+
+.warningContent {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+}
+
+.warningAmount {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.mynt;
+}

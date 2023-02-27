@@ -1,0 +1,39 @@
+.heading {
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  padding-top: 10px;
+}
+
+.productsContainer {
+  background: white;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.firstProductClass:first-child {
+  margin-left: 0px;
+}
+
+.cartFillerHighlight {
+  border: 1px solid ~colors.watermelon;
+}
+
+.blur {
+  opacity: 0.7;
+}
+
+.noProductsFound {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.or {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.borderTop {
+  border-top: 1px solid ~colors.blueberry_10;
+}

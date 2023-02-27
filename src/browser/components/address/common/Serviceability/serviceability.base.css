@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.notification {
+  background-color: ~colors.white;
+  padding: 12px 16px;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  line-height: ~fontSize.medium;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.noBorder {
+  border: 0;
+}
+
+.note {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.salmon;
+}
+
+.list {
+  background-color: ~colors.white;
+  padding: 16px;
+}
+
+.imgStyle {
+  height: 48px;
+  width: 36px;
+  display: inline-block;
+}
+
+.deliveryContainer {
+  border-bottom: 1px dashed ~colors.blueberry_10;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.deliveryContainer:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.deliveryInfo {
+  margin-left: 12px;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  max-width: calc(100% - 48px);
+}
+
+.estimatedDate {
+  font-weight: ~fontWeight.bold;
+}
+
+.tryNBuyInfo {
+  font-size: ~fontSize.small;
+  color: ~colors.mynt;
+}
+
+.why {
+  display: inline-block;
+  color: ~colors.blue;
+  font-weight: ~fontWeight.bold;
+  margin-left: 5px;
+}
+
+.expressDeliveryLabel {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.toolTip {
+  padding: 5px;
+  width: 182px;
+}
+
+.essentialTag {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: ~fontSize.small;
+  border: 1px solid ~colors.blueberry;
+  padding: 2px 8px 3px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.notServiceableMsg {
+  font-size: ~fontSize.small;
+  line-height: 15px;
+}
+
+.orderByTimer {
+  font-size: ~fontSize.small;
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.light;
+}

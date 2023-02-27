@@ -1,0 +1,72 @@
+.sizeChart {
+  position: fixed;
+  overflow-y: auto;
+  padding: 10px;
+  top: 48px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 12;
+  width: 100%;
+  background: ~colors.white;
+}
+
+.crossIcon {
+  height: 15px;
+  width: 15px;
+  font-weight: ~fontWeight.bold;
+}
+
+.header {
+  margin-top: 15px;
+  margin-bottom: 10px !important;
+}
+
+.cardTitle {
+  margin: 10px 0px;
+  font-weight: ~fontWeight.bold;
+}
+
+h6 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.sizeChartImage {
+  padding-top: 108.1081%; /*(400/370)*100 = 108.108108*/
+  background-color: ~colors.white;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sizeImage {
+  max-width: 400px;
+  margin: 10px auto 0 auto;
+}
+
+.tableContainer {
+  min-height: 0.01%;
+  overflow-x: auto;
+}
+
+table {
+  border: 1px solid ~colors.blueberry_10;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+th {
+  font-weight: ~fontWeight.bold;
+}
+
+th,
+td {
+  padding: 10px 5px;
+  font-size: 11px;
+  text-align: center;
+  border: 1px solid ~colors.blueberry_10;
+  text-transform: capitalize;
+}

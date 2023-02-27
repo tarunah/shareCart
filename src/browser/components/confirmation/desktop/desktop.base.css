@@ -1,0 +1,51 @@
+.container {
+  background: ~colors.blueberry_5;
+  min-height: 600px;
+}
+
+.cardLayout {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.cardContainer {
+  width: 100%;
+  margin: 70px auto;
+  display: inline-block;
+  border: 1px solid ~colors.blueberry_20;
+  border-radius: 8px;
+  background: ~colors.white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.confirmationCardContainer {
+  padding-bottom: 48px;
+  padding-top: 16px;
+}
+
+.confirmationCard {
+  max-width: 60%;
+  margin-bottom: 16px;
+  border: 1px solid ~colors.grey_5;
+  border-radius: 4px;
+}
+
+.modalContainer {
+  padding: 26px 16px;
+  max-width: 420px;
+  top: 35%;
+  text-align: left;
+}
+
+.modalHeader {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 20px;
+  color: ~colors.blueberry;
+}
+
+.modalDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 17px;
+  color: ~colors.blueberry;
+}

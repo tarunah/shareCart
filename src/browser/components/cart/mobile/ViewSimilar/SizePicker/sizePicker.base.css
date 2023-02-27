@@ -1,0 +1,51 @@
+.selected {
+  color: ~colors.watermelon;
+  border-color: ~colors.watermelon !important;
+}
+
+.list {
+  overflow: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.selectSizeHeading {
+  color: ~colors.blueberry;
+  margin-right: 5px;
+}
+
+.item {
+  position: relative;
+  padding: 10px 12px;
+  border: 1px solid ~colors.blueberry_80;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 16px;
+  min-height: 40px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.display {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  min-width: 18px;
+  text-align: center;
+}
+
+.disabled {
+  border: 1px solid ~colors.blueberry_40;
+  color: ~colors.blueberry_40;
+}
+
+.strike {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: ~colors.blueberry_40;
+}

@@ -1,0 +1,63 @@
+.productContainer {
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+
+.brandName {
+  font-size: ~fontSize.medium;
+}
+.productName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.light;
+  color: ~colors.blueberry_50;
+  margin-top: 10px;
+  height: 16px;
+}
+
+.productData {
+  padding: 6px 5px 10px;
+  overflow: hidden;
+  background-color: ~colors.white;
+}
+
+.priceContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: -8px;
+}
+
+.price {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  margin-right: 5px;
+}
+
+.originalPrice {
+  color: ~colors.blueberry_50;
+  text-decoration: line-through;
+  font-size: ~fontSize.tiny_xl;
+  margin-right: 5px;
+}
+
+.iconRupee {
+  font-size: ~fontSize.tiny_xl;
+  font-weight: ~fontWeight.bold;
+}
+
+.discPercent {
+  color: ~colors.watermelon;
+  font-size: ~fontSize.tiny_xl;
+  white-space: nowrap;
+}
+
+.cardContents {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 12px;
+  justify-content: space-around;
+}

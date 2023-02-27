@@ -1,0 +1,21 @@
+.modal {
+  width: 100%;
+  padding: 16px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+}
+
+.title {
+  line-height: ~fontSize.icon_large;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.banner {
+  margin-top: 21px;
+}

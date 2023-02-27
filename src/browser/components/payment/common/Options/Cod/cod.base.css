@@ -1,0 +1,24 @@
+.heading {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  padding-bottom: 32px;
+}
+
+.alternateHeading {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+}
+
+.emptyBlock {
+  padding: 95px 0px;
+}
+
+.actionButton {
+  margin-top: 32px;
+}
+
+@media (max-width: 480px) {
+  .mode {
+    margin: 10px 0 0 10px;
+  }
+}

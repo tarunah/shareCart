@@ -1,0 +1,327 @@
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.animatedBackground {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: ~colors.blueberry_20;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8%, ~colors.blueberry_10),
+    color-stop(18%, ~colors.blueberry_20),
+    color-stop(33%, ~colors.blueberry_10)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    ~colors.blueberry_10 8%,
+    ~colors.blueberry_20 18%,
+    ~colors.blueberry_10 33%
+  );
+  background: linear-gradient(
+    to right,
+    ~colors.blueberry_10 8%,
+    ~colors.blueberry_20 18%,
+    ~colors.blueberry_10 33%
+  );
+  background-size: 800px 104px;
+  height: 65px;
+}
+
+.desktopLayout {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 10px 16px;
+  min-height: 320px;
+}
+
+.desktopRight {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding: 24px 0px 0px 16px;
+}
+
+.desktopLeft {
+  display: inline-block;
+  width: 64%;
+  padding-right: 20px;
+  border-right: 1px solid ~colors.blueberry_10;
+  padding-top: 32px;
+}
+
+.desktopRightPayment {
+  width: 100%;
+}
+
+.desktopLeftPayment {
+  width: 100%;
+  padding-right: unset;
+}
+
+.mobileLayout {
+  background-color: ~colors.blueberry_5;
+  min-height: 100vh;
+}
+
+.timelineItem {
+  background: ~colors.white;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 8px 16px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.marginTop4 {
+  margin-top: 4px;
+}
+
+.marginTop8 {
+  margin-top: 8px;
+}
+
+.marginTop12 {
+  margin-top: 12px;
+}
+
+.marginTop16 {
+  margin-top: 16px;
+}
+
+.marginRight12 {
+  margin-right: 12px;
+}
+
+.marginBottom34 {
+  margin-bottom: 34px;
+}
+
+.marginLeft32 {
+  margin-left: 32px;
+}
+
+.pushLeft {
+  margin-right: auto;
+}
+
+.pushRight {
+  margin-left: auto;
+}
+
+.lineFullWidth {
+  height: 16px;
+  width: 100%;
+}
+
+.line240 {
+  height: 16px;
+  width: 240px;
+}
+
+.line176 {
+  height: 16px;
+  width: 176px;
+}
+
+.line96 {
+  height: 16px;
+  width: 96px;
+}
+
+.line56 {
+  height: 16px;
+  width: 56px;
+}
+
+.line48 {
+  height: 16px;
+  width: 48px;
+}
+
+.line24 {
+  height: 16px;
+  width: 24px;
+}
+
+.line148 {
+  height: 16px;
+  width: 148px;
+}
+
+.line109 {
+  height: 16px;
+  width: 109px;
+}
+
+.line76 {
+  height: 16px;
+  width: 76px;
+}
+
+.line33 {
+  height: 16px;
+  width: 33px;
+}
+
+.line95 {
+  margin-bottom: 2px;
+  height: 16px;
+  width: 95px;
+}
+
+.line104 {
+  height: 16px;
+  width: 104px;
+}
+
+.line87 {
+  height: 16px;
+  width: 87px;
+}
+
+.line100 {
+  margin-bottom: 7px;
+  height: 16px;
+  width: 100px;
+}
+
+.line39 {
+  margin-bottom: 7px;
+  height: 16px;
+  width: 39px;
+}
+
+.line62 {
+  height: 16px;
+  width: 62px;
+}
+
+.rect43 {
+  height: 43px;
+  width: 43px;
+}
+
+.rect24 {
+  height: 24px;
+  width: 24px;
+}
+
+.rect16 {
+  height: 16px;
+  width: 16px;
+}
+
+.image {
+  height: 144px;
+  width: 112px;
+}
+
+.productInfo {
+  width: calc(100% - 124px);
+  align-self: start;
+}
+
+.paymentInstrument {
+  width: calc(100% - 36px);
+}
+
+.btnContainer {
+  padding: 16px 16px 8px;
+}
+
+.horizontalBox {
+  width: 100%;
+  height: 96px;
+}
+
+.borderBox {
+  border: 1px solid ~colors.blueberry_10;
+}
+
+.borderBottom {
+  content: '';
+  margin-top: 16px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.paddingLRZero {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.paymentDekstopContiner {
+  display: flex;
+}
+
+.paymentOptionLeft {
+  width: 220px;
+}
+
+.paymentOptionRight {
+  width: 100%;
+}
+
+.paymentOptionContainer {
+  padding: 16px;
+  border: 1px solid ~colors.blueberry_10;
+  border-bottom: unset;
+}
+
+.paymentOptionContainerRight {
+  padding: 16px;
+  border: 1px solid ~colors.blueberry_10;
+  border-left: unset;
+  display: inline-block;
+  width: 100%;
+}
+
+.paymentRightBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed ~colors.grey_5;
+}
+
+.paymentOptionContainerEnd {
+  height: 60px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.desktopPaymentOption {
+  border-right: unset;
+  margin-bottom: 130px;
+}
+
+.unsetBorder {
+  border: unset;
+}

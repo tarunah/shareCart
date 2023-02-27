@@ -1,0 +1,161 @@
+.cardHeader {
+  text-transform: uppercase;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  padding: 16px 16px 8px;
+}
+
+.viewItems {
+  font-size: ~fontSize.small;
+  color: ~colors.watermelon;
+  cursor: pointer;
+  font-weight: ~fontWeight.bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.container {
+  background: ~colors.white;
+  display: flex;
+  font-size: ~fontSize.medium;
+  padding: 16px;
+}
+
+.ctaOnViewItemsModal {
+  border: 1px ~colors.watermelon solid;
+  border-radius: 4px;
+  background: ~colors.white;
+  color: ~colors.watermelon;
+}
+
+.checkboxIcon {
+  position: relative;
+  height: 16px;
+  top: -1px;
+}
+
+.selected {
+  fill: ~colors.watermelon;
+}
+
+.details {
+  margin-left: 16px;
+  margin-top: -4px;
+  width: 100%;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+}
+
+.title {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+}
+
+.subTitle {
+  color: ~colors.blueberry_60;
+}
+
+.messageContainer {
+  margin-top: 16px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.checkIcon {
+  fill: ~colors.mynt;
+  margin-right: 4px;
+  position: relative;
+  top: 8px;
+  height: 6px;
+  width: 8px;
+}
+
+.freeTag {
+  color: ~colors.mynt;
+}
+
+.how {
+  cursor: pointer;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  text-transform: uppercase;
+  font-size: ~fontSize.small;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.rupeeIcon {
+  height: 9px;
+}
+
+.howItWorksModal {
+  max-width: 400px;
+  max-height: 475px;
+  padding: 16px;
+  top: 18%;
+}
+
+.viewItemsModal {
+  padding: 8px 16px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.viewItemsMessage {
+  margin-top: 3px;
+}
+
+.eligibleProductsContainer {
+  margin: 12px 0 4px 0;
+}
+
+.eligibleProducts {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.productName {
+  margin-left: 8px;
+}
+
+.eligibleProducts-div:not(:last-child) {
+  border-bottom: 1px ~colors.blueberry_10 dashed;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-top: 8px;
+}
+
+.modalBody {
+  margin-top: 24px;
+}
+
+.tryNBuyImage {
+  width: 100%;
+  height: 100%;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+@media (max-width: 480px) {
+  .howItWorksModal {
+    position: absolute !important;
+    bottom: 0px;
+    width: 100%;
+    max-width: initial;
+    top: auto;
+  }
+}

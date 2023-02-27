@@ -1,0 +1,23 @@
+.snackBar {
+  position: fixed;
+  bottom: 108px;
+  z-index: 10;
+  left: 50%;
+}
+
+.container {
+  left: -50%;
+  position: relative;
+  background-color: ~colors.blueberry;
+  opacity: 0.9;
+  padding: 3px 12px 3px 14px;
+  border-radius: 22px;
+  color: ~colors.white;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+}
+
+.iconStyle {
+  margin-right: 6px;
+}

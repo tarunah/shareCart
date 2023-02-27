@@ -1,0 +1,20 @@
+.container {
+  color: ~colors.blueberry;
+  padding: 12px 16px;
+  display: flex;
+}
+
+.labelContainer {
+  margin-left: 12px;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  width: 100%;
+}
+
+.selected .radioIcon {
+  fill: ~colors.watermelon;
+}
+
+.disabledIcon {
+  fill: ~colors.blueberry_40;
+}

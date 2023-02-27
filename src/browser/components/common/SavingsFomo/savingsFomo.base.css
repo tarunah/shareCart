@@ -1,0 +1,128 @@
+.modal {
+  width: 100%;
+}
+
+.desktopModal {
+  top: 25%;
+  width: 400px;
+  padding: 8px 0px 8px 2px;
+}
+
+.container {
+  padding: 18px;
+}
+
+.header {
+  color: ~colors.blueberry;
+}
+
+.savingsValue {
+  font-size: ~fontSize.icon_enlarged;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.mynt;
+}
+
+.products {
+  padding: 20px 0px 12px 0px;
+  overflow-y: scroll;
+  max-height: 350px;
+}
+
+.savingsConfirmationText {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  padding: 12px 0px;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 48%;
+}
+
+.fillWatermelon {
+  fill: ~colors.watermelon;
+}
+
+.fillBlueberry20 {
+  fill: ~colors.blueberry_20;
+}
+
+.goBackButton {
+  background-color: white;
+  color: ~colors.blueberry;
+  border-radius: 2px;
+  border: 1px solid ~colors.blueberry_20;
+}
+
+.checkboxMessage {
+  padding: 0px 10px;
+  position: relative;
+  bottom: 3px;
+}
+
+.checkboxContainer {
+  border-top: 1px solid ~colors.blueberry_20;
+  padding: 10px 0px;
+}
+
+.productContainer {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.priceDetails {
+  margin-left: auto;
+}
+
+.limitedAvailability {
+  color: ~colors.salmon;
+  font-weight: ~fontWeight.bold;
+}
+
+.brandName {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+}
+
+.itemName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productInfo {
+  width: 65%;
+  padding-left: 10px;
+}
+
+.strikeOff {
+  text-decoration: line-through;
+  color: ~colors.blueberry_50;
+}
+
+.boldPrice {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.stayOnPageShortButton {
+  display: none;
+}
+
+@media (max-width: 380px) {
+  .stayOnPageButton {
+    display: none;
+  }
+  .stayOnPageShortButton {
+    display: unset;
+  }
+}

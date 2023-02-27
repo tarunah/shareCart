@@ -1,0 +1,61 @@
+.info {
+  padding: 10px 18px 14px 18px;
+  border: 1px solid ~colors.blueberry_10;
+  border-left: 3px solid ~colors.orange;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  background-color: ~colors.white;
+}
+
+.headerText {
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 5px;
+  font-size: ~fontSize.medium;
+  color: ~colors.orange;
+}
+
+.textMessage {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.link {
+  color: ~colors.blue;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  font-size: ~fontSize.medium;
+  margin-left: 3px;
+}
+
+.header {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding: 25px 25px 10px;
+}
+
+.details {
+  padding: 0px 25px;
+  font-size: ~fontSize.medium;
+}
+
+.cancelButton {
+  width: 40%;
+  color: ~colors.mynt;
+  float: right;
+  height: 50px;
+  background: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  border: none;
+  cursor: pointer;
+}
+
+.faq {
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .details {
+    font-size: ~fontSize.small;
+  }
+}

@@ -1,0 +1,18 @@
+.iconClass {
+  margin-right: 7px;
+  height: 12px;
+  width: 12px;
+}
+
+.container {
+  color: ~colors.salmon;
+  margin-top: 7px;
+  font-size: ~fontSize.small;
+  display: flex;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,5 @@
+.container {
+  font-size: ~fontSize.small;
+  color: ~colors.salmon;
+  padding-top: 12px;
+}

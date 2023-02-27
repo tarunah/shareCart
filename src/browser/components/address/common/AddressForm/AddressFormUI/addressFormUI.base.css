@@ -1,0 +1,257 @@
+.container {
+  padding-bottom: 70px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.header {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry_80;
+  font-weight: ~fontWeight.bold;
+  padding: 20px 10px 20px 16px;
+  background: white;
+  border-bottom: 1px solid ~colors.grey_20;
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  margin-right: 16px;
+  fill: ~colors.blueberry;
+  color: ~colors.blueberry;
+}
+
+.scrollable {
+  overflow-y: auto;
+  height: 90%;
+}
+
+.form {
+  padding: 16px;
+  margin-top: 8px;
+  color: ~colors.blueberry;
+}
+
+.form:last-of-type {
+  margin-bottom: 16px;
+}
+
+.formRow {
+  margin-top: 32px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid #949c9d;
+  width: 100%;
+}
+
+.formHeader {
+  padding: 16px 16px 0;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.inputRow {
+  margin-bottom: 16px;
+}
+
+.pincodeBlock {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.halfWidth {
+  width: 47.5% !important;
+  margin-bottom: 0;
+}
+
+.cityContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addressTypeIcon {
+  padding: 4px 16px;
+  border: 1px solid ~colors.blueberry;
+  border-radius: 20px;
+  font-size: ~fontSize.small;
+  margin-right: 16px;
+}
+
+.addressTypeIcon.selectedAddressType {
+  border: 1px solid ~colors.watermelon;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.addressTypes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subAddress {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.subAddressDay {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.subAddressLabel {
+  margin-left: 8px;
+  font-size: ~fontSize.medium;
+  text-transform: capitalize;
+}
+
+.selectedCheckboxIcon {
+  fill: ~colors.watermelon;
+}
+
+.isDefault {
+  display: flex;
+  align-items: center;
+}
+
+.defaultAddress {
+  margin-left: 8px;
+  font-size: ~fontSize.medium;
+}
+
+.footer {
+  position: absolute;
+  background: ~colors.white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  box-shadow: 0px -1px 4px 0px #0000004d;
+}
+
+.saveBtn {
+  background-color: ~colors.watermelon !important;
+  font-size: ~fontSize.medium !important;
+  border-radius: 4px !important;
+  padding: 14px !important;
+}
+
+.error {
+  color: ~colors.red;
+}
+
+.pincodeLoder {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  left: auto;
+}
+
+.pincodeLoderContainer {
+  box-shadow: none;
+}
+
+.halfWidthPincodeBlock {
+  width: 50% !important;
+  margin-right: 12px;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.highlightAddressError {
+  border: 1px solid ~colors.salmon !important;
+}
+
+.errorMessage {
+  color: ~colors.salmon;
+  padding-left: 12px;
+  font-size: ~fontSize.small;
+  padding-top: 4px;
+}
+
+.nudgeContainer {
+  font-size: ~fontSize.medium;
+  background-color: ~colors.peach;
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+}
+
+.nudgeInputRow {
+  display: flex !important;
+}
+
+.nudgeInput {
+  border-right: none !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.tagContainer {
+  border: 1px solid ~colors.blueberry_20;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 12px;
+}
+
+.textContainer {
+  padding: 2px 8px 2px 8px;
+  color: ~colors.white;
+  background-color: ~colors.mynt;
+  border-radius: 4px;
+  font-size: ~fontSize.small;
+}
+
+.socialProofBanner {
+  display: flex;
+  background-color: ~colors.mynt_10;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.small;
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.socialProofText {
+  padding-left: 6px;
+}
+
+.socialProofText b {
+  font-weight: ~fontWeight.bold;
+}
+
+@media (max-width: 480px) {
+  .container {
+    background: #f2f2f3;
+  }
+
+  .form {
+    background-color: white;
+  }
+
+  .footer {
+    position: fixed;
+  }
+
+  .header {
+    padding-left: 20px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

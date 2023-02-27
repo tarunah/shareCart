@@ -1,0 +1,18 @@
+.container {
+  background: white;
+  border-bottom: 1px solid ~colors.blueberry_10;
+  padding: 10px 0px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.label {
+  text-align: left;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+}
+
+.timer {
+  display: inline-block;
+}

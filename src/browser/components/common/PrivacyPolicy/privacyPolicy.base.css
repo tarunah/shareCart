@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  width: 68%;
+  margin: 24px auto;
+  font-size: ~fontSize.small;
+  line-height: 20px;
+}
+
+.link {
+  color: ~colors.watermelon;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: ~colors.watermelon;
+  text-decoration: underline;
+}
+
+.link:focus {
+  color: ~colors.watermelon;
+  text-decoration: underline;
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<meta charset="utf-8">
+<meta name="theme-color" content="#ffffff" />
+<meta name="format-detection" content="telephone=no" />
+[[? model.data.newrelicEnabled ]]
+<script type="text/javascript" src="https://constant.myntassets.com/checkout/assets/js/nrcheckout.js"></script>
+[[?]]
+
+<title>[[=model.data.pageTitle||'']]</title>
+<link rel="preconnect" href="https://constant.myntassets.com">
+<link rel="dns-prefetch" href="//constant.myntassets.com">
+<link rel="preconnect" href="https://assets.myntassets.com">
+<link rel="dns-prefetch" href="//assets.myntassets.com">
+<link rel="preconnect" href="https://api.myntra.com">
+<link rel="dns-prefetch" href="//api.myntra.com">
+<link rel="preconnect" href="https://touch.myntra.com">
+<link rel="dns-prefetch" href="//touch.myntra.com">
+<link rel="icon" type="image/png" href="https://constant.myntassets.com/checkout/assets/img/myntraIcon.png" sizes="64x64" />
+<script type="text/javascript">
+  window._checkout_ = {
+    __sw_enabled__: '[[=model.data.swEnabled]]'
+  };
+</script>
+[[? model.data.firebaseEnable && model.data.firebaseEnable.enableCheckout ]]
+<script>
+  (function(sa, fbc) {
+    function load(f, c) {
+      var a = document.createElement('script');
+      a.async = 1;
+      a.src = f;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a, s);
+    }
+    load(sa);
+    window.addEventListener('load', function() {
+      firebase.initializeApp(fbc).performance()
+    });
+  })('https://www.gstatic.com/firebasejs/8.6.2/firebase-performance-standalone.js', {
+    apiKey: "AIzaSyDAegtWIjzK09VsL5KH05nn-zzCSSql3H4",
+    authDomain: "valiant-airlock-578.firebaseapp.com",
+    databaseURL: "https://valiant-airlock-578.firebaseio.com",
+    projectId: "valiant-airlock-578",
+    storageBucket: "valiant-airlock-578.appspot.com",
+    messagingSenderId: "787245060481",
+    appId: "1:787245060481:web:fa9044a39e5a8ed1a51880",
+    measurementId: "G-S4QD46HSB1"
+  });
+</script>
+[[?]]
+
+  ((~ model.data.cssBundles :b))
+  <link rel="preload" as="style" href="[[=b]]"></link>
+((~))
+((~ model.data.jsBundles :b))
+  <link rel="preload" as="script" href="[[=b]]"></link>
+((~))
+  <style>#mountRoot{clear:both;min-height:420px}.header{border-bottom:1px solid #F5F5F6;font-size:12px;font-weight:600}.header .container{line-height:78px}.header .myntra-logo{height:40px;width:40px;float:left}.header .secureContainer{float:right;max-height:78px}.header .secureContainer .secure{float:right;letter-spacing:3px;color:#535766;margin:0 20px 0 0}.header .secureContainer .secureIcon{margin:-7px 5px 0 0}.header .checkout-steps{margin:0 0 0 34%;width:40%;color:#696B79;padding:0;display:inline-block;line-height:20px}.header .checkout-steps .step{display:inline-block;letter-spacing:3px}.header .checkout-steps .step1{margin:0 5px 0 0}.header .checkout-steps .step2{margin:0 5px 0 6px}.header .checkout-steps .step3{margin:0 0 0 7px}.header .checkout-steps .active{color:#20BD99;border-bottom:2px solid #20BD99}.header .checkout-steps .divider{display:inline-block;border-top:1px dashed #696B79;height:4px;width:10%}.header .checkout-steps .clickable{cursor:pointer}@media screen and (max-width:768px){.header .checkout-steps{display:none}}.checkout-footer{border-top:1px solid #F5F5F6;margin:0 0 10px 0}.checkout-footer .images{display:inline-block}.checkout-footer .content{max-width:980px;padding-top:10px;margin:auto}.checkout-footer .content .contact-us{color:#282c3f;text-decoration:none;font-weight:600}.checkout-footer .content .contact-us span{float:right;font-size:14px;padding:10px 0}body,html{font-family:Assistant,Helvetica,Arial,sans-serif!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.payment{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block}.sprite-size-small{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:733px 125px}.sprite-size-regular{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:2090px 349px}[class^=sprite-card-]{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:733px 125px}[class^=sprite-cardv2-]{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:2090px 349px}[class^=sprite-wallet-]{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:2090px 349px}[class^=sprite-upi-]{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:2090px 349px}[class^=sprite-logo-]{background-image:url([[=model.data.sprites.payment]]);overflow:hidden;background-repeat:no-repeat;display:inline-block;background-size:2090px 349px;width:42px;height:42px;border:1px solid #e9e9eb;border-radius:50%;background-position:-1578px -115px}.sprite-wallet-mobikwik{width:44px;height:42px;background-position:-1146px -166px}.sprite-wallet-paypal{width:44px;height:42px;background-position:-1227px -166px}.sprite-wallet-tab-paypal{width:109px;height:43px;background-position:-961px -154px}.sprite-wallet-payu{width:44px;height:42px;background-position:-1067px -166px}.sprite-wallet-freecharge{width:44px;height:42px;background-position:-1186px -166px}.sprite-wallet-airtelmoney{width:44px;height:42px;background-position:-1067px -166px}.sprite-wallet-payzapp{width:44px;height:42px;background-position:-1107px -166px}.sprite-wallet-paytm{width:44px;height:42px;background-position:-1270px -114px}.sprite-wallet-emi{width:44px;height:42px;background-position:-1267px -166px}.sprite-wallet-flexipaybyhdfcbank{width:44px;height:42px;background-position:-1892px -166px}.sprite-wallet-creditcardemi{width:44px;height:42px;background-position:-1267px -166px}.sprite-wallet-zestmoney{width:44px;height:42px;background-position:-1307px -166px}.sprite-wallet-lazypay{width:44px;height:42px;background-position:-2027px -166px}.sprite-wallet-icicibank,.sprite-wallet-icicipaylater{width:44px;height:42px;background-position:-1895px -126px}.sprite-wallet-instacred{width:44px;height:42px;background-position:-1346px -166px}.sprite-wallet-axis{width:60px;height:60px;background-position:-11px -10px}.sprite-wallet-citi{width:60px;height:60px;background-position:-81px -10px}.sprite-wallet-hdfc{width:60px;height:60px;background-position:-151px -10px}.sprite-wallet-icici{width:60px;height:60px;background-position:-221px -10px}.sprite-wallet-kotak{width:60px;height:60px;background-position:-291px -10px}.sprite-wallet-sbi{width:60px;height:60px;background-position:-361px -10px}.sprite-wallet-pnb{width:60px;height:60px;background-position:-431px -10px}.sprite-wallet-bob{width:60px;height:60px;background-position:-501px -10px}.sprite-wallet-canara{width:60px;height:60px;background-position:-781px -10px}.sprite-wallet-bank{width:60px;height:60px;background-position:-148px -140px}.sprite-wallet-olamoneypostpaidwallet{background-position:-1350px -75px;width:44px;height:42px}.sprite-upi-paytm{width:44px;height:42px;background-position:-1270px -114px}.sprite-upi-phonepeupi{width:44px;height:42px;background-position:-1270px -74px}.sprite-upi-phonepe{width:44px;height:42px;background-position:-1270px -74px}.sprite-upi-googlepay{width:44px;height:42px;background-position:-463px -151px}.sprite-upi-bhim{width:44px;height:42px;background-position:-1310px -114px}.sprite-upi-otherupi{width:44px;height:42px;background-position:-1310px -74px}.sprite-upi-imobilebyicicibank{width:44px;height:42px;background-position:-1350px -114px}.sprite-upi-mobikwik{width:44px;height:42px;background-position:-1146px -166px}.sprite-upi-freecharge{width:44px;height:42px;background-position:-1186px -166px}.sprite-upi-kotakmahindrabank{width:44px;height:42px;background-position:-1934px -167px}.sprite-upi-hdfc{width:44px;height:42px;background-position:-1892px -166px}.sprite-upi-yonosbi{width:44px;height:42px;background-position:-1934px -10px}.sprite-upi-payzapp{width:44px;height:42px;background-position:-1107px -166px}.sprite-card-default{width:38px;height:20px;background-position:-357px -26px}.sprite-card-mastercard{width:38px;height:20px;background-position:-45px -26px}.sprite-card-visa{width:38px;height:20px;background-position:-4px -26px}.sprite-card-maestro{width:38px;height:20px;background-position:-85px -26px}.sprite-card-rupay{width:55px;height:20px;background-position:-131px -26px}.sprite-card-amex{width:30px;height:20px;background-position:-187px -26px}.sprite-card-diners{width:57px;height:20px;background-position:-232px -26px}.sprite-card-discover{width:63px;height:20px;background-position:-294px -26px}.sprite-cardv2-default{width:36px;height:24px;background-position:-1888px -10px}.sprite-cardv2-mastercard{width:41px;height:24px;background-position:-1837px -10px}.sprite-cardv2-visa{width:38px;height:24px;background-position:-1837px -78px}.sprite-cardv2-maestro{width:41px;height:24px;background-position:-1837px -44px}.sprite-cardv2-rupay{width:60px;height:24px;background-position:-1837px -112px}.sprite-cardv2-amex{width:24px;height:24px;background-position:-1888px -44px}.sprite-cardv2-diners{width:69px;height:24px;background-position:-1733px -154px}.sprite-cardv2-discover{width:80px;height:24px;background-position:-1812px -154px}.sprite-card-cvv-info{background-position:-400px -25px;width:45px;height:36px}.sprite-wallet-cvv-3-digits{background-position:-1733px -10px;width:94px;height:62px}.sprite-wallet-cvv-4-digits{background-position:-1733px -82px;width:94px;height:62px}.sprite-logo-googlepay{background-position:-1474px -63px}.sprite-logo-paytm{background-position:-1474px -11px}.sprite-logo-phonepeupi{background-position:-1422px -63px}.sprite-logo-phonepe{background-position:-1422px -63px}.sprite-logo-bhim{background-position:-1578px -63px}.sprite-logo-cred{background-position:-1422px -219px}.sprite-logo-airtel{background-position:-1474px -219px}.sprite-logo-otherupi{background-position:-1630px -63px}.sprite-logo-mobikwik{background-position:-1578px -11px}.sprite-logo-paypal{background-position:-1422px -11px}.sprite-logo-freecharge{background-position:-1675px -14px}.sprite-logo-airtelmoney{background-position:-1630px -11px}.sprite-logo-payzapp{background-position:-1526px -11px}.sprite-logo-emi{background-position:-1422px -115px}.sprite-logo-creditcardemi{background-position:-1422px -115px}.sprite-logo-zestmoney{background-position:-1474px -115px}.sprite-logo-instacred{background-position:-1526px -115px}.sprite-logo-payu{background-position:-1682px -63px}.sprite-logo-axis{background-position:-1526px -167px}.sprite-logo-hdfc{background-position:-1422px -167px}.sprite-logo-icici{background-position:-1474px -167px}.sprite-logo-kotak{background-position:-1631px -167px}.sprite-logo-sbi{background-position:-1578px -167px}.sprite-logo-stanc{background-position:-1682px -167px}.sprite-logo-bank{background-position:-1578px -115px}.sprite-logo-imobileicici{background-position:-1474px -167px}.sprite-logo-kotakmahindrabank{background-position:-1631px -167px}.sprite-logo-yonosbi{background-position:-1936px -11px}.sprite-logo-olamoney{background-position:-1682px -116px}.sprite-logo-bankselection{background-position:-1630px -121px;width:30px;height:30px}.sprite-logo-airtelpaymentsbank{background-position:-1986px -114px}.sprite-logo-hsbc{background-position:-1986px -10px}.sprite-logo-bankofbaroda{background-position:-1986px -62px}.sprite-logo-citi{background-position:-1987px -167px}.sprite-logo-americanexpress{background-position:-2038px -11px}.sprite-logo-indusind{background-position:-2038px -65px}.sprite-logo-federal{background-position:-2038px -115px}/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:500}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:not(input):not(textarea):not(button){-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.42857143;color:#424553;background-color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit;outline:0}a{color:#282c3f;text-decoration:none;outline:0}a:focus,a:hover{color:#282c3f;text-decoration:none}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}[role=button]{cursor:pointer}.margin-lg{margin:30px!important}.margin-lg-top{margin-top:30px!important}.margin-lg-right{margin-right:30px!important}.margin-lg-bottom{margin-bottom:30px!important}.margin-lg-left{margin-left:30px!important}.margin-md{margin:18px!important}.margin-md-top{margin-top:18px!important}.margin-md-right{margin-right:18px!important}.margin-md-bottom{margin-bottom:18px!important}.margin-dm-left{margin-left:18px!important}.margin-sm{margin:8px!important}.margin-sm-top{margin-top:8px!important}.margin-sm-right{margin-right:8px!important}.margin-sm-bottom{margin-bottom:8px!important}.margin-sm-left{margin-left:8px!important}.padding-lg{padding:30px!important}.padding-lg-top{padding-top:30px!important}.padding-lg-right{padding-right:30px!important}.padding-lg-bottom{padding-bottom:30px!important}.padding-lg-left{padding-left:30px!important}.padding-md{padding:18px!important}.padding-md-top{padding-top:18px!important}.padding-md-right{padding-right:18px!important}.padding-md-bottom{padding-bottom:18px!important}.padding-md-left{padding-left:18px!important}.padding-sm{padding:8px!important}.padding-sm-top{padding-top:8px!important}.padding-sm-right{padding-right:8px!important}.padding-sm-bottom{padding-bottom:8px!important}.padding-sm-left{padding-left:8px!important}.badge{position:absolute;top:9px;left:25px;color:#fff;background:#ff3e6c;font-weight:500;border-radius:50%;font-size:11px;display:inline-block;font-family:helvetica,arial,sans-serif;width:19px;height:19px;text-align:center;line-height:19px}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}.h1,.h2,.h3,h1,h2,h3{margin-top:0;margin-bottom:9px}.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:0;margin-bottom:9px}.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-size:75%}.h1,h1{font-size:33px}.h2,h2{font-size:27px}.h3,h3{font-size:23px}.h4,h4{font-size:17px}.h5,h5{font-size:13px}.h6,h6{font-size:12px}p{margin:0}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.text-nowrap{white-space:nowrap}.text-lowercase{text-transform:lowercase}.text-uppercase{text-transform:uppercase}.text-capitalize{text-transform:capitalize}ol,ul{margin-top:0;margin-bottom:0}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}.list-unstyled{padding-left:0;list-style:none}.list-inline{padding-left:0;list-style:none;margin-left:0}.list-inline>li{display:inline-block;padding-left:0;padding-right:10px}.text-lg{font-size:18px}.text-md{font-size:14px}.text-sm{font-size:12px}.text-ellipsis{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.btn{display:inline-block;margin-bottom:0;font-weight:700;text-align:center;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;outline:0;padding:10px 12px;font-size:13px;line-height:1.42857143;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn.focus,.btn:focus,.btn:hover{color:#3e4152;text-decoration:none}.btn[disabled]{opacity:.5}.btn.default{color:#3e4152;background-color:#fff;border-color:#ccc}.btn.default.flat,.btn.default.outline{color:#3e4152}.btn.primary{color:#fff;background-color:#ff3e6c;border-color:#ff2459}.btn.primary.flat,.btn.primary.outline{color:#ff3e6c}.btn.secondary{color:#fff;background-color:#3d82f7;border-color:#2572f6}.btn.secondary.flat,.btn.secondary.outline{color:#3d82f7}.btn.flat{border-color:transparent;background-color:#fff}.btn.outline{border-color:#ccc;background-color:#fff}.btn.lg{padding:10px 16px;font-size:13px;line-height:1.3333333;border-radius:6px}.btn.md{padding:5px 10px;font-size:16px;line-height:1.5;border-radius:3px}.btn.sm{padding:4px 6px;font-size:11px;line-height:1.5;border-radius:3px}.btn.block{display:block;width:100%}.btn.block+.btn.block{margin-top:5px}.btn input[type=button].block,.btn input[type=reset].block,.btn input[type=submit].block{width:100%}.btn [class*=" icon-"],.btn [class^=icon-]{font-size:18px;margin-right:14px;vertical-align:text-bottom}fieldset{padding:0;margin:0;border:0;min-width:0}input[type=search]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}input[type=checkbox],input[type=radio]{margin:4px 0 0;margin-top:1px\9;line-height:normal}input[type=file]{display:block}select[multiple],select[size]{height:auto}input[type=file]:focus,input[type=checkbox]:focus,input[type=radio]:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.form-control{display:block;width:100%;height:40px;padding:10px 0;font-size:13px;line-height:1.42857143;color:#3e4152;background-color:#fff;background-image:none;border:none}.form-control:focus{outline:0}.form-control::-moz-placeholder{color:#9fa0a9;opacity:1}.form-control:-ms-input-placeholder{color:#9fa0a9}.form-control::-webkit-input-placeholder{color:#9fa0a9}.form-control::-ms-expand{border:0;background-color:transparent}.form-control[disabled],fieldset[disabled] .form-control{cursor:not-allowed}textarea.form-control{height:auto}.form-control.has-feedback{padding-right:60px}input[type=search]{-webkit-appearance:none}@media screen and (-webkit-min-device-pixel-ratio:0){input[type=date].form-control,input[type=time].form-control,input[type=datetime-local].form-control,input[type=month].form-control{line-height:40px}}.form-group{margin-bottom:14px;position:relative}.form-group .form-control-feedback{position:absolute;top:4px;right:0;z-index:2;display:block;width:34px;height:34px;font-size:11px;line-height:34px;text-align:center;color:#ff3e6c;font-weight:500}.form-group .bar{position:relative;border-bottom:1px solid #a9abb3;display:block}.form-group .bar::before{content:'';height:1px;width:0;left:50%;bottom:-1px;position:absolute;transition:left .3s ease,width .3s ease;z-index:2}.form-group input:focus~.bar::before{width:100%;left:0}.form-group input:focus~.bar::before{background:#ff3e6c}.form-group input:focus[readonly]~.bar::before{background:0 0}.form-group .errorContainer{font-size:11px;color:#ff5a5a;margin-top:10px}input:-webkit-autofill,input:-webkit-autofill:focus,input:-webkit-autofill:hover{-webkit-box-shadow:0 0 0 1000px #fff inset}.animated{animation-duration:1s;animation-fill-mode:both}.animated.infinite{animation-iteration-count:infinite}@keyframes pulse{0%{transform:scaleX(1)}50%{transform:scale3d(1.1,1.1,1.1)}to{transform:scaleX(1)}}.pulse{animation-name:pulse}@keyframes shake{10%,90%{transform:translate3d(-1px,0,0)}20%,80%{transform:translate3d(2px,0,0)}30%,50%,70%{transform:translate3d(-4px,0,0)}40%,60%{transform:translate3d(4px,0,0)}}.shake{animation-name:shake}@keyframes bounceIn{0%,30%,60%,80%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:scale3d(.8,.8,.8)}30%{transform:scale3d(1.03,1.03,1.03)}60%{opacity:1;transform:scale3d(.8,.8,.8)}80%{transform:scale3d(1,1,1)}to{opacity:1;transform:scaleX(1)}}.bounceIn{animation-name:bounceIn}.btn-group{position:relative;display:inline-block;vertical-align:middle}.btn-group>.btn{position:relative;float:left}.btn-group>.btn.active,.btn-group>.btn:active,.btn-group>.btn:focus,.btn-group>.btn:hover{z-index:2}.btn-group .btn+.btn,.btn-group .btn+.btn-group,.btn-group .btn-group+.btn,.btn-group .btn-group+.btn-group{margin-left:-1px}.btn-group>.btn-group:not(:first-child) .btn{border-left:none}.btn-group>.btn:not(:first-child):not(:last-child){border-radius:0}.btn-group>.btn:first-child{margin-left:0}.btn-group>.btn:first-child:not(:last-child){border-bottom-right-radius:0;border-top-right-radius:0}.btn-group>.btn:last-child:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0}.btn-group>.btn-group{float:left}.btn-group>.btn-group:not(:first-child):not(:last-child)>.btn{border-radius:0}.btn-group>.btn-group:first-child:not(:last-child)>.btn:last-child{border-bottom-right-radius:0;border-top-right-radius:0}.btn-group>.btn-group:last-child:not(:first-child)>.btn:first-child{border-bottom-left-radius:0;border-top-left-radius:0}.btn-group-justified{display:table;width:100%;table-layout:fixed;border-collapse:separate}.btn-group-justified>.btn,.btn-group-justified>.btn-group{float:none;display:table-cell;width:1%}.btn-group-justified>.btn-group .btn{width:100%}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.hidden{display:none!important}.affix{position:fixed}.no-scroll-background{overflow:hidden}.logo-inline{width:54px;height:78px;display:inline-block;background-position:center;background-size:contain}.site-nav-container{background-color:#fff;width:100%;min-height:78px;max-width:92%;margin:auto}.header{border-bottom:1px solid #F5F5F6}.myntra-name{font-weight:600;font-size:18px;color:#3E4152;float:left;margin-left:18px}.notifyMainContainer{position:fixed;width:85%;margin:0 auto;left:0;right:0;min-height:50px;z-index:20000;transition:all 1s ease-out;opacity:0;display:block;text-align:center}.notifyContent{position:relative;font-size:12px;border-radius:4px;display:inline-block;padding:5px 8px}.notifyerror{color:#fff;background-color:rgba(255,90,90,.9)}.notifyinfo{width:100%;color:#fff;background-color:rgba(83,87,102,.9)}.notifytop{top:65px}.notifybottom{bottom:0}.notifyActionerror{color:#FF3F6C;background-color:#fff;border:1px solid #FF3F6C}.notifyActioninfo{color:#fff;background-color:#14CDA8;border:1px solid #14CDA8}.notifyShow{opacity:1}.hidey{display:none}.notifyActionDiv,.notifyText,.notifyThumbnail{display:inline-block;max-height:50px;vertical-align:middle}.notifyThumbnail img{padding:5px;height:40px;min-width:30px}.notifyActionDiv{float:right;margin-top:2px}.notifyText{font-weight:600;font-size:13px;padding:8px 8px;max-height:initial}.notifyAction{border-radius:3px;outline:0;padding:3px 4px;min-height:30px;font-size:12px;font-weight:500;margin:0 5px 0 5px;float:right;width:73px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.notifyMainContainer{width:35%!important}@-webkit-keyframes placeHolderShimmer{0%{background-position:-468px 0}100%{background-position:468px 0}}@keyframes placeHolderShimmer{0%{background-position:-468px 0}100%{background-position:468px 0}}.animatedBackground{animation-duration:1s;animation-fill-mode:forwards;animation-iteration-count:infinite;animation-name:placeHolderShimmer;animation-timing-function:linear;background:#D4D5D9;background:-webkit-gradient(linear,left top,right top,color-stop(8%,#EAEAEC),color-stop(18%,#D4D5D9),color-stop(33%,#EAEAEC));background:-webkit-linear-gradient(left,#EAEAEC 8%,#D4D5D9 18%,#EAEAEC 33%);background:linear-gradient(to right,#EAEAEC 8%,#D4D5D9 18%,#EAEAEC 33%);background-size:800px 104px;height:65px}.timelineItem{background:#FFF;margin:0 auto;margin-top:8px;padding:8px 16px}.flexRow{display:flex;flex-direction:row;align-items:center}.flexColumn{display:flex;flex-direction:column}.marginTop4{margin-top:4px}.marginTop8{margin-top:8px}.marginTop12{margin-top:12px}.marginTop16{margin-top:16px}.marginRight12{margin-right:12px}.pushLeft{margin-right:auto}.pushRight{margin-left:auto}.lineFullWidth{height:16px;width:100%}.line240{height:16px;width:240px}.line176{height:16px;width:176px}.line96{height:16px;width:96px}.line56{height:16px;width:56px}.line48{height:16px;width:48px}.line24{height:16px;width:24px}.rect24{height:24px;width:24px}.rect16{height:16px;width:16px}.image{height:144px;width:112px}.productInfo{width:calc(100% - 124px);align-self:start}.paymentInstrument{width:calc(100% - 36px)}.btnContainer{padding:16px 16px 8px}.horizontalBox{width:100%;height:96px}.borderBottom{margin-top:16px;border-bottom:1px solid #EAEAEC}.shimmerDesktopLayout{max-width:980px;margin:auto;padding:0 10px 16px;min-height:320px}.shimmerDesktopLayout .shimmerDesktopRight{vertical-align:top;display:inline-block;width:35%;padding:24px 0 0 16px}.shimmerDesktopLayout .shimmerDesktopRight .timelineItem{padding-left:0;padding-right:0}.shimmerDesktopLayout .shimmerDesktopLeft{display:inline-block;width:64%;padding-right:20px;border-right:1px solid #EAEAEC;padding-top:32px}.shimmerDesktopLayout .shimmerDesktopLeft .timelineItem{border:1px solid #EAEAEC;padding:12px 16px}.shimmerMobileLayout{background-color:#F4F4F5;min-height:100vh}</style>
+  ((~ model.data.cssBundles :b))
+  <link rel="stylesheet" href="[[=b]]">
+  <noscript><link rel="stylesheet" href="[[=b]]"></noscript>
+((~))
+  [[? model.data.legacyPolyfill !== "" ]]
+<script>window.Reflect || document.write(
+  '<script src="[[=model.data.legacyPolyfill]]"><\x2fscript>'
+);</script>
+[[?]]
+  <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff" href="[[=model.data.fonts.assistant.woff]]"/>
+<link rel="preload" as="font" crossorigin="crossorigin" type="font/woff" href="[[=model.data.fonts.assistantBold.woff]]"/>
+<style>
+  @font-face {
+    font-family: 'Assistant';
+    font-display: swap;
+    font-weight: 400;
+    src: url('[[=model.data.fonts.assistant.eot]]');
+    src: url('[[=model.data.fonts.assistant.eot]]?#iefix') format('embedded-opentype'),
+      url('[[=model.data.fonts.assistant.woff]]') format('woff'),
+      url('[[=model.data.fonts.assistant.ttf]]') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Assistant';
+    font-display: swap;
+    font-weight: 700;
+    src: url('[[=model.data.fonts.assistantBold.eot]]');
+    src: url('[[=model.data.fonts.assistantBold.eot]]?#iefix') format('embedded-opentype'),
+      url('[[=model.data.fonts.assistantBold.woff]]') format('woff'),
+      url('[[=model.data.fonts.assistantBold.ttf]]') format('truetype');
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <div class="header">
+  <div class="site-nav-container container">
+    <div class="myntra-logo">
+        <svg id="logo" style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 640">
+  <defs>
+    <filter x="-3.8%" y="-2.8%" width="107.7%" height="111.1%" filterUnits="objectBoundingBox" id="a">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M499.178 195.54c5.828 16.006 14.447 39.657-.562-1.566-5.336-14.64-3.618-9.916-.393-1.053-14.807-40.373-36.1-84.274-58.53-120.637-24.04-38.975-45.588-61.116-60.983-69.195 0 0-7.932-5.624-19.532-.77l-.396.141c-14.996 5.47-33.715 25.286-55.633 58.902-14.538 22.292-28.937 48.334-41.764 75.39-14.042-29.557-30.051-58.123-45.687-81.29-15.87-23.516-39.493-54.78-61.304-54.78-1.663 0-3.31.174-4.895.513v.003c-9.717 1.784-20.027 8.995-32.359 22.649-10.125 11.209-21.155 26.278-32.78 44.784-23.513 37.429-45.83 83.134-61.23 125.404C6.765 238.986-.888 275.643.382 302.987c.881 18.986 6.664 43.19 28.725 53.275l3.093 1.299 2.867.945a42.678 42.678 0 0012.032 1.733h.002c17.686 0 35.05-10.567 51.603-31.403 16.203-20.394 31.744-50.845 46.196-90.516a622.213 622.213 0 009.405-27.965 627.225 627.225 0 009.395 27.918c26.077 71.57 55.065 112.058 86.161 120.338l.48.121c.602.153 1.336.339 2.16.501l.527.109c2.362.452 4.69.712 7.115.8l.285.01a30.71 30.71 0 003.203-.063c.471-.02.904-.048 1.381-.08l1.023-.105a35.83 35.83 0 001.159-.158c.5-.06 1.22-.15 2.073-.311.71-.13 1.424-.28 2.24-.473l.45-.112c.19-.044.379-.092.57-.143 31.237-8.052 60.344-48.563 86.512-120.41a610.7 610.7 0 008.928-26.38 605.593 605.593 0 008.928 26.35c14.432 39.653 29.962 70.099 46.156 90.494 16.547 20.837 33.906 31.404 51.592 31.406h.007c4.729 0 9.407-.785 13.92-2.335 11.15-2.948 20.065-10.173 25.812-20.94 14.201-26.586 9.078-74.145-15.203-141.352" id="b"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(60 130)">
+      <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+      <use fill="#FFF" xlink:href="#b"/>
+    </g>
+    <path d="M212.833 145.065c-26.297 3.973-84.645 97.719-116.018 183.823-33.34 91.572-25.359 135.799.835 145.413.018.02.037.02.037.02s.008 0 .036.02c26.263 9.458 60.834-19.288 94.201-110.87 9.022-24.79 16.733-51.485 22.741-77.44-3.163-70.55-2.157-140.89-1.832-140.966" fill="#F41CB2"/>
+    <path d="M212.834 145.065c21.775-4.676 74.573 74.706 108.915 156.41.626 19.203-8.524 173.233-7.884 173.426-23.151-6.162-50.176-39.282-76.482-111.484-9.01-24.771-16.753-51.453-22.717-77.386l-.481-2.096c-15.758-69.124-19.215-132.285-2.41-138.574 0 0 .006 0 .026-.01h.02a8.75 8.75 0 011.013-.285h.002z" fill="#FF912E"/>
+    <path d="M330.794 474.52c-.514.166-1.024.322-1.532.47-.23.066-.451.104-.667.17-.5.116-1.018.23-1.559.326-.535.104-1.018.152-1.502.213-.399.072-.756.108-1.138.158-.418.028-.791.05-1.213.068a23.89 23.89 0 01-1.623.056c-.193 0-.373-.017-.555-.017a32.514 32.514 0 01-4.969-.556c-.075-.019-.172-.036-.261-.057-.608-.115-1.26-.286-1.91-.45-.64-.193-1.329-.393-1.996-.628l-.02-.01h-.028c-26.212-9.615-34.2-53.839-.833-145.42 3.29-9.078 6.92-18.233 10.762-27.368l.941-2.23c31.216-73.547 77.02-144.602 101.307-153.456 1.005 19.974.7 70.72 4.319 142.353-5.917 25.257-13.455 51.19-22.249 75.292-26.428 72.555-53.585 105.63-76.806 111.557.254-.074.509-.15.764-.228z" fill="#F25511"/>
+    <path d="M427.832 286.062c-15.87-68.598-19.71-131.89-3.834-140.273 1.673-.59 3.198-.905 4.643-.917 1.224.096 2.475.382 3.795.853 27.474 9.686 82.893 99.962 113.207 183.107 33.34 91.574 25.38 135.815-.834 145.409 0 0-.02 0-.047.024h-.017c-26.26 9.478-60.833-19.269-94.166-110.849-8.81-24.103-16.346-50.017-22.262-75.274z" fill="#F41CB2"/>
+    <path d="M432.436 162.748c27.474 9.686 84.786 99.016 115.099 182.16 13.7 37.631 20.142 58.855 19.881 86.95 1.666-23.794-4.528-55.658-21.773-103.026-30.312-83.145-85.733-173.421-113.207-183.107-1.32-.471-2.571-.757-3.795-.854-1.445.013-2.97.327-4.643.918-24.532 8.945-71.019 82.296-102.25 156.633-34.34-81.706-87.138-162.033-108.915-157.356-26.296 3.972-84.646 97.716-116.018 183.822-17.243 47.358-23.433 80.158-21.766 103.95-.262-32.858 6.176-50.252 19.873-87.873 31.374-86.105 91.615-178.904 117.91-182.876 21.778-4.677 65.534 60.732 108.917 142.222 39.93-75.569 77.717-132.554 102.249-141.5 1.582-.56 3.032-.87 4.41-.91" fill="#821414"/>
+  </g>
+</svg>
+        <a class="linkClean" href="/">
+            <svg class="logo-inline"><use xlink:href="#logo"></use></svg>
+        </a>
+    </div>
+    <ol class="checkout-steps">
+        <li class="step step1">BAG</li>
+        <li class="divider"></li>
+        <li class="step step2">ADDRESS</li>
+        <li class="divider"></li>
+        <li class="step step3">PAYMENT</li>
+    </ol>
+    <div class="secureContainer">
+        <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" class="secureIcon" width="26" height="28"  />
+        <div class="secure">100% SECURE</div>
+    </div>
+    </div>
+</div>
+  <div id="mountRoot">
+    <div class="shimmerDesktopLayout">
+  <div class="shimmerDesktopLeft">
+    <div class=" timelineItem flexRow">
+  <div class="flexColumn">
+    <div class=" animatedBackground line240"></div>
+    <div class=" animatedBackground line176 marginTop4"></div>
+  </div>
+  <div class=" animatedBackground line48 pushRight"></div>
+</div>
+
+    <div class=" timelineItem flexColumn">
+  <div class="flexRow">
+    <div class=" animatedBackground rect24 marginRight12"></div>
+    <div class=" animatedBackground line96"></div>
+  </div>
+  <div class=" animatedBackground lineFullWidth marginTop8"></div>
+  <div class=" animatedBackground line176 marginTop4"></div>
+  <div class=" animatedBackground line96 marginTop12"></div>
+</div>
+
+    <div class=" flexRow btnContainer">
+  <div class=" animatedBackground rect24 marginRight12"></div>
+  <div class=" animatedBackground line176"></div>
+  <div class=" animatedBackground rect24 marginRight12 pushRight"></div>
+  <div class=" animatedBackground rect24"></div>
+</div>
+
+
+    
+      <div class=" timelineItem flexRow">
+  <div class=" animatedBackground image marginRight12"></div>
+  <div class=" flexColumn productInfo">
+    <div class=" animatedBackground lineFullWidth"></div>
+    <div class=" animatedBackground line176 marginTop4"></div>
+    <div class=" animatedBackground line96 marginTop8"></div>
+    <div class=" flexRow marginTop12">
+      <div class=" animatedBackground line96 marginRight12"></div>
+      <div class=" animatedBackground line96"></div>
+    </div>
+    <div class=" flexRow marginTop12">
+      <div class=" animatedBackground line48 marginRight12"></div>
+      <div class=" animatedBackground line48"></div>
+    </div>
+    <div class=" flexRow marginTop12">
+      <div class=" animatedBackground rect16 marginRight12"></div>
+      <div class=" animatedBackground line24"></div>
+    </div>
+  </div>
+</div>
+
+    
+      <div class=" timelineItem flexRow">
+  <div class=" animatedBackground image marginRight12"></div>
+  <div class=" flexColumn productInfo">
+    <div class=" animatedBackground lineFullWidth"></div>
+    <div class=" animatedBackground line176 marginTop4"></div>
+    <div class=" animatedBackground line96 marginTop8"></div>
+    <div class=" flexRow marginTop12">
+      <div class=" animatedBackground line96 marginRight12"></div>
+      <div class=" animatedBackground line96"></div>
+    </div>
+    <div class=" flexRow marginTop12">
+      <div class=" animatedBackground line48 marginRight12"></div>
+      <div class=" animatedBackground line48"></div>
+    </div>
+    <div class=" flexRow marginTop12">
+      <div class=" animatedBackground rect16 marginRight12"></div>
+      <div class=" animatedBackground line24"></div>
+    </div>
+  </div>
+</div>
+
+    
+
+    <div class=" timelineItem flexColumn">
+  <div class="flexRow">
+    <div class=" animatedBackground rect24 marginRight12"></div>
+    <div class=" animatedBackground line176"></div>
+  </div>
+</div>
+
+  </div>
+  <div class="shimmerDesktopRight">
+    <div class=" timelineItem flexColumn">
+  <div class="flexRow">
+    <div class=" animatedBackground rect24 marginRight12"></div>
+    <div class=" animatedBackground line176"></div>
+  </div>
+</div>
+
+    <div class="borderBottom"></div>
+    <div class=" timelineItem flexColumn">
+  <div class=" animatedBackground line176"></div>
+  <div class=" animatedBackground horizontalBox marginTop12"></div>
+</div>
+
+    <div class="borderBottom"></div>
+    <div class=" timelineItem flexColumn">
+  <div class=" animatedBackground line176 marginTop8"></div>
+  <div class="borderBottom"></div>
+  <div class=" flexRow marginTop16">
+    <div class=" animatedBackground line56"></div>
+    <div class=" animatedBackground line56 pushRight"></div>
+  </div>
+  <div class=" flexRow marginTop16">
+    <div class=" animatedBackground line96"></div>
+    <div class=" animatedBackground line56 pushRight"></div>
+  </div>
+  <div class=" flexRow marginTop16">
+    <div class=" animatedBackground line176"></div>
+    <div class=" animatedBackground line56 pushRight"></div>
+  </div>
+  <div class="borderBottom"></div>
+  <div class=" flexRow marginTop16">
+    <div class=" animatedBackground line56"></div>
+    <div class=" animatedBackground line56 pushRight"></div>
+  </div>
+  <div class="marginTop8"></div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+  [[? model.data.pageTitle !== 'OTP' ]]
+    <div class="checkout-footer">
+  <div class="content">
+    <div class="images">
+      <img class="footer-bank-ssl" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" width="70" height="37"/>
+      <img class="footer-bank-visa"  src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" width="60" height="37" />
+      <img class="footer-bank-mc" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" width="60" height="37" />
+      <img class="footer-bank-ae" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" width="60" height="37" />
+      <img class="footer-bank-dc" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" width="60" height="37" />
+      <img class="footer-bank-nb" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png" width="60" height="37" />
+      <img class="footer-bank-cod" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" width="60" height="37" />
+      <img class="footer-bank-rupay" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" width="60" height="37" />
+      <img class="footer-bank-paypal" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" width="60" height="37" />
+      <img class="footer-bank-bhim" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" width="60" height="37" />
+    </div>
+    <a href="/contactus" class="contact-us">
+      <span>Need Help ? Contact Us</span>
+    </a>
+  </div>
+</div>
+  [[?]]
+</div>
+<script>
+  window.addEventListener("beforeinstallprompt", function(e) {
+  var OLD_CHROME_VERSION = 50;
+  if (window.chromeVersion < OLD_CHROME_VERSION || window.chromeVersion === 61 || window.chromeVersion === 62) {
+    e.preventDefault();
+    return false;
+  }
+  
+  window.a2hs = e;
+  e.preventDefault();
+  e.userChoice.then(function(choiceResult) {
+    if (choiceResult.outcome == "dismissed") {
+      window.ga("send", "event", "add_to_homescreen", "dismiss_prompt", 'thankyou_page');
+    } else {
+      window.ga("send", "event", "add_to_homescreen", "accept_prompt", 'thankyou_page');
+      window.localStorage && window.localStorage.setItem("pwaInstalled", true);
+    }
+  });
+ });
+</script>
+<script>
+  function loadJS(src, cb, ecb){
+  var ref = document.getElementsByTagName( "script" )[ 0 ];
+  var script = document.createElement( "script" );
+  script.src = src;
+  script.async = true;
+  ref.parentNode.insertBefore( script, ref );
+  if (cb && typeof(cb) === "function") {
+    script.onload = cb;
+  }
+  if (ecb && typeof(ecb) === "function") {
+    script.onerror = ecb;
+  }
+  return script;
+}
+</script>
+((~ model.data.jsBundles :b))
+  <script src="[[=b]]"></script>
+((~))
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-1752831-18', 'auto');
+ga('require', 'ec');
+ga('require', 'displayfeatures');
+/* dimension55 will be set for new Checkout */
+ga('set', 'dimension55', 'checkoutv2');
+ga('set', 'dimension48', 'realUser');
+
+function setGaDimension(deviceId, uidx, appsflyerId){
+    ga('set', 'dimension60', deviceId);
+    ga('set', 'dimension61', uidx);
+    if(appsflyerId !== 'undefined'){
+        ga('set', 'dimension62', appsflyerId);
+    }
+}
+
+(function () {
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+        var string = msg.toLowerCase();
+        var substring = "script error";
+        if (string.indexOf(substring) > -1){
+            console.log('Script Error');
+        } else {
+            var message = [
+                'Message: ' + msg,
+                'URL: ' + url,
+                'Line: ' + lineNo,
+                'Column: ' + columnNo,
+                'Error object: ' + JSON.stringify(error)
+            ].join(' - ');
+            ga('send', 'event', 'Javascript-Error', message);
+        }
+        return false;
+    };
+})();
+
+  setGaDimension('[[=model.data.deviceId]]', '[[=model.data.uidx]]', '[[=model.data.appsflyerId]]');
+</script>
+<script async>
+	/**
+ * Notify
+ */
+var Notify = (function() {
+  var SHOW_NOTIFY = 'notifyShow';
+  var notifyMainDiv = document.createElement('div');
+  notifyMainDiv.setAttribute("id", "notifyMainDiv");
+  notifyMainDiv.setAttribute("class", "notifyMainContainer");
+
+  var getTextWidth = function(iconDiv, actionDiv) {
+    if (!iconDiv && !actionDiv) {
+      return "100%";
+    } else if (iconDiv && !actionDiv) {
+      return "70%";
+    } else {
+      return "57%";
+    }
+  };
+
+  var getIconDiv = function() {
+    var icon = this.config.icon;
+    if(icon) {
+        if (typeof(icon) === 'object') {
+            var iconName = icon.name;
+            return iconName
+                ? '<div class = "notifyThumbnail icon-' + iconName + '" style = "' + (icon.style || '') +'" ></div>'
+                : '';
+        } else if (typeof(icon) === 'string') {
+            return '<div class = "notifyThumbnail" ><img src = "' + icon + '" /></div>';
+        }
+    }
+    return '';
+  };
+
+  var overrideTextStyle = function(styleOverrides) {
+    if(styleOverrides)
+      return styleOverrides.notifyTextDiv || '';
+  };
+
+  var getTemplate = function() {
+    var iconDiv = getIconDiv();
+    var actionDiv = this.config.action && this.config.action.name ?
+    '<div class="notifyActionDiv">' +
+    '<button class="notifyAction notifyAction' + this.type + '">' + this.config.action.name +
+    '</button></div>' : '';
+    return '<div class="notifyContent notify' + this.type + '" style="">' +
+        iconDiv +
+        '<div class="notifyText" style = "width:' + (getTextWidth(iconDiv, actionDiv)) + ';text-align:' +
+        (iconDiv ? "left;" : "center;") + (overrideTextStyle(this.config.styleOverrides)) + '">'
+        + (this.config.message || '') + '</div>' +
+        actionDiv +
+        '</div>';
+  };
+
+  var handleNotification = function() {
+    notifyMainDiv.className = 'notifyMainContainer';
+    var notifyMainDivClass = 'notify' + this.config.position;
+    /* preference to styleOverrides object to decide styling of the notifyMainDiv */
+    var styleOverrides = this.config.styleOverrides;
+    if (styleOverrides) {
+      notifyMainDiv.setAttribute("style", styleOverrides.notifyMainDiv || '');
+    } else if (!notifyMainDiv.classList.contains(notifyMainDivClass)) {
+      notifyMainDiv.classList.add(notifyMainDivClass);
+    }
+    notifyMainDiv.innerHTML = getTemplate();
+    if (this.config.action) {
+      notifyMainDiv.querySelector(".notifyAction").addEventListener('click',this.config.action.handler);
+    }
+    setTimeout(showNotification, 100);
+    document.body.appendChild(notifyMainDiv);
+    setTimeout(hideNotification, this.config.delay);
+  };
+
+  var showNotification = function() {
+    if (notifyMainDiv && !notifyMainDiv.classList.contains(SHOW_NOTIFY)) {
+      notifyMainDiv.classList.add(SHOW_NOTIFY);
+    }
+  };
+
+  var onTransitionEnd = function (e) {
+    var cL = this.classList;
+    if (cL.contains('hidey')) {
+      cL.remove('hidey');
+    } else {
+      cL.add('hidey');
+    }
+    this.removeEventListener('transitionend', onTransitionEnd, false);
+  };
+
+  var hideNotification = function() {
+    if (notifyMainDiv && notifyMainDiv.classList.contains(SHOW_NOTIFY)) {
+      notifyMainDiv.classList.remove(SHOW_NOTIFY);
+      notifyMainDiv.addEventListener('transitionend', onTransitionEnd, false);
+    }
+  };
+
+  return function(type, config) {
+    this.config = Object.assign({
+      message: '',
+      delay: 4000,
+      position: 'top'
+    }, config);
+    this.type = type ? type.toLowerCase() : 'info';
+    handleNotification();
+  };
+})();
+/* Usage -> SHELL.alert('info', { message: 'Hello, World', action: { name: 'Go to', handler: ()=>{} }}) */
+function alert (type, config) {
+  Notify(type, config);
+}
+  loadJS('https://www.google-analytics.com/analytics.js');
+  var commonUtils = (function () {
+  var getRedirectToFunc = function (insideUrls, redirectionRequiredUrls) {
+    return function (url) {
+      for (var i = 0; i < redirectionRequiredUrls.length; i++) {
+        if (url.indexOf(redirectionRequiredUrls[i]) !== -1) {
+          window.location = url;
+          return;
+        }
+      }
+
+      for (var i = 0; i < insideUrls.length; i++) {
+        if (url.indexOf(insideUrls[i]) !== -1) {
+          window.ckrrhistory ? window.ckrrhistory.push(url) : (window.location = url);
+          return;
+        }
+      }
+      window.location = url;
+    };
+  };
+
+  return { getRedirectToFunc: getRedirectToFunc };
+})();
+  [[? model.data.type !== "app" ]]
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-H34B');
+  [[?]]
+  [[? model.data.namogoIntegrationEnabled &&  model.data.type !== "app" ]]
+    loadJS('https://mjca-yijws.global.ssl.fastly.net/MYAEKO733JDL.js');
+    loadJS('https://mjca-yijws.global.ssl.fastly.net/MYAEKO733.cjos-module.js');
+  [[?]]
+</script>
+<script id="_webengage_script_tag" async>
+  (function(w,e,b,n,g){
+  function o(e,t){e[t[t.length-1]]=function(){
+    r.__queue.push([t.join("."),arguments])
+  }}
+  var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="feedback survey notification".split(z),c="options render clear abort".split(z),p="Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);
+  if(!r||!r.__v){
+    for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i<l.length;i++)o(r,[l[i]]);for(i=0;i<a.length;i++){for(r[a[i]]={},s=0;s<c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s<p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i<u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})
+  }
+})(window,document,"webengage");
+</script>
+
+
+
+<script async>
+  var desktopUtils = (function () {
+  var checkoutSteps = document.querySelector('.checkout-steps');
+
+  var setActivePage = function (pageName, options) {
+    options = options || {};
+
+    if (typeof options.hideStepNumber === 'boolean') {
+      options.hideStepNumber
+        ? (checkoutSteps.classList.add('hide'))
+        : (checkoutSteps.classList.remove('hide'));
+    }
+
+    var bag = document.querySelector('.header .step1');
+    var address = document.querySelector('.header .step2');
+    var payment = document.querySelector('.header .step3');
+
+    switch (pageName) {
+      case 'SHOPPING BAG':
+        address.classList.remove('active');
+        payment.classList.remove('active');
+        bag.classList.add('active');
+
+        bag.classList.remove('clickable');
+        address.classList.remove('clickable');
+        break;
+      case 'ADDRESS':
+        bag.classList.remove('active');
+        payment.classList.remove('active');
+        address.classList.add('active');
+
+        bag.classList.add('clickable');
+        address.classList.remove('clickable');
+        break;
+      case 'PAYMENT':
+        if (window.location && window.location.search && window.location.search.indexOf('cartContext=egiftcard') !== -1) {
+          checkoutSteps.classList.add('hide');
+        } else {
+          bag.classList.remove('active');
+          address.classList.remove('active');
+          payment.classList.add('active');
+
+          bag.classList.add('clickable');
+          address.classList.add('clickable');
+        }
+        break;
+      case 'CONFIRMATION':
+        checkoutSteps.classList.add('hide');
+    }
+    document.title = pageName;
+  };
+
+  var desktopInsideUrls = [
+    '/checkout/cart',
+    '/checkout/address',
+    '/checkout/payment',
+  ];
+
+  var redirectionRequiredUrls = [
+    '/login'
+  ];
+
+  var redirectTo = commonUtils.getRedirectToFunc(desktopInsideUrls, redirectionRequiredUrls);
+
+  var checkoutStepsHandler = function (e) {
+    if (e.target.classList.contains('clickable')) {
+      var label = e.target.innerText;
+      var url = label === 'BAG' ? '/checkout/cart' : '/checkout/address';
+      redirectTo(url);
+    }
+  };
+
+  checkoutSteps.addEventListener('click', checkoutStepsHandler);
+
+  return { setActivePage: setActivePage, redirectTo: redirectTo };
+})();
+
+  var SHELL = {
+    alert: alert,
+    setActivePage: desktopUtils.setActivePage,
+    redirectTo: desktopUtils.redirectTo
+  }
+</script>

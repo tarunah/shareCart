@@ -1,0 +1,102 @@
+.localityBlock {
+  position: relative;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.localityOptionsDesktop,
+.loadingOptionsDesktop {
+  border: 1px solid ~colors.grey_10;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 2px 4px 0px ~colors.blueberry_30;
+  top: 40px;
+  max-height: 220px;
+  overflow: scroll;
+  border-radius: 4px;
+}
+
+.loadingOptions {
+  background: ~colors.white;
+  font-size: ~fontSize.medium;
+  padding: 16px;
+}
+
+.localityOptionsDesktop:empty {
+  display: none;
+}
+
+.optionBtnDesktop {
+  display: block;
+  width: 100%;
+  border: none;
+  color: ~colors.blueberry;
+  padding: 8px 16px;
+  background: ~colors.white;
+}
+
+.optionBtnDesktop:hover {
+  font-weight: ~fontWeight.bold;
+}
+
+.mobileBlockContainer {
+  width: 100%;
+  max-height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerMobile {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding: 16px 16px 16px;
+  color: ~colors.blueberry;
+}
+
+.optionsContainer {
+  margin-bottom: auto;
+  padding-bottom: 16px;
+  overflow-y: auto;
+}
+
+.customOptionInput {
+  padding: 0px 16px;
+  width: 100%;
+}
+
+.customRadioBtn {
+  margin-top: 10px;
+}
+
+.btnContainer {
+  border: none !important;
+}
+
+.itemButtons {
+  border: none !important;
+  margin: 8px 0 !important;
+}
+
+.btnDone {
+  background-color: ~colors.watermelon !important;
+  color: ~colors.white !important;
+  height: 40px !important;
+  width: 100%;
+  border-radius: 4px;
+  font-size: ~fontSize.medium !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.selectedLabel {
+  font-weight: ~fontWeight.bold;
+}
+
+@media (max-height: 400px) {
+  .mobileBlockContainer {
+    height: 95%;
+  }
+}

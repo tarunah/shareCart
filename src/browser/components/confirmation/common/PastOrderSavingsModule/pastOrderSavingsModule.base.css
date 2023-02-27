@@ -1,0 +1,27 @@
+.totalSavingsContainer {
+  padding: 16px;
+  background-color: ~colors.white;
+  border-top: 16px solid ~colors.blueberry_5;
+}
+
+.greenBackground {
+  display: flex;
+  padding: 6px;
+  align-items: center;
+  background-color: ~colors.green_600;
+  border-radius: 4px;
+}
+
+.messageContainer {
+  color: ~colors.white;
+  padding-left: 10px;
+}
+
+.savingsMessage {
+  font-size: ~fontSize.medium;
+}
+
+.savingsValuePlaceholder {
+  fill: ~colors.white;
+  font-weight: ~fontWeight.bold;
+}

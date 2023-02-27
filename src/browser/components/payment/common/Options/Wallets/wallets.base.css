@@ -1,0 +1,15 @@
+.walletContainer {
+  display: inline-block;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.mobileContainer {
+  padding-bottom: 0px;
+}
+
+.heading {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 8px;
+  font-size: ~fontSize.large;
+}

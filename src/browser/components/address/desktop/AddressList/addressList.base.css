@@ -1,0 +1,75 @@
+.title {
+  float: left;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  font-size: 18px;
+  margin: 12px 0 12px 0;
+}
+
+.titleContainer {
+  margin-bottom: 12px;
+  height: 45px;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+
+.addAddressButton {
+  float: right;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  border: 1px solid ~colors.blueberry;
+  margin: 7px 0 6px 0;
+  padding: 8px 16px 7px 16px;
+  border-radius: 4px;
+}
+
+.formContainer {
+  width: 441px;
+}
+
+.defaultTitle {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin: 12px 0 16px 0;
+  color: ~colors.blueberry_80;
+}
+
+.otherTitle {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin: 24px 0 16px 0;
+  color: ~colors.blueberry_80;
+}
+
+.modal {
+  max-width: 441px;
+  top: 2%;
+  height: 80%;
+}
+
+.label {
+  position: relative;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  color: ~colors.watermelon;
+}
+
+.addBlock {
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
+  height: 72px;
+  padding: 27px 0 26px 19px;
+  margin-bottom: 25px;
+  vertical-align: top;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  border: 1px dashed ~colors.blueberry_20;
+}
+
+.removeMargin {
+  margin-top: 0px !important;
+}

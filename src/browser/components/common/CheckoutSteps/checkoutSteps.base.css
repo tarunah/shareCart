@@ -1,0 +1,143 @@
+.stepsContainer {
+  background: ~colors.white;
+  padding: 15px 25px 30px 0px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.stepsContainerV2 {
+  padding: 5px 10px;
+  display: flex;
+}
+
+.stepsContentV2 {
+  flex: 1;
+  display: flex;
+  padding: 5px 0px;
+  margin-left: auto;
+}
+
+.stepsTextV2 {
+  font-size: ~fontSize.tiny_xl;
+  color: ~colors.blueberry_50;
+}
+
+.stepsContentV2.completed .stepsTextV2 {
+  color: ~colors.mynt;
+}
+
+.stepsContentV2.active .stepsTextV2 {
+  font-weight: ~fontWeight.bold;
+}
+
+.stepsCircleV2 {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: ~colors.blueberry_10;
+  border: 1px solid ~colors.blueberry_10;
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.stepsContentV2.completed .stepsCircleV2 {
+  background-color: ~colors.mynt;
+  border-color: ~colors.mynt;
+}
+
+.stepsLineV2 {
+  flex: 4;
+  height: 1px;
+  background-color: ~colors.blueberry_20;
+  margin: 6px 5px;
+}
+
+.stepsContentV2.inactive .stepsLineV2 {
+  margin-top: 7px;
+}
+
+.stepsContentV2.completed .stepsLineV2 {
+  background-color: ~colors.mynt;
+  height: 2px;
+}
+
+.lineProgress {
+  height: 2px;
+  background-color: ~colors.mynt;
+  animation: progressBar 1s;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.stepsContent.completed .stepsLine {
+  background-color: ~colors.mynt;
+}
+
+.completedIcon {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: ~colors.mynt;
+  top: 2px;
+  position: relative;
+  left: -5px;
+  animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tickIcon {
+  position: relative;
+  transform: scaleX(-1) rotate(-45deg);
+  font-size: ~fontSize.tiny;
+  color: ~colors.white;
+  top: -1px;
+}
+
+.outerActiveCircle {
+  position: relative;
+  left: -5px;
+  top: 2px;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  border: 1px solid ~colors.mynt;
+  animation: circleTransitionIn 2s;
+}
+
+.innerActiveCircle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: ~colors.blueberry_50;
+  border: 1px solid ~colors.blueberry_50;
+}
+
+@keyframes circleTransitionIn {
+  0% {
+    opacity: 0;
+    border: 1px solid ~colors.white;
+  }
+  50% {
+    opacity: 0;
+    border: 1px solid ~colors.mynt;
+  }
+  100% {
+    opacity: 1;
+  }
+}

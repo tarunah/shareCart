@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.white;
+}
+
+.items {
+  line-height: 15px;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.animate {
+  animation: shake 0.62s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.detailBody {
+  padding-top: 16px;
+}
+
+@media (max-width: 480px) {
+  .items {
+    padding-bottom: 8px;
+    border-bottom: 1px solid ~colors.grey_10;
+    color: ~colors.blueberry;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+.savingsStripStyle {
+  padding: 12px 0px 0px 0px;
+}

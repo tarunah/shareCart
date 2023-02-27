@@ -1,0 +1,44 @@
+.container {
+  padding-bottom: 12px;
+  border-bottom: 1px solid ~colors.grey_10;
+}
+
+.header {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_80;
+  margin: 24px 0 12px;
+}
+
+.content {
+  background: #fff1ec;
+  padding: 12px 12px 12px 63px;
+  font-size: ~fontSize.small;
+  position: relative;
+  border-radius: 4px;
+  line-height: 16px;
+}
+
+.content.applied {
+  background: #f0f8f8;
+}
+
+.title {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 1px;
+}
+
+.rupeeIcon {
+  height: 8px;
+}
+
+.gift {
+  position: absolute;
+  top: -1px;
+  left: 10px;
+}
+
+.separator {
+  border-right: 1px solid ~colors.blueberry_10;
+}

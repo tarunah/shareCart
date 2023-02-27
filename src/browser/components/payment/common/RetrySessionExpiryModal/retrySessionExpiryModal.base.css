@@ -1,0 +1,33 @@
+.modalContainer {
+  padding: 40px 16px 16px;
+  text-align: center;
+}
+
+.modalContainerDesktop {
+  max-width: 445px;
+  top: 35%;
+}
+
+.timerIcon {
+  margin-bottom: 37px;
+  transform: scale(2);
+}
+
+.timerIcon g {
+  stroke: ~colors.salmon;
+}
+
+.modalHeader {
+  font-size: ~fontSize.large_xl;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 12px;
+}
+
+.modalDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 42px;
+}
+
+.retryButton {
+  width: 100%;
+}

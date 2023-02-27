@@ -1,0 +1,24 @@
+.errorContainer {
+  background: ~colors.salmon_05;
+  border: 1px solid ~colors.salmon;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.heading {
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.desc {
+  color: ~colors.blueberry;
+  margin-top: 8px;
+}
+
+.button {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.watermelon;
+  margin-top: 12px;
+}

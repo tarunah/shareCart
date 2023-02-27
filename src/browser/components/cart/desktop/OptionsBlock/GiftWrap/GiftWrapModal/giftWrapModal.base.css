@@ -1,0 +1,67 @@
+.container {
+  padding: 48px;
+}
+
+.modal {
+  background: ~colors.white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid ~colors.blueberry_20;
+  max-width: 770px;
+  top: 25px;
+}
+
+.success {
+  max-height: 500px;
+  height: 80%;
+  padding: 30px;
+  border-bottom: 1px solid #f5f5f6;
+  text-align: center;
+  font-size: ~fontSize.small;
+  min-height: 412px;
+  color: ~colors.mynt;
+}
+
+.left {
+  display: inline-block;
+  width: 50%;
+  padding-right: 25px;
+}
+
+.right {
+  display: inline-block;
+  width: 50%;
+  padding-left: 25px;
+  vertical-align: top;
+}
+
+.desciption {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.form {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-right: 15px;
+  border-right: 1px solid ~colors.blueberry_30;
+}
+
+.images {
+  height: 131px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.giftWrapImg {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}

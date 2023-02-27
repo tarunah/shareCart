@@ -1,0 +1,174 @@
+.container {
+  width: 417px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 24px;
+}
+
+.header {
+  padding: 19px 0px 18px 8px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  border-bottom: 1px solid ~colors.grey_10;
+}
+
+.comboDiscount {
+  display: inline;
+}
+
+.qtyList {
+  max-height: 200px;
+  padding: 16px 0 0 8px;
+}
+
+.qtyList::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.qtyList::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.item {
+  height: 40px;
+  cursor: pointer;
+  font-size: ~fontSize.large;
+  position: relative;
+  padding: 10px 12px;
+  border: 1px solid ~colors.blueberry_80;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 16px;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.selected {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  border-color: ~colors.watermelon !important;
+}
+
+.tick {
+  float: right;
+  font-size: ~fontSize.large;
+}
+
+.productRow {
+  padding-bottom: 16px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.productImage {
+  float: left;
+}
+
+.productDetails {
+  margin-left: 76px;
+}
+
+.productName {
+  font-size: ~fontSize.large;
+}
+
+.brandName {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+}
+
+.price {
+  margin-top: 16px;
+}
+
+.moreSeller {
+  margin: 4px 0 14px 0px;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.large;
+}
+
+.sellerCount {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.strike {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: ~colors.blueberry_40;
+}
+
+.strikedAmount {
+  padding: 0 4px !important;
+}
+
+.disabled {
+  border: 1px solid ~colors.blueberry_40;
+  color: ~colors.blueberry_40;
+}
+
+.display {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  min-width: 14px;
+  line-height: initial;
+  text-align: center;
+}
+
+.quantityContainer {
+  width: 306px;
+  padding: 0 16px 0 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cancelIcon {
+  top: 20px;
+  right: 20px;
+}
+
+.chevronIcon {
+  margin-left: 3px;
+}
+
+.ListSellerContainer {
+  max-height: 200px;
+  overflow: scroll;
+}
+
+.warningContainer {
+  padding: 8px;
+  margin: 0px 16px;
+  margin-bottom: 12px;
+  background-color: ~colors.salmon_05;
+  display: flex;
+  border-radius: 4px;
+}
+
+.warningIcon {
+  display: inline-block;
+  height: 24px;
+  width: 45px;
+  background-position: -115px -185px;
+  margin-top: 5px;
+  margin-right: 9px;
+}
+
+.warningContent {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+}
+
+.warningAmount {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.mynt;
+}

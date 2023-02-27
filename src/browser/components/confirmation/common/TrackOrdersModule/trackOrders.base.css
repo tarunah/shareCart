@@ -1,0 +1,37 @@
+.bagContainer {
+  padding: 24px 16px 24px 16px;
+  display: flex;
+}
+
+.subText {
+  font-size: ~fontSize.large_xl;
+  line-height: 18px;
+  font-weight: ~fontWeight.bold;
+  align-self: center;
+}
+
+.myntraBagIcon {
+  margin-right: 30px;
+  margin-left: 4px;
+}
+
+.viewOrdersButton {
+  border: 1px solid ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 16px;
+  padding: 8px;
+}
+
+.viewOrdersButton > a {
+  color: ~colors.watermelon;
+}
+
+.shoppingBag {
+  transform: scale(0.7);
+  margin: -16px -8px -20px -10px;
+}

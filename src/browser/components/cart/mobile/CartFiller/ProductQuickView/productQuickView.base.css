@@ -1,0 +1,143 @@
+.productQuickView {
+  overflow-y: 'hidden';
+}
+
+.shimmer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 12;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.productView {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 52%;
+  transform: translate(0%, -50%);
+  z-index: 13;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: ~colors.white;
+}
+
+@media (max-height: 600px) {
+  .productView {
+    top: 52%;
+  }
+}
+
+@media (max-width: 340px) {
+  .productView {
+    margin: 20px 10px;
+  }
+}
+
+.iconWrapper {
+  position: relative;
+}
+
+.crossIcon {
+  position: absolute;
+  top: -25px;
+  height: 15px;
+  width: 15px;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.white;
+}
+
+.imageComponent {
+  overflow: auto;
+  min-height: 250px;
+  white-space: nowrap;
+}
+
+.thumbnail {
+  display: inline-block;
+  margin: 4px 2px;
+  border: 1px solid ~colors.blueberry_10;
+  width: 65%;
+  min-width: 65%;
+}
+
+@media (min-height: 600px) {
+  .thumbnail {
+    width: 70%;
+    min-width: 70%;
+  }
+}
+
+@media (min-height: 750px) {
+  .thumbnail {
+    width: 80%;
+    min-width: 80%;
+  }
+}
+
+.thumbnail:first-child {
+  margin-left: 4px;
+}
+
+.thumbnail:last-child {
+  margin-right: 4px;
+}
+
+.info {
+  text-align: center;
+}
+
+.brandName {
+  font-weight: ~fontWeight.bold;
+}
+
+.productDescription {
+  color: ~colors.blueberry_40;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: ~fontSize.small;
+}
+
+.priceInfo {
+  margin: 5px 0px;
+}
+
+.rupeeIcon {
+  height: 9px;
+}
+
+.price {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: ~colors.blueberry_30;
+  fill: ~colors.blueberry_30;
+}
+
+.price + .mrp,
+.mrp + .price {
+  margin-left: 5px;
+}
+
+.discountLabel {
+  display: inline-block;
+  color: ~colors.watermelon;
+  margin-left: 5px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 15px 10px;
+  color: ~colors.watermelon;
+  border-top: 1px solid ~colors.blueberry_10;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+}

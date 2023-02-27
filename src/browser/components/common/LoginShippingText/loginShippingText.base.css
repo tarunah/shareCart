@@ -1,0 +1,64 @@
+.tipIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.tipBold {
+  font-weight: ~fontWeight.bold;
+}
+
+.message {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.loginDeliveryTip {
+  padding: 8px;
+  margin-bottom: 12px;
+  background: ~colors.white;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+  display: flex;
+}
+
+.mobileContainer {
+  border: none;
+  border-radius: 0px;
+}
+
+.mobileContainer .tipIcon {
+  margin-top: 10px;
+}
+
+.loginCTA {
+  float: right;
+  font-size: ~fontSize.small;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.loginCTA:hover {
+  color: ~colors.watermelon;
+}
+
+.mobileContainer .loginCTA {
+  margin-top: 10px;
+}
+
+.loginTipMessage {
+  display: inline-block;
+  vertical-align: middle;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.mobileContainer .loginCTA {
+  float: left;
+  width: 100%;
+}

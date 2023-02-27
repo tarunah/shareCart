@@ -1,0 +1,63 @@
+.name {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  text-transform: capitalize;
+  word-break: break-all;
+}
+
+.addressTitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.desktopAddressTitle {
+  display: flex;
+  align-items: baseline;
+}
+
+.defaultTag {
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.small;
+  margin-left: 4px;
+  font-weight: ~fontWeight.light;
+}
+
+.addressType {
+  font-size: ~fontSize.tiny_xl;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  border: 1px solid ~colors.mynt;
+  margin-left: 8px;
+  line-height: 12px;
+}
+
+.notServiceable {
+  color: ~colors.orange;
+  border: 1px solid ~colors.orange;
+}
+
+.address {
+  margin-top: 4px;
+  text-transform: capitalize;
+  font-size: ~fontSize.medium;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+}
+
+.addressField {
+  word-break: break-all;
+}
+
+.mobile {
+  margin: 12px 0 16px;
+}
+
+.mobile :nth-child(2) {
+  font-weight: ~fontWeight.bold;
+}

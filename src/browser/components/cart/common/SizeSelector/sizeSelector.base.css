@@ -1,0 +1,122 @@
+.header {
+  margin: 16px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.selected {
+  color: ~colors.watermelon;
+  border-color: ~colors.watermelon !important;
+}
+
+.mobileList {
+  overflow: scroll;
+  white-space: nowrap;
+  margin-left: 16px;
+  overflow-y: hidden;
+}
+
+.item {
+  position: relative;
+  padding: 10px 12px;
+  border: 1px solid ~colors.blueberry_80;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 12px;
+}
+
+.itemWithPrice {
+  padding: 0 0;
+  height: 40px;
+  width: 61px;
+  line-height: initial;
+  vertical-align: top;
+}
+
+.display {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  min-width: 18px;
+  text-align: center;
+}
+
+.disabled {
+  border: 1px solid ~colors.blueberry_40 !important;
+  color: ~colors.blueberry_40;
+}
+
+.strike {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: ~colors.blueberry_40;
+}
+
+.comboDiscount {
+  display: inline;
+}
+
+.moreSeller {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.price {
+  display: block;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.light;
+  font-color: ~colors.blueberry;
+}
+
+.iconClass {
+  font-weight: ~fontWeight.light;
+  fill: ~colors.blueberry;
+  height: 9px;
+  width: 6px;
+}
+
+.disabledIcon {
+  fill: ~colors.blueberry_40 !important;
+}
+
+.checkedIcon {
+  fill: ~colors.watermelon;
+}
+
+.priceComponent {
+  margin: 4px 16px 0 16px;
+  font-size: ~fontSize.medium;
+}
+
+.seller {
+  color: ~colors.blueberry_90;
+  font-size: ~fontSize.large;
+}
+
+.strikedAmount {
+  padding: 0 4px !important;
+}
+
+.desktopHeader {
+  margin: 16px 0;
+  font-size: ~fontSize.large;
+}
+
+.mobileSeller {
+  margin: 4px 16px 2px 16px;
+  font-size: ~fontSize.small;
+}
+
+.amount {
+  font-weight: ~fontWeight.bold;
+}
+
+.discountText {
+  color: ~colors.salmon;
+}

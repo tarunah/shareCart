@@ -1,0 +1,188 @@
+.row {
+  margin-top: 24px;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .row:first-child {
+    margin-top: 0px;
+  }
+}
+
+.errorMessage {
+  color: ~colors.salmon;
+}
+
+.lowSRMessage {
+  padding-top: 8px;
+}
+
+/**
+* Row 1 and Row 2, both inputs.s
+*/
+
+.label {
+  color: ~colors.blueberry_80;
+  display: block;
+}
+
+.cardNumber {
+  width: 100%;
+  height: 38px;
+  padding: 5px;
+  border: 1px solid ~colors.blueberry_20;
+}
+
+.offerMessage {
+  font-weight: 800;
+  color: ~colors.mynt;
+}
+
+.cardType {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  top: 8px;
+}
+
+.cardNumberBottomMargin {
+  margin-bottom: 15px;
+}
+
+.cardNameNoMargin {
+  margin-top: 0;
+}
+
+input[id='cvv'] {
+  -webkit-text-security: disc;
+}
+
+/**
+* Row 3: Expiry Month and Expiry Year
+*/
+
+.expiry {
+  width: 60%;
+  display: inline-block;
+}
+
+/**
+* Row 4: CVV Details and Instructions
+*/
+
+.cvv {
+  width: 35%;
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.cvvInfoIcon {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.cvvInfoModal {
+  padding: 28px 16px 24px;
+  width: 376px;
+  top: 20%;
+}
+
+@media (max-width: 480px) {
+  .cvvInfoModal {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    border-radius: 0px;
+    top: auto;
+  }
+}
+
+.cvvInfoModal .title {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 10px;
+}
+
+.cvvSprite {
+  margin: 24px auto;
+  display: block;
+}
+
+.cvvSprite:last-child {
+  margin-bottom: 0px;
+}
+
+.payButtonButton {
+  display: none;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+
+/**
+* Row 5: Save Card Instructions.
+*/
+
+.checkBox {
+  margin: 10px 0px;
+}
+
+.saveCardWrapper {
+  margin-top: 28px;
+}
+
+.checkboxIcon {
+  position: relative;
+  font-size: 20px;
+  top: 4px;
+}
+
+.selectedCheckboxIcon {
+  position: relative;
+  font-size: 20px;
+  top: 4px;
+  fill: ~colors.watermelon;
+}
+
+.saveCardLabel {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.inEligibleTokenizationText {
+  font-size: ~fontSize.small;
+  color: ~colors.salmon;
+}
+
+.cardTooltip {
+  color: ~colors.blue;
+  font-size: 22px;
+}
+
+.savedInfoIcon {
+  position: relative;
+  top: 2px;
+  color: ~colors.blue;
+  margin-left: 4px;
+}
+
+.expiryMessage {
+  margin-top: 8px;
+}
+
+.saveCardSuggestion {
+  background-color: ~colors.blueberry_5;
+  margin-top: 16px;
+  padding: 12px;
+  font-size: ~fontSize.small;
+}
+
+.savedLimitText {
+  background-color: ~colors.blueberry_5;
+  padding: 10px;
+  border-radius: 4px;
+}

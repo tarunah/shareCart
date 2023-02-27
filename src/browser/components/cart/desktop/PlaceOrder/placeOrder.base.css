@@ -1,0 +1,190 @@
+.button {
+  width: 100%;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: auto;
+}
+
+.modal {
+  /* width: 100%;
+  min-height: 200px; */
+
+  max-width: 441px;
+  max-height: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+}
+
+.modalHeader{
+  padding: 18px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+
+.modalCloseIcon {
+  /* top: 16px;
+  right: 16px; */
+  position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.modalBody {
+  padding: 16px 24px;
+    margin-top: 8px;
+    background-color: #fff;
+    position: relative;
+}
+.emailBox{
+  width: 100%;
+  font-size: 14px;
+  padding: 12px;
+  border: 1px solid #d4d5d9;
+  background-color: transparent;
+  font-weight: 300;
+  border-radius: 4px;
+  line-height: 14px;
+}
+
+.modalText{
+  width: 100%;
+  font-size: 14px;
+  padding: 12px;
+  font-weight: 900;
+  line-height: 14px;
+}
+
+.modalFooter{
+  background-color: #fff;
+  padding: 8px;
+}
+
+.sendButton {
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid #282c3f;
+    color: #282c3f;
+    text-align: center;
+    padding: 9px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.agreeStatement {
+  font-size: ~fontSize.medium;
+  margin-bottom: 16px;
+}
+
+.agreeText {
+  font-size: 13px;
+  font-weight: ~fontWeight.bold;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: ~fontSize.large;
+  fill: ~colors.watermelon;
+  vertical-align: text-bottom;
+}
+
+.nudgeContainer {
+  font-size: ~fontSize.medium;
+  background-color: ~colors.peach;
+  padding: 12px 0px 12px 0px;
+  text-align: center;
+}
+
+.pincodeLoder {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  width: 32px;
+  height: 32px;
+  left: auto;
+}
+
+.pincodeLoderContainer {
+  box-shadow: none;
+}
+.errorMessage{
+  text-align: left;
+  color: #ff5722;
+  font-size: 12px;
+  min-height: 20px;
+}
+
+.actionContainer{
+  border-top: 1px solid #eaeaec;
+}
+
+.actionButton1{
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.actionButton2 {
+  display: inline-block;
+  width: 55%;
+  text-align: center;
+  margin: 12px 0;
+  border-left: 1px solid #d4d5d9;
+}
+
+.actionButtonStyle1{
+  text-transform: uppercase;
+    font-weight: 700;
+    color: #ff3f6c!important;
+    padding: 0;
+    height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.actionButtonStyle2{
+  text-transform: uppercase;
+    font-weight: 900;
+    color: #03a685;
+    padding: 0;
+    height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modalDesktop {
+  width: 360px;
+  top: 33%;
+  transform: translateY(-50%);
+  min-width: 288px;
+  padding: 16px 16px 0px 16px;
+}
+
+.modalMoveOutOfBag {
+  padding: 12px 12px 0px 12px;
+}
+
+.rightButton {
+  color: ~colors.watermelon !important;
+}

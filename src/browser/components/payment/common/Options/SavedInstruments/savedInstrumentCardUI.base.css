@@ -1,0 +1,45 @@
+.radioContainer {
+  padding: 16px 0px;
+}
+
+.rowContainer {
+  position: relative;
+  padding: 0px 16px;
+}
+
+.rowContainer::after {
+  border-bottom: 1px dashed ~colors.blueberry_5;
+  position: absolute;
+  content: '';
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.fullWidth.rowContainer::after {
+  left: 0px;
+  right: 0px;
+}
+
+.rowContainer:last-child::after {
+  border-bottom: none;
+}
+
+.radioIcon {
+  margin-top: 16px;
+}
+
+.expiredCard {
+  background: ~colors.white;
+  border-radius: 4px;
+  border: 1px solid ~colors.blueberry_10;
+  margin: 8px 16px 0px;
+}
+
+.expiredCard:last-child {
+  margin-bottom: 8px;
+}
+
+.actionButton {
+  margin-bottom: 16px;
+}

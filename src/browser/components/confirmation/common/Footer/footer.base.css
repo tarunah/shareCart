@@ -1,0 +1,21 @@
+.footerContainer {
+  text-align: center;
+  margin-top: 16px;
+  padding: 16px 0 24px;
+}
+
+.heading {
+  margin-bottom: 4px;
+  font-size: ~fontSize.large;
+  color: ~colors.blueberry;
+}
+
+.desc {
+  margin-bottom: 12px;
+  font-size: ~fontSize.small;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+}

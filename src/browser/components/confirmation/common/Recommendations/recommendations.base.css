@@ -1,0 +1,187 @@
+.recommendationsWrapper {
+  padding: 16px 0;
+  background: ~colors.white;
+  border-top: 16px solid ~colors.blueberry_5;
+}
+
+.orderedStyles {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.orderedStyles {
+  padding: 20px 0;
+}
+
+.title,
+.desc {
+  color: ~colors.blueberry;
+  margin-left: 16px;
+}
+
+.title {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+}
+
+.desc {
+  font-size: ~fontSize.small;
+  opacity: 0.6;
+}
+
+.loader {
+  position: absolute;
+}
+
+.recommendedList {
+  padding: 0 0 0px 16px;
+  overflow-x: auto;
+  width: 100%;
+  min-height: 310px;
+  position: relative;
+}
+
+.cardLoader {
+  width: 180px;
+  height: 312px;
+  margin-right: 8px;
+  background: ~colors.blueberry_20;
+  animation: shine 3s ease-in infinite;
+}
+
+.innerWrapper {
+  display: flex;
+  min-width: 100%;
+  padding-right: 8px;
+  float: left;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2px;
+}
+
+.productTitle {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productInfo {
+  padding: 8px 0 12px 8px;
+}
+
+.brand {
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+}
+
+.productTitle {
+  color: ~colors.blueberry_60;
+  font-size: ~fontSize.tiny_xl;
+}
+
+.finalPrice {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.black;
+  margin-right: 6px;
+  font-size: ~fontSize.small;
+}
+
+.finalPrice .rupeeIcon {
+  fill: ~colors.black;
+  font-size: ~fontSize.small;
+  height: 8px;
+}
+
+.discountInfo {
+  display: flex;
+}
+
+.originalPrice {
+  color: ~colors.blueberry_50;
+  margin-right: 6px;
+  font-size: ~fontSize.tiny_xl;
+}
+
+.originalPrice .rupeeIcon {
+  fill: ~colors.blueberry_50;
+  font-size: ~fontSize.tiny_xl;
+  height: 7px;
+}
+
+.discount {
+  text-transform: uppercase;
+  color: ~colors.watermelon;
+  font-size: ~fontSize.tiny_xl;
+}
+
+.styleCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 2px solid ~colors.grey;
+  overflow: hidden;
+  margin-left: 16px;
+}
+
+.styleCircle.noBorder {
+  border: none;
+}
+
+.emptyCircle {
+  width: 100%;
+  height: 100%;
+  background: ~colors.blueberry_20;
+  animation: shine 3s ease-in infinite;
+}
+
+.styleCircle.selectedStyle {
+  border: 2px solid ~colors.watermelon;
+}
+
+.styleCard {
+  margin-right: 8px;
+  border: 1px solid ~colors.grey;
+}
+
+.viewMore {
+  color: ~colors.watermelon;
+  border: 1px solid ~colors.watermelon;
+  padding: 8px;
+  border-radius: 16px;
+  align-self: center;
+  display: flex;
+  margin: 0 16px 0 16px;
+  min-width: 100px;
+  align-items: center;
+  min-width: 120px;
+  justify-content: space-around;
+  margin-top: -70px;
+}
+
+.viewMore span {
+  margin-right: 12px;
+  font-weight: ~fontWeight.bold;
+}
+
+.nextArrow {
+  fill: ~colors.watermelon;
+  height: 8px;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 1;
+  }
+}

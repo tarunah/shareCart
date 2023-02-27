@@ -1,0 +1,112 @@
+.modal {
+  top: 25%;
+  width: 504px;
+  padding: 20px;
+}
+
+.modalBody {
+  text-align: center;
+}
+
+.block {
+  display: inline-block;
+  width: 48%;
+  border: 1px solid ~colors.blueberry_10;
+  padding: 16px;
+  background: ~colors.blueberry_5;
+  text-align: left;
+  border: 1px solid ~colors.blueberry_20;
+  border-radius: 4px;
+  color: ~colors.blueberry_90;
+  min-height: 370px;
+  cursor: pointer;
+}
+
+.earlyCheckoutBlock {
+  float: left;
+}
+
+.waitForSaleBlock {
+  float: right;
+}
+
+.header {
+  padding-bottom: 20px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.headerText {
+  display: inline-block;
+}
+
+.headerClose {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+
+.mainList {
+  padding: 10px 16px;
+  font-size: 13px;
+  letter-spacing: 0.24px;
+  line-height: 1.6;
+}
+
+.eachList {
+  padding-bottom: 5px;
+}
+
+.selected {
+  background: ~colors.white;
+  border: 1px solid ~colors.watermelon;
+}
+
+.blockHeader {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+}
+
+.hide {
+  display: none;
+}
+
+.confirm {
+  color: ~colors.white;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding: 10px;
+  background: ~colors.watermelon;
+  cursor: pointer;
+  position: absolute;
+  top: 360px;
+  width: 38%;
+  border: none;
+  border-radius: 4px;
+}
+
+.confirmationOption {
+  padding: 14px 0;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: ~fontSize.large;
+  vertical-align: text-bottom;
+}
+
+.checked {
+  fill: ~colors.watermelon;
+}
+
+.imageContainer {
+  margin-bottom: 12px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.headerImage {
+  transform: scale(1.3);
+}

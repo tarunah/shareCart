@@ -1,0 +1,40 @@
+.container {
+  background: ~colors.blueberry_5;
+  padding: 0px 0px 90px;
+  min-height: 700px;
+}
+
+.title {
+  margin: 16px 16px 8px;
+  color: ~colors.blueberry_80;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+}
+
+.stickyButton {
+  background: ~colors.white;
+  box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.15);
+  border-top: 1px solid ~colors.grey_20;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+div.disabledBtn,
+div.confirmBtn {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  border-radius: 4px;
+  height: 50px;
+}
+
+div.disabledBtn {
+  background: ~colors.blueberry_30;
+  color: ~colors.white;
+  border: 1px solid ~colors.blueberry_30;
+  pointer-events: none;
+}

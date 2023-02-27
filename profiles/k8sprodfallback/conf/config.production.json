@@ -1,0 +1,141 @@
+{
+  "ROOT": "https://www.myntra.com/",
+  "API_ROOT": "http://knuth.myntra.com/",
+  "API_CLIENT_ROOT": "https://api.myntra.com/",
+  "fetchPayment": {
+    "clientRootV2": true,
+    "path": "v1/payments/fetchData"
+  },
+  "address": {
+    "clientRootV2": true,
+    "path": "v2/addresses",
+    "v1path": "v1/address",
+    "v2path": "v2/addresses"
+  },
+  "orderAddress": {
+    "path": "v2/user/order/address"
+  },
+  "shield": {
+    "clientRootV2": true,
+    "path": "v1/shield/"
+  },
+  "cart": {
+    "clientRootV2": true,
+    "path": "v1/cart/"
+  },
+  "profile": {
+    "clientRootV2": true,
+    "path": "v1/user/profile",
+    "v2path": "v2/user/profile"
+  },
+  "usps": {
+    "clientRootV2": true,
+    "path": "user/"
+  },
+  "bounty": {
+    "clientRootV2": true,
+    "path": "v1/user/order/"
+  },
+  "user": {
+    "clientRootV2": true,
+    "path": "v1/user/"
+  },
+  "lgp": {
+    "clientRootV2": true,
+    "path": "lgp/v2.9/"
+  },
+  "pastOrders": {
+    "clientRootV2": true,
+    "client": "checkout-ui-orders",
+    "path": "v2/user/orders"
+  },
+  "ppsClient": {
+    "clientRoot": "https://pps.myntra.com/",
+    "path": "myntra-payment-plan-service/",
+    "client": "checkout",
+    "version": "1.0"
+  },
+  "paymentsClient": {
+    "clientRoot": "https://pps.myntra.com/",
+    "path": "payments/v2/",
+    "client": "checkout",
+    "version": "1.0"
+  },
+  "otp": {
+    "path": "user/mobile/getotp"
+  },
+  "payments": {
+    "root": "https://payments.myntra.com/",
+    "path": "payments/v2/",
+    "client": "checkoutui",
+    "version": "1.0"
+  },
+  "notifyMe": {
+    "clientRootV2": true,
+    "path": "v1/notifications/notifyUser"
+  },
+  "giftcard": {
+    "clientRootV2": true,
+    "path": "v1/user/giftcard"
+  },
+  "token": {
+    "clientRootV2": true,
+    "path": "auth/v1/"
+  },
+  "plutus": {
+    "clientRoot": "https://pps.myntra.com/",
+    "path": "plutus/v3/eligibility/at"
+  },
+  "atlas": {
+    "root": "http://touch-sse.myntra.com/",
+    "path": ""
+  },
+  "wallet": {
+    "clientRootV2": true,
+    "path": "wallets-service/api/paylater/resend"
+  },
+  "insider": {
+    "clientRootV2": true,
+    "path": "v1/styleplus"
+  },
+  "product": {
+    "clientRootV2": true,
+    "path": "product"
+  },
+  "recommendations": {
+    "clientRootV2": true,
+    "path": "v2/product"
+  },
+  "switchValue": {
+    "clientRootV2": true,
+    "path": "config/"
+  },
+  "captcha": {
+    "clientRootV2": true,
+    "path": "v1/captcha"
+  },
+  "feedbackSurvey": {
+    "clientRootV2": true,
+    "path": "v1/survey"
+  },
+  "switchConfig": {
+    "root": "http://switch.myntra.com/",
+    "path": "config"
+  },
+  "statsD": {
+    "root": "statsdnew.myntra.com",
+    "port": 8125
+  },
+  "createScratchCardIfEligible": {
+    "path": "v1/scratchcard/createScratchCardIfEligible",
+    "clientRootV2": true
+  },
+  "claimReward": {
+    "path": "v1/scratchcard/claimReward",
+    "clientRootV2": true
+  },
+  "supercoinsCreditBalance": {
+    "clientRootV2": true,
+    "path": "v1/insider/cnc"
+  }
+}

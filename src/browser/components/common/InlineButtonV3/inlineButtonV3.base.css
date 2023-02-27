@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 12px 14px;
+  min-width: 48%;
+}
+
+.secondary {
+  background-color: ~colors.white;
+  color: ~colors.blueberry;
+  border-color: ~colors.blueberry_20;
+}
+
+@media (max-width: 380px) {
+  .button {
+    font-size: ~fontSize.small;
+  }
+}
+
+@media (max-width: 350px) {
+  .button {
+    font-size: ~fontSize.tiny_xl;
+  }
+}

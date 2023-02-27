@@ -1,0 +1,55 @@
+.returnInfoBanner {
+  width: 100%;
+  background-color: ~colors.mynt_5;
+  text-align: center;
+  padding: 4px;
+  z-index: 0;
+  -ms-box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.returnInfoBanner .text {
+  color: ~colors.blueberry_90;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+:global(.android) .returnInfoBanner,
+:global(.ios) .returnInfoBanner {
+  position: fixed;
+  bottom: 71px;
+  margin-left: 0px;
+}
+
+:global(.android) .animateBannerUp {
+  bottom: 40px;
+  transform: translateY(-30px);
+  animation: moveUp 0.3s linear;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+:global(.android) .animateBannerDown {
+  bottom: 70px;
+  transform: translateY(30px);
+  animation: moveDown 0.3s linear;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}

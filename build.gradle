@@ -1,0 +1,44 @@
+apply plugin: 'rpm'
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo1.maven.org/maven2'
+        }
+    }
+
+    dependencies {
+        classpath 'com.trigonic:gradle-rpm-plugin:1.4'
+    }
+}
+
+task npminstall(type: Exec) {
+    commandLine 'make', 'setup'
+}
+
+task tar(type: Exec) {
+    commandLine 'make','cdn','tar'
+}
+
+task rpm(type: Rpm) {
+    packageName = 'checkoutui'
+    version = "1.0.0"
+    release = "${new Date().format('yyyyMMdd_HHmm')}"
+    arch = NOARCH
+    os = LINUX
+
+    ext.root = "/myntra/checkoutui/releases/" + version + "-" + release
+    //path in generated rpm
+    into root
+
+    //source files
+    from('.'){
+        //Add here if you want to exclude any files
+        into '.'
+        exclude 'build/distributions'
+        exclude '.gradle'
+        exclude 'node_modules'
+        exclude '_npmcache'
+        exclude 'override.txt'
+    }
+}

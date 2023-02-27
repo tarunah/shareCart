@@ -1,0 +1,32 @@
+.modalContainer {
+  padding-top: 24px;
+}
+
+.modalHeader {
+  font-size: ~fontSize.xl_tiny;
+  font-weight: ~fontWeight.bold;
+  padding-left: 24px;
+}
+
+.modalFooter {
+  margin-top: 24px;
+  height: 650px;
+}
+
+.iframe {
+  border: none;
+}
+
+.modalWidth {
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  width: 762px;
+  top: 10%;
+  border: 1px solid #d4d5d9;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4px;
+}

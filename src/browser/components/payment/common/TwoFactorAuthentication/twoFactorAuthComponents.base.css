@@ -1,0 +1,155 @@
+.modal {
+  width: 100%;
+  color: ~colors.blueberry;
+}
+
+.mobileModal {
+  padding: 19px 16px 8px;
+}
+
+.desktopModal {
+  padding: 27px 24px 24px;
+}
+
+.mobileNumbers {
+  max-height: 278px;
+  overflow-y: scroll;
+}
+
+.radioButton {
+  margin-right: 12px;
+  vertical-align: text-bottom;
+  font-size: ~fontSize.large;
+}
+
+.radioText {
+  margin-right: 15px;
+}
+
+.selectedButton {
+  fill: ~colors.watermelon;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.otpVerifHeader {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 10px;
+}
+
+.otpVerifDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 13px;
+}
+
+.number {
+  font-size: ~fontSize.medium;
+  padding-bottom: 16px;
+  margin-top: 15px;
+  border-bottom: 1px dashed ~colors.blueberry_10;
+  cursor: pointer;
+}
+
+.selectedNumber {
+  font-weight: ~fontWeight.bold;
+}
+
+.number:last-child {
+  border-bottom: none;
+  padding-bottom: 4px;
+}
+
+.sendButton {
+  padding: 16px;
+  margin-top: 24px;
+  color: ~colors.white;
+  border-radius: 4px;
+}
+
+.sendButton.disabled {
+  background-color: ~colors.blueberry_30;
+  color: ~colors.white;
+}
+
+.otpScannerContainer {
+  text-align: center;
+}
+
+.imageContainer {
+  height: 80px;
+}
+
+.otpScannerHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 10px;
+}
+
+.otpScannerDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 24px;
+}
+
+.otpInput {
+  border: none;
+  padding: 0;
+  width: 144px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #535766 0px,
+    #535766 1ch,
+    transparent 0px,
+    transparent 1.5ch
+  );
+  background-position-x: 0px;
+  background-position-y: 100%;
+  background-size: 132px 1px;
+  background-repeat: no-repeat;
+  font: 39px droid sans mono, consolas, monospace;
+  letter-spacing: 12px;
+  margin-top: 10px;
+}
+
+.otpScannerButton {
+  margin-top: 16px;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  color: ~colors.watermelon;
+}
+
+.disabled {
+  color: ~colors.blueberry;
+  cursor: default;
+}
+
+.timerBlock {
+  margin: 5px auto;
+}
+
+.error {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.red;
+  margin-top: 4px;
+}
+
+.headerClose {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: ~fontSize.medium;
+  transform: scale(0.9);
+}
+
+@media (min-width: 760px) {
+  .modal {
+    width: 25%;
+    top: 25%;
+    min-width: 288px;
+  }
+}

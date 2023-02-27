@@ -1,0 +1,68 @@
+.collectCoinsContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  padding: 20px 16px 24px;
+  background: ~colors.midnight_black_secondary;
+  font-size: ~fontSize.large;
+}
+
+.acceleratedEarningContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 72px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.acceleratedEarningIcon {
+  color: ~colors.mustard_yellow;
+  font-weight: ~fontWeight.bold;
+}
+
+.acceleratedEarningDesc {
+  color: ~colors.white;
+  text-align: center;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  line-height: 13px;
+}
+
+.acceleratedEarningContainer::after {
+  position: absolute;
+  height: calc(100% + 12px);
+  content: '';
+  border-right: 2px solid ~colors.blueberry;
+  right: -8px;
+}
+
+.collectCoinsText {
+  margin: auto;
+  font-size: ~fontSize.medium;
+}
+
+.superCoinToCollectBold {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+}
+
+.superCoinToCollectIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.collectCoinsText img,
+.acceleratedEarningIcon img {
+  display: block;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 2px;
+  right: 1px;
+}
+
+.acceleratedEarningIcon img {
+  left: 1px;
+}

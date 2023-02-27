@@ -1,0 +1,39 @@
+.productRow {
+  font-size: ~fontSize.medium;
+  margin: 16px 16px 24px 16px;
+}
+
+.productImage {
+  float: left;
+}
+
+.productDetails {
+  margin-left: 38px;
+}
+
+.productName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 4px;
+}
+
+.brandName {
+  float: left;
+  font-weight: ~fontWeight.bold;
+}
+
+.title {
+  margin-bottom: 4px;
+  line-height: initial;
+}
+
+.size {
+  line-height: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.listSellers {
+  margin: 8px 16px 0 16px;
+}

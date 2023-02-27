@@ -1,0 +1,130 @@
+.mobileModalContainer {
+  width: 100%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+}
+
+.desktopModalContainer {
+  max-width: 441px;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+  top: 2%;
+}
+
+.header {
+  padding: 18px 16px;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  background-color: ~colors.white;
+}
+
+.pincodeContainer {
+  padding: 16px 24px;
+  margin-top: 8px;
+  background-color: ~colors.white;
+  position: relative;
+}
+
+.checkBtn {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  position: absolute;
+  right: 38px;
+  top: 28px;
+  height: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+.valid {
+  color: ~colors.watermelon;
+}
+
+.inValid {
+  color: ~colors.blueberry_50;
+}
+
+.or {
+  text-align: center;
+  padding: 10px;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry_70;
+  font-weight: ~fontWeight.bold;
+}
+
+.optionsContainer {
+  overflow-y: auto;
+}
+
+.addBlockDiv {
+  background-color: ~colors.white;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.addBlockDiv:first-child {
+  margin-top: 0px;
+}
+
+.addBlockAnchor {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  border-radius: 4px;
+  display: block;
+  border: 1px solid ~colors.blueberry;
+  color: ~colors.blueberry;
+  text-align: center;
+  padding: 9px;
+  text-transform: uppercase;
+}
+
+.addressRadioBtn {
+  margin-top: 2px;
+  min-width: 16px;
+}
+
+.addressContainer {
+  position: relative;
+  padding: 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: ~colors.white;
+}
+
+.addressContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  right: 16px;
+}
+
+.savedAddressText {
+  color: ~colors.grey_60;
+  max-width: 55%;
+}
+
+.topStrip {
+  padding: 16px 16px 16px 21px;
+  display: flex;
+  flex-direction: row;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  position: relative;
+}
+
+.savedAddress {
+  color: ~colors.grey_60;
+}
+
+.addNewAddress {
+  position: absolute;
+  right: 16px;
+  color: ~colors.watermelon;
+  max-width: 45%;
+  text-align: end;
+}

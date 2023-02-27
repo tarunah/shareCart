@@ -1,0 +1,37 @@
+.superCoinHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.tierNameText {
+  text-transform: uppercase;
+  color: ~colors.golden_yellow_dark;
+  font-weight: ~fontWeight.bold;
+}
+
+.insiderLogoContainer,
+.tierNameContainer {
+  display: flex;
+  align-items: center;
+  font-size: ~fontSize.small;
+}
+
+.crownIcon {
+  margin-right: 4px;
+  margin-bottom: 3px;
+  height: 16px;
+  width: 16px;
+}
+
+.myntraLogo {
+  width: auto;
+  height: 18px;
+  margin-right: 3px;
+}
+
+.insiderLogoSuperCoin {
+  height: 12px;
+  width: 64px;
+}

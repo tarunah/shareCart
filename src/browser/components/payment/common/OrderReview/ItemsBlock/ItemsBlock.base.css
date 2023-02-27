@@ -1,0 +1,73 @@
+.item {
+  padding: 12px 0px 4px 0px;
+  display: flex;
+}
+
+.leftMobile {
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.leftDesktop {
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rightMobile {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+}
+
+.rightDesktop {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+}
+
+.brandName {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  line-height: 14px;
+}
+
+.productName {
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.sizeQty {
+  color: ~colors.grey_700;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 8px;
+}
+
+.size {
+  padding-right: 8px;
+}
+
+.quantity {
+  margin: 0;
+}
+
+.price {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 8px;
+}
+
+.freeGift {
+  font-size: ~fontSize.medium;
+  margin-bottom: 8px;
+  color: ~colors.mynt;
+}

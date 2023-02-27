@@ -1,0 +1,32 @@
+.useMyLocationButtonContainer {
+  border: 1px solid ~colors.watermelon;
+  border-radius: 4px;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  width: 50%;
+  display: flex;
+  padding: 12px;
+}
+
+.modal {
+  width: 100%;
+  min-height: 200px;
+}
+
+.modalCloseIcon {
+  top: 16px;
+  right: 16px;
+}
+
+.locationIcon {
+  fill: ~colors.watermelon;
+  margin-right: 8px;
+}
+
+@media (max-width: 360px) {
+  .useMyLocationButtonContainer {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

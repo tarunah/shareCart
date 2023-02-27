@@ -1,0 +1,169 @@
+@keyframes circle {
+  0% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale3d(50, 50, 50);
+  }
+}
+
+@keyframes page {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.parent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: ~colors.white;
+  animation: page 1s 1.8s ease-out forwards;
+  overflow-x: hidden;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: ~colors.watermelon;
+  display: inline-block;
+  bottom: -50px;
+  right: -50px;
+  animation: circle 1s ease-in-out forwards;
+  -moz-animation: circle 1s ease-in-out forwards;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@media (min-width: 780px) {
+  .parent {
+    display: none;
+  }
+}
+
+.iconBlock {
+  position: absolute;
+  height: 100px;
+  width: 72px;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.iconContainer {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: iconContainer 1s forwards;
+  animation-delay: 1s;
+  position: relative;
+  text-align: center;
+  height: 72px;
+}
+
+@keyframes iconContainer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.successCircle {
+  width: 72px;
+  height: 72px;
+  transform: rotate(180deg);
+  fill: ~colors.watermelon;
+  display: table;
+  margin: 0 auto;
+  animation: successCircle 0.8s;
+  will-change: opacity, transform;
+}
+
+@keyframes successCircle {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+.circleTick {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  fill: ~colors.white;
+  animation: circleTick 1s;
+  left: 20px;
+  top: 22px;
+}
+
+@keyframes circleTick {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.orderSuccessful {
+  color: ~colors.watermelon;
+  font-size: ~fontSize.xl;
+  margin-top: 15px;
+  font-weight: ~fontWeight.bold;
+  animation: orderSuccessful 1.2s;
+}
+
+@keyframes orderSuccessful {
+  0% {
+    opacity: 0;
+    transform: translateY(300%);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.displayNone {
+  display: none;
+}

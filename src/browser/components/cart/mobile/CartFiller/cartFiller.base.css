@@ -1,0 +1,71 @@
+.cartFiller {
+  font-size: 13px;
+  margin: auto 0px;
+  padding: 10px 0px 0px 8px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff5f7+0,ffffff+100 */
+  background: #fff5f7; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #fff5f7 0%,
+    #ffffff 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #fff5f7 0%,
+    #ffffff 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #fff5f7 0%,
+    #ffffff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff5f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  overflow: auto;
+}
+
+.cartFillerHeading {
+  font-size: 14px;
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  margin-top: 2px;
+  padding-left: 10px;
+}
+
+.productHighlight {
+  border: 1px solid ~colors.watermelon !important;
+}
+
+.blur {
+  opacity: 0.6;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  padding-bottom: 16px;
+}
+
+.productWrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 12px;
+
+  /* Animations */
+  -webkit-animation-name: slideInFromRight; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: slideInFromRight;
+  animation-duration: 1s;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

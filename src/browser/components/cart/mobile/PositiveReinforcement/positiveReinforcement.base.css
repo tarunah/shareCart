@@ -1,0 +1,33 @@
+.container {
+  background: ~colors.white;
+  padding: 0 16px 16px 16px;
+}
+
+.block {
+  background: ~colors.mynt_10;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+}
+
+.textBlock {
+  margin-left: 14px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.desc {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+}
+
+.caption {
+  font-size: ~fontSize.small;
+  color: ~colors.darkgrey;
+}

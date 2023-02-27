@@ -1,0 +1,41 @@
+.container {
+  background-color: ~colors.white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 6px 2%;
+  font-size: ~fontSize.medium;
+}
+
+.desktopContainer {
+  border: 1px solid ~colors.mynt;
+  border-radius: 4px;
+}
+
+.textContainer {
+  margin-left: 10px;
+}
+
+.title {
+  border-bottom: 1px solid ~colors.grey_20;
+  padding-bottom: 20px;
+  padding-top: 8px;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_70;
+}
+
+.tip {
+  margin-top: 16px;
+  color: ~colors.blue_light;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.bulbImage {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.infoBlock {
+  display: inline-block;
+}

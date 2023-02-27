@@ -1,0 +1,32 @@
+.container {
+  background: ~colors.white;
+  padding: 10px;
+  border: 1px solid ~colors.blueberry_10;
+  border-left: 3px solid ~colors.mynt;
+  font-size: ~fontSize.medium;
+}
+
+.title {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 4px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.icon {
+  font-size: 11px;
+  font-weight: ~fontWeight.bold;
+}
+
+@media (min-width: 480) {
+  .container {
+    padding: 12px 0 12px 16px;
+  }
+
+  .title {
+    padding-bottom: 6px;
+  }
+}

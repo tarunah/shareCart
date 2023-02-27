@@ -1,0 +1,20 @@
+.actionButton {
+  margin-top: 16px;
+}
+
+.lowSRMessage {
+  padding-top: 12px;
+}
+
+.cardText {
+  display: flex;
+  align-items: center;
+}
+
+.inlineOffer {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  line-height: 16px;
+  color: ~colors.mynt;
+  margin-left: 8px;
+}

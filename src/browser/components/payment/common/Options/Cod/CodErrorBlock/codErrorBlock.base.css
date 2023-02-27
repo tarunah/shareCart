@@ -1,0 +1,5 @@
+.knowMore {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}

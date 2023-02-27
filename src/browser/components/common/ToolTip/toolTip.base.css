@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.message + div {
+  width: 0px;
+  height: 0px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: ~colors.blueberry;
+  position: absolute;
+  top: -10px;
+  left: 2px;
+  z-index: 10;
+}
+
+.message {
+  display: inline-block;
+  position: absolute;
+  background: ~colors.blueberry;
+  color: white;
+  bottom: 26px;
+  left: -108px;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.toolTip {
+  display: inline-block;
+  cursor: pointer;
+}

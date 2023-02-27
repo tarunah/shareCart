@@ -1,0 +1,225 @@
+.validCouponContainer {
+  width: 100%;
+  padding: 16px 23px 16px 24px;
+  background: ~colors.white;
+  margin-bottom: 1px;
+}
+
+.infoContainer {
+  margin-left: 36px;
+}
+
+.couponCode {
+  background: ~colors.amour;
+  color: ~colors.blueberry_90;
+  border: 1px dashed ~colors.brink_pink;
+  border-radius: 3px;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: ~fontWeight.bold;
+}
+
+.benefit {
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  padding-top: 12px;
+}
+
+.amount {
+  color: ~colors.blueberry;
+}
+
+.rupeeIcon {
+  font-weight: ~fontWeight.bold;
+  font-size: 11px;
+}
+
+.expiredRupeeIcon {
+  font-weight: ~fontWeight.bold;
+  font-size: 11px;
+  fill: ~colors.grey_30;
+}
+
+.errorMessage {
+  padding-top: 4px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.salmon;
+  opacity: 1;
+  padding-left: 36px;
+  word-wrap: break-word;
+}
+
+.extraInfo {
+  margin-top: 4px;
+  margin-right: 20px;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.extraInfo .expiryBlock {
+  margin-top: 1px;
+}
+
+.extraInfo .couponExpiryBlock {
+  margin-top: 8px;
+}
+
+.couponExpiryBlock {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: ~fontSize.small;
+  background-color: ~colors.salmon_05;
+}
+
+.couponExpiryText {
+  padding-right: 4px;
+}
+
+.couponExpiryTimer {
+  color: ~colors.salmon;
+}
+
+.couponExpiryContainer {
+  padding: 4px 8px 4px 8px;
+}
+
+.extraInfo .expiryDate {
+  padding-right: 5px;
+  border-right: 1px solid ~colors.blueberry_20;
+}
+
+.extraInfo .expiryTime {
+  padding-left: 5px;
+}
+.list {
+  padding-left: 17px;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.apply {
+  float: right;
+  margin: 8px 0px;
+  border: 1px solid ~colors.watermelon;
+  border-radius: 25px;
+  color: ~colors.watermelon;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  padding: 0px 12px;
+}
+
+/* The main container  for custom checkbox*/
+.customCheckbox {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-size: ~fontSize.medium;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.labelUnchecked {
+  display: flex;
+  margin-left: 16px;
+  padding: 8px 12px 8px 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: ~colors.blueberry;
+  border: 1px dashed ~colors.blueberry;
+  border-radius: 3px;
+  font-weight: ~fontWeight.bold;
+}
+
+.labelChecked {
+  display: flex;
+  margin-left: 16px;
+  padding: 8px 12px 8px 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: ~colors.watermelon;
+  border: 1px dashed ~colors.watermelon;
+  border-radius: 3px;
+  font-weight: ~fontWeight.bold;
+}
+
+.checkboxIcon {
+  font-size: 20px;
+  position: relative;
+  margin-top: 8px;
+  fill: ~colors.blueberry;
+}
+
+.selectedCheckboxIcon {
+  fill: ~colors.watermelon;
+  font-size: 20px;
+  position: relative;
+  margin-top: 8px;
+}
+
+.expiredCoupon {
+  color: ~colors.grey_30;
+  border-color: ~colors.grey_30;
+}
+
+.expiredCouponIcon {
+  fill: ~colors.grey_30;
+}
+
+.extraInfoLink {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.viewApplicableItem,
+.viewApplicableItem:hover {
+  position: relative;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  font-size: ~fontSize.small;
+  margin-left: 0px;
+  text-decoration: none;
+}
+
+hr.separator {
+  border-top: 1px dashed ~colors.blueberry_20;
+  border-bottom: 0px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+
+.arrowIcon {
+  font-size: ~fontSize.small;
+  fill: ~colors.watermelon;
+  width: 4px;
+  height: 7px;
+  font-weight: ~fontWeight.bold;
+}
+
+@media (max-width: 480px) {
+  .validCouponContainer {
+    padding: 16px 0 16px 16px;
+  }
+
+  .apply {
+    margin: 8px 5px;
+  }
+
+  .icon {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: 15px;
+  }
+}

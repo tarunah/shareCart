@@ -1,0 +1,105 @@
+.container {
+  padding: 0px 24px;
+  font-size: ~fontSize.medium;
+  position: relative;
+}
+
+.imageContainer {
+  position: relative;
+  height: 136px;
+}
+
+.header {
+  background: ~colors.white;
+  width: 100%;
+  padding: 15px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  border-bottom: 1px solid #d6d6d6;
+  position: relative;
+  z-index: 2;
+}
+
+.headerButtons {
+  display: none;
+}
+
+.desciption {
+  background: ~colors.white;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.moreDetails {
+  margin-top: 16px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: ~colors.white;
+  border-top: 1px solid ~colors.grey_20;
+  padding: 10px;
+  z-index: 100;
+}
+
+.actionButton {
+  font-weight: ~fontWeight.bold;
+  letter-spacing: 1px;
+}
+
+div.cancelButton {
+  width: 50%;
+  height: 50px;
+  color: #29303f;
+  background-color: ~colors.white;
+  padding: 14px;
+  display: inline-block;
+}
+
+div.saveButton {
+  width: 50%;
+  height: 50px;
+  border-radius: 4px;
+  padding: 14px;
+  display: inline-block;
+}
+
+.img1 {
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  animation: move1 1s;
+}
+
+@keyframes move1 {
+  from {
+    top: -96px;
+    left: 0px;
+  }
+  to {
+    top: 0px;
+    left: 19px;
+  }
+}
+
+.img2 {
+  position: absolute;
+  top: 19px;
+  right: -24px;
+  animation: move2 1s;
+  z-index: 1;
+}
+
+@keyframes move2 {
+  from {
+    top: 19px;
+    right: -196px;
+  }
+  to {
+    top: 19px;
+    right: -24px;
+  }
+}

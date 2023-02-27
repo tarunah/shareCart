@@ -1,0 +1,72 @@
+.expContainer {
+  padding: 16px;
+  display: flex;
+}
+
+.subText {
+  font-size: ~fontSize.large_xl;
+  line-height: 18px;
+  font-weight: ~fontWeight.bold;
+  align-self: center;
+}
+
+.myntraExpIcon {
+  margin-right: 30px;
+  margin-left: 4px;
+}
+
+.yesNoBlock {
+  font-size: ~fontSize.large;
+  padding: 0 10px 16px 10px;
+  display: flex;
+}
+
+.notSatisfied,
+.satisfied {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  letter-spacing: 0.2px;
+  display: inline-block;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 5px;
+  flex-basis: 100%;
+}
+
+.notSatisfied {
+  border: 1px solid ~colors.blueberry_80;
+  color: ~colors.blueberry_80;
+}
+
+.satisfied {
+  border: 1px solid ~colors.watermelon;
+  background: ~colors.watermelon;
+  color: ~colors.white;
+  margin-left: 8px;
+}
+
+.satisfied > a {
+  color: ~colors.white;
+}
+
+.notSatisfied div:last-child,
+.satisfied div:last-child {
+  letter-spacing: 0.02px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.light;
+}
+
+.displayNone {
+  display: none;
+}
+
+.spreadLoveStars {
+  transform: scale(0.7);
+  margin-left: -35px;
+  margin-top: -6px;
+}
+
+.myntraMobile {
+  transform: scale(0.7);
+  margin: -16px -8px -20px -10px;
+}

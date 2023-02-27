@@ -1,0 +1,47 @@
+.buttonContainer {
+  position: relative;
+  margin-bottom: 40px;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.buttonBlock {
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid ~colors.blueberry_10;
+  background: ~colors.white;
+}
+
+.button {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.white;
+  background: ~colors.watermelon;
+  width: 100%;
+  border-radius: 2px;
+  padding: 10px;
+  border: 0;
+}
+
+.agreeBlock {
+  position: relative;
+  background: ~colors.white;
+  padding: 16px;
+  z-index: 12;
+  left: 0;
+  right: 0;
+}
+
+.itemSelectedStrip {
+  background-color: ~colors.salmon_05;
+  font-size: ~fontSize.small;
+  padding: 4px 0 5px 0;
+  text-align: center;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}

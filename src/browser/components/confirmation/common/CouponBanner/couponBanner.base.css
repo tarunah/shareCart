@@ -1,0 +1,83 @@
+.container {
+  border-radius: 6.3px;
+  border: solid 0.6px ~colors.watermelon_20;
+  background-image: linear-gradient(
+    280deg,
+    ~colors.off_yellow,
+    ~colors.light_pink
+  );
+  color: ~colors.blueberry;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin: 12px;
+  text-align: initial;
+}
+
+.desktop {
+  width: 420px;
+  height: 80px;
+  margin: 32px auto 0;
+}
+
+.header {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+}
+
+.desktop .header {
+  font-size: ~fontSize.xl;
+  font-weight: ~fontWeight.bold;
+}
+
+.subHeader {
+  font-size: ~fontSize.small;
+}
+
+.desktop .subHeader {
+  font-size: ~fontSize.large;
+}
+
+.boldText {
+  font-weight: ~fontWeight.bold;
+}
+
+.coupon {
+  padding: 8px 16px;
+  border: dashed 1.6px ~colors.red_10;
+  background-color: ~colors.watermelon_15;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  position: relative;
+}
+
+.desktop .coupon {
+  padding: 8px 20px;
+  font-size: ~fontSize.large_xl;
+}
+
+.couponLine {
+  width: 1px;
+  height: 6px;
+  background-color: ~colors.blue_5;
+  position: absolute;
+}
+
+.line1 {
+  top: -13px;
+  right: 6px;
+  transform: rotate(-22deg);
+}
+
+.line2 {
+  top: -11px;
+  right: -9px;
+  transform: rotate(45deg);
+}
+
+.line3 {
+  top: 3px;
+  right: -12px;
+  transform: rotate(90deg);
+}

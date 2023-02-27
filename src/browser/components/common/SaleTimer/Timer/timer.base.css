@@ -1,0 +1,8 @@
+.timerContainer {
+  display: inline-block;
+}
+
+.timer {
+  color: ~colors.watermelon;
+  display: inline-block;
+}

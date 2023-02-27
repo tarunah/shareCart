@@ -1,0 +1,50 @@
+.mobile {
+  background: ~colors.blueberry_5;
+  position: relative;
+  margin: auto;
+  color: ~colors.blueberry;
+}
+
+.returnPolicyOnStripAb {
+  margin-bottom: 68px;
+}
+
+.tip {
+  text-align: left;
+  padding: 10px;
+  background: ~colors.white;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.tipHead {
+  color: ~colors.red;
+  font-weight: ~fontWeight.bold;
+}
+
+.cfHeader:nth-child(2) {
+  margin-top: 12px;
+}
+
+.offerContainer {
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+.bankOfferTitle {
+  padding: 5px 0 8px 16px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry_80;
+}
+.bankOfferPillContainer {
+  padding: 0 12px;
+}
+
+.couponNudgeSnackBar {
+  width: 100%;
+}
+
+.couponNudgeContainer {
+  border-radius: 0 !important;
+}

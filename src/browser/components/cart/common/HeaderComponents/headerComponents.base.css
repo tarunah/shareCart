@@ -1,0 +1,216 @@
+.container {
+  padding: 12px 12px 12px 52px;
+  font-size: ~fontSize.medium;
+  text-align: left;
+  line-height: 16px;
+  background: ~colors.white;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.nonServiceableContainer {
+  padding: 9px 12px 12px 8px;
+  font-size: ~fontSize.medium;
+  text-align: left;
+  line-height: 16px;
+  background: ~colors.white;
+  margin-bottom: 12px;
+  position: relative;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+}
+
+.nonServiceableHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: ~fontWeight.bold;
+  margin-top: 4px;
+}
+
+.button {
+  color: ~colors.watermelon;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .buttonContainer {
+    text-align: left;
+  }
+}
+
+.vb {
+  padding: 12px 16px;
+  border-left: 3px solid ~colors.salmon !important;
+  font-size: ~fontSize.medium;
+  margin-bottom: 12px;
+  background: ~colors.white;
+}
+
+.oosIcon {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+.viewButton {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  margin-right: 8px;
+  font-size: ~fontSize.small;
+  cursor: pointer;
+}
+
+.nonServiceableButton {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  margin-right: 8px;
+  margin-left: auto;
+  font-size: ~fontSize.small;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.wishlistButton {
+  color: ~colors.watermelon !important;
+}
+
+.priceDropIcon,
+.sellerChange {
+  position: absolute;
+  left: 21px;
+  top: 16px;
+}
+
+.warningIcon {
+  position: absolute;
+  color: ~colors.salmon;
+  left: 16px;
+  top: 12px;
+}
+
+.warningBlock {
+  display: inline-block;
+  color: ~colors.orange;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.warningInfoBlock {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Cover fee block styles */
+.cfContainer {
+  padding: 12px 12px 12px 57px;
+  background: ~colors.white;
+  margin-bottom: 12px;
+  position: relative;
+  font-size: ~fontSize.medium;
+  border-left: 4px solid ~colors.mynt !important;
+}
+
+.cfIcon {
+  position: absolute;
+  left: 12px;
+  font-size: 40px;
+  top: 12px;
+  height: 36px;
+  width: 29px;
+}
+
+.cfMainText {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+  line-height: 18px;
+  color: ~colors.mynt;
+}
+
+.cfInfo {
+  line-height: 19px;
+}
+
+.ufp {
+  background: ~colors.mynt;
+  color: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  text-align: center;
+  padding: 6px;
+  font-size: ~fontSize.medium;
+}
+
+.nonServiceableIcon {
+  left: 8px;
+  margin-right: 6px;
+}
+
+@media (min-width: 480px) {
+  .vb,
+  .container {
+    border-radius: 4px;
+    border: 1px solid ~colors.blueberry_10;
+  }
+  .cfContainer {
+    border-radius: 4px;
+    border: 1px solid ~colors.blueberry_10;
+  }
+  .ufp {
+    padding: 4px;
+  }
+
+  .nonServiceableContainer {
+    padding: 12px 12px 12px 8px;
+    border: 1px solid ~colors.blueberry_10;
+    border-radius: 4px;
+  }
+
+  .nonServiceableHeader {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cfText {
+    width: 90%;
+  }
+}
+
+.amount {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.mynt;
+}
+
+.savingsFeedbackIcon {
+  fill: ~colors.mynt;
+  margin: 2px 3px 2px 0;
+}
+
+.savingsStrip {
+  background: ~colors.white;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.savingsStrip span {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  margin-left: 4px;
+}
+.savingsStrip b {
+  font-weight: ~fontWeight.bold;
+  margin-left: 2px;
+}

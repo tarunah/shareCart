@@ -1,0 +1,36 @@
+.mainContainer {
+  min-height: 20px;
+  position: relative;
+}
+
+.fullWidthContainer {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.slicedContainer {
+  max-width: 90%;
+  overflow: hidden;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expandedContainer {
+  width: 100%;
+}
+
+.readMore {
+  position: absolute;
+  background-color: ~colors.white;
+  float: right;
+  right: 0;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+@media (max-width: 320px) {
+  .slicedContainer {
+    max-width: 87%;
+  }
+}

@@ -1,0 +1,21 @@
+.actionButton {
+  width: 100%;
+  text-align: center;
+  background: ~colors.watermelon;
+  color: ~colors.white;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  line-height: 48px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.disable {
+  cursor: default;
+  opacity: 0.5;
+}

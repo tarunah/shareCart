@@ -1,0 +1,9 @@
+.inputClass {
+  margin-top: 12px;
+  caret-color: ~colors.watermelon;
+}
+
+.error {
+  color: ~colors.salmon;
+  margin-top: 8px;
+}

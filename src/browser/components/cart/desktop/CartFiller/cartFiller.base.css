@@ -1,0 +1,11 @@
+.cartFiller {
+  margin: 60px 0px;
+}
+
+.cartFillerHeading {
+  font-size: 16px;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  padding: 10px 0px;
+  border-top: 1px solid ~colors.blueberry_60;
+}

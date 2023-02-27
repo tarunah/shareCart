@@ -1,0 +1,70 @@
+.nudge {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  padding: 2px 16px 18px;
+  display: flex;
+  align-items: center;
+}
+
+.headerIcon {
+  margin-right: 12px;
+}
+
+.fitAssistContainer {
+  position: relative;
+  padding-top: 12px;
+}
+
+.slideUpwards {
+  animation: slideUpAnim 1s ease-out !important;
+  margin-top: -282px !important;
+}
+
+@keyframes slideUpAnim {
+  0% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -282px;
+  }
+}
+
+.adjustPadding {
+  padding-bottom: 12px;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px ~colors.grey_20;
+  border-radius: 4px;
+  padding: 8px;
+  margin-right: 12px;
+}
+
+.selectedProduct {
+  box-shadow: 0px 1px 4px ~colors.grey_20;
+}
+
+.itemTagged {
+  border: 1px solid ~colors.mynt;
+}
+
+.itemDetails {
+  width: calc(100% - 70px);
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.itemBrand {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+}
+
+.deliveryTAT {
+  font-weight: ~fontWeight.bold;
+  margin-top: 12px;
+  color: ~colors.mynt;
+}

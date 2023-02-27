@@ -1,0 +1,343 @@
+.info {
+  padding: 10px 18px 14px 18px;
+  border: 1px solid ~colors.blueberry_10;
+  border-left: 3px solid ~colors.salmon;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  background-color: ~colors.white;
+}
+
+.headerText {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 4px;
+  font-size: ~fontSize.medium;
+  color: ~colors.salmon;
+}
+
+.textMessage {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.link {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  font-size: ~fontSize.medium;
+  margin-left: 3px;
+}
+
+.header {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding-right: 42px;
+  margin-bottom: 16px;
+}
+
+.details {
+  font-size: ~fontSize.medium;
+}
+
+.faq {
+  margin-top: 10px;
+}
+
+.mainContainer {
+  margin: 19px 16px 0px 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid ~colors.grey_20;
+}
+
+.abuserHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 6px;
+}
+
+.contentHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 12px;
+  width: 90%;
+}
+
+.cardContainer {
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.tipsMainContainer {
+  border: 0.5px solid ~colors.grey_20;
+  padding-bottom: 15px;
+}
+
+.greenContainer {
+  background: ~colors.green_10;
+}
+
+.redContainer {
+  background: ~colors.salmon_10;
+}
+
+.headContainer {
+  background: ~colors.grey_40;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom: 1px solid ~colors.grey_5;
+  margin-top: 16px;
+}
+
+.returnsContainer {
+  background: ~colors.grey_40;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.cardContent {
+  padding: 12px 0px 0px 16px;
+}
+
+.iconContainer {
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.tipsFlexBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardFlexBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.tipsText {
+  font-size: ~fontSize.icon;
+  max-width: 65px;
+  margin-top: 10px;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.tipsContainer {
+  flex: 1;
+  padding-right: 12px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.contentText {
+  font-size: ~fontSize.large;
+  width: 80%;
+  margin-left: 12px;
+}
+
+.contentTextSmall {
+  font-size: ~fontSize.medium;
+  width: 85%;
+  margin-left: 12px;
+}
+
+.multiplier {
+  color: ~colors.salmon_20;
+}
+
+.cardHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 12px;
+}
+
+.returnsText {
+  font-size: ~fontSize.medium;
+  padding-bottom: 6px;
+}
+
+.indicator {
+  height: 6px;
+  width: 95%;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to right,
+    ~colors.mynt 0%,
+    ~colors.mynt 16%,
+    ~colors.mynt_30 16%,
+    ~colors.mynt_30 33%,
+    ~colors.yellow_light_10 33%,
+    ~colors.yellow_light_10 50%,
+    ~colors.orange 50%,
+    ~colors.orange 67%,
+    ~colors.salmon 67%,
+    ~colors.salmon 84%,
+    ~colors.dark_red 84%,
+    ~colors.dark_red 100%
+  );
+}
+
+.indicatorText {
+  font-size: ~fontSize.small;
+}
+
+.floatRight {
+  position: relative;
+  right: 5%;
+  float: right;
+}
+
+.note {
+  font-size: ~fontSize.tiny_xl;
+  color: ~colors.blueberry;
+  padding-bottom: 16px;
+}
+
+.myntUser {
+  display: inline-block;
+  visibility: hidden;
+  position: relative;
+  top: -20px;
+  animation: linearOne;
+  animation-delay: 0.3s;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.low {
+  visibility: hidden;
+  position: relative;
+  width: 100px;
+  bottom: -5px;
+  animation: makeVisible 0.6s 0.6s forwards, linearLow 0.4s 0.9s linear;
+  animation-fill-mode: forwards;
+}
+
+.medium {
+  visibility: hidden;
+  position: relative;
+  width: 100px;
+  bottom: -5px;
+  animation: makeVisible 0.6s 0.6s forwards, linearMedium 0.4s 0.9s linear;
+  animation-fill-mode: forwards;
+}
+
+.high {
+  visibility: hidden;
+  position: relative;
+  width: 100px;
+  bottom: -5px;
+  animation: makeVisible 0.6s 0.6s forwards, linearHigh 0.4s 0.9s linear;
+  animation-fill-mode: forwards;
+}
+
+.warning {
+  visibility: hidden;
+  position: relative;
+  width: 100px;
+  bottom: -5px;
+  animation: makeVisible 0.6s 0.6s forwards, linearWarning 0.4s 0.9s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes linearOne {
+  from {
+    opacity: 0;
+    left: 0%;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    left: 10%;
+  }
+}
+
+@keyframes makeVisible {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes linearLow {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 40%;
+  }
+}
+
+@keyframes linearMedium {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 55%;
+  }
+}
+
+@keyframes linearHigh {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 70%;
+  }
+}
+
+@keyframes linearWarning {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 25%;
+  }
+}
+
+.modal {
+  width: 370px;
+  top: 25%;
+  font-size: ~fontSize.small;
+  position: relative;
+  padding: 24px;
+}
+
+@media (max-width: 480px) {
+  .info {
+    border-radius: 0px;
+  }
+
+  .headerText {
+    color: ~colors.blueberry;
+  }
+
+  .details {
+    font-size: ~fontSize.small;
+  }
+
+  .modal {
+    position: absolute !important;
+    bottom: 0px;
+    top: auto;
+    width: 100%;
+    border: none !important;
+    border-radius: 0px !important;
+  }
+}
+
+:global(.ios) .modal {
+  width: 90%;
+  top: 25%;
+  position: relative !important;
+  border-radius: 4px !important;
+  border: 1px solid ~colors.blueberry_20 !important;
+}

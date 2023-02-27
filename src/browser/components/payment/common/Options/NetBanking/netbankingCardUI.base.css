@@ -1,0 +1,29 @@
+.actionButton {
+  margin-top: 16px;
+}
+
+.lowSRMessage {
+  margin-top: 8px;
+}
+
+.displayMain {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.displaySub {
+  font-weight: ~fontWeight.light;
+}
+
+.cardText {
+  display: -webkit-inline-box;
+  align-items: center;
+}
+
+.inlineOffer {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  line-height: 16px;
+  color: ~colors.mynt;
+  margin-left: 8px;
+}

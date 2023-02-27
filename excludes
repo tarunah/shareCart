@@ -1,0 +1,8 @@
+.git
+caches
+.gradle
+node_modules
+_npmcache
+tar
+build
+checkoutui*.tar.gz

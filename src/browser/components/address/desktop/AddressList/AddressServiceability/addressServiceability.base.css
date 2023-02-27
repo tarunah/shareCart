@@ -1,0 +1,8 @@
+.container {
+  font-size: ~fontSize.medium;
+}
+
+.bullet {
+  display: inline-block;
+  margin-right: 3px;
+}

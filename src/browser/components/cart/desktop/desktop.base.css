@@ -1,0 +1,26 @@
+.cartLayout {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 10px 16px;
+  min-height: 320px;
+  color: ~colors.blueberry;
+}
+
+.right {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding: 24px 0px 0px 16px;
+}
+
+.tip {
+  margin-top: 10px;
+  font-size: ~fontSize.small;
+  text-align: center;
+  color: ~colors.orange;
+}
+
+.emptyCart {
+  max-width: 650px;
+  margin: 24px auto;
+}

@@ -1,0 +1,82 @@
+.cartFillerProduct {
+  display: inline-block;
+  /* To dsiable text from overflowing */
+  white-space: pre-wrap;
+  background: ~colors.white;
+  width: 150px;
+  margin: 0px 10px 10px 0px;
+  border: 1px solid ~colors.blueberry_10;
+}
+
+.cartFillerProduct:first-child {
+  margin-left: 10px;
+}
+
+.clickableInfo {
+  padding: 0 10px;
+}
+
+.brandName {
+  font-size: ~fontSize.medium;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productDescription {
+  color: ~colors.blueberry_60;
+  font-size: ~fontSize.small;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 17px;
+}
+
+.priceInfo {
+  font-size: ~fontSize.tiny_xl;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.priceRupeeIcon {
+  height: 8px;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: ~colors.blueberry_60;
+  fill: ~colors.blueberry_60;
+}
+
+.mrpRupeeIcon {
+  height: 7px;
+}
+
+.price + .mrp,
+.mrp + .price {
+  margin-left: 5px;
+}
+
+.discountLabel {
+  color: ~colors.watermelon;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  border-top: 1px solid ~colors.blueberry_10;
+}

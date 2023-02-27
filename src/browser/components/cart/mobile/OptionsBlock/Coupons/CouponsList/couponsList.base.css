@@ -1,0 +1,204 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  background: ~colors.white;
+  padding: 16px 12px 0px 16px;
+  position: relative;
+}
+
+.couponText {
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.applyCouponContainer {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  align-items: baseline;
+}
+
+.applyCouponText {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  color: ~colors.watermelon;
+}
+
+.applyCouponIcon {
+  height: 8px;
+  width: 5px;
+  margin-left: 8px;
+  fill: ~colors.watermelon;
+}
+
+.couponDetailContainer {
+  background: ~colors.white;
+  padding: 8px 12px 8px 8px;
+}
+
+.couponDetail {
+  border: 1px solid ~colors.green_200;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 4px 0;
+}
+
+.couponDetailDisabled {
+  border: 1px solid ~colors.grey_5;
+}
+
+.couponContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.couponDisplay {
+  display: flex;
+}
+
+.couponButton {
+  color: ~colors.watermelon;
+  border: 1px solid ~colors.watermelon;
+  padding: 8px 8px 8px 8px;
+  border-radius: 2px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.couponButtonFooter {
+  background: ~colors.white;
+  padding: 8px 8px 8px 8px;
+  font-weight: ~fontWeight.bold;
+}
+
+.coupon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  background: ~colors.mynt_10;
+  border: 1px dashed ~colors.mynt;
+  padding: 8px 8px 8px 8px;
+  flex: 1;
+  text-align: center;
+  max-width: 140px;
+  min-width: 90px;
+  overflow: hidden;
+}
+
+.couponDisabled {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  background: ~colors.blueberry_5;
+  border: 1px dashed ~colors.grey_400;
+  padding: 8px 8px 8px 8px;
+  color: ~colors.grey_60;
+  flex: 1;
+  text-align: center;
+  max-width: 140px;
+  min-width: 90px;
+  overflow: hidden;
+}
+
+.scissorsDisabled path {
+  fill: ~colors.grey_400;
+}
+
+.couponDescriptionContainer {
+  margin-bottom: 8px;
+  font-size: ~fontSize.medium;
+}
+
+.couponDiscountMessageContainer {
+  color: ~colors.mynt;
+  margin-right: auto;
+  padding-right: 8px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.couponDiscountMessageContainerDisabled {
+  color: ~colors.grey_60;
+  margin-right: auto;
+  padding: 0 8px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.rupeeIcon {
+  font-size: 11px;
+  height: 9px;
+  fill: ~colors.mynt;
+}
+
+.totalSavingsContainer {
+  background: ~colors.white;
+  padding: 0 24px 8px 24px;
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.scissors {
+  position: relative;
+  right: 75%;
+  bottom: 4px;
+}
+
+.couponExpiryContainer {
+  padding-top: 12px;
+}
+
+.couponExpiryBlock {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.couponExpiryText {
+  color: ~colors.blueberry;
+  padding-right: 4px;
+}
+
+.couponExpiryTimer {
+  color: ~colors.salmon;
+}
+
+.couponExpiredText {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.salmon;
+}
+
+.removeButton {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.watermelon;
+}
+
+.couponDescriptionHeader {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 4px;
+}
+
+.couponDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal {
+  width: 304px;
+  height: 330px;
+  top: 50%;
+  margin-top: -150px;
+  border-radius: 40px;
+}
+
+.confetti {
+  z-index: 12 !important;
+}

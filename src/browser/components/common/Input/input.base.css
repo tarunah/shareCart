@@ -1,0 +1,43 @@
+.label {
+  display: block;
+  position: absolute;
+  top: 10px;
+  transition-property: top;
+  transition-duration: 0.1s;
+}
+
+.selected {
+  color: ~colors.mynt;
+}
+
+.selected .input {
+  border-color: ~colors.mynt;
+}
+
+.top .label {
+  top: -12px;
+  transition-property: top;
+  transition-duration: 0.1s;
+}
+
+.inputRow {
+  position: relative;
+  display: inline-block;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  font-size: 15px;
+  padding-top: 8px;
+  border: none;
+  border-bottom: 1px solid ~colors.blueberry_40;
+  background: transparent;
+  font-weight: ~fontWeight.bold;
+}
+
+.errorMessage {
+  color: ~colors.red;
+  margin-bottom: 5px;
+}

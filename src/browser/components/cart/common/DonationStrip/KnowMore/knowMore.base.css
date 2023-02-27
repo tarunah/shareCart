@@ -1,0 +1,64 @@
+.imageComponent {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.anchor {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.anchor:hover,
+.anchor:focus {
+  color: ~colors.watermelon;
+  text-decoration: none;
+  outline: none;
+}
+
+.modalDesktop {
+  width: 360px;
+  top: 33%;
+  transform: translateY(-50%);
+  min-width: 288px;
+  padding-top: 19px;
+}
+
+.modalMobile {
+  width: 100%;
+}
+
+.modalCloseIcon {
+  top: 21px;
+  right: 17px;
+}
+
+.textContainer {
+  background: ~colors.blueberry_5;
+  margin: 12px 16px 16px 16px;
+  padding: 12px;
+  font-weight: ~fontWeight.light;
+}
+
+.title {
+  margin: 0 0 20px 16px;
+  font-weight: ~fontWeight.bold;
+}
+
+.titleMobile {
+  margin-top: 19px;
+}
+
+.list {
+  padding-left: 16px;
+}
+
+.footer {
+  padding-top: 8px;
+  border-top: 1px solid ~colors.grey_5;
+  margin-bottom: 0;
+}

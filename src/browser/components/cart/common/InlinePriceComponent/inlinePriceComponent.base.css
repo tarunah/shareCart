@@ -1,0 +1,20 @@
+.price {
+  color: ~colors.blueberry;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.amount {
+  font-weight: ~fontWeight.bold;
+  padding-right: 8px;
+}
+
+.strikedAmount {
+  padding: 0 2px 0 0px !important;
+}
+
+.discountText {
+  color: ~colors.salmon;
+}

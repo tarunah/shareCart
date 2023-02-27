@@ -1,0 +1,185 @@
+.comboComplete {
+  padding-left: 33px !important;
+}
+
+.comboInComplete {
+  padding-right: 120px;
+}
+
+.comboUrl {
+  display: block;
+  padding: 10px 0;
+  background: ~colors.white;
+  margin: 10px 0 0;
+  border-radius: 4px;
+  border: 1px dashed ~colors.blue;
+  position: relative;
+}
+
+.comboOfferRightText {
+  display: inline-block;
+  float: right;
+  color: ~colors.blueberry_90;
+  padding-right: 10px;
+  position: relative;
+  top: 1px;
+  padding-left: 4px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+}
+
+.comboHeaderText {
+  font-size: ~fontSize.medium;
+  display: inline-block;
+  font-weight: ~fontWeight.bold;
+  position: relative;
+  width: 100%;
+}
+
+.comboContainer {
+  padding: 0px 0px 12px 8px;
+  position: relative;
+  color: ~colors.blueberry;
+}
+
+.comboStatus {
+  white-space: nowrap;
+  text-align: center;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.comboAddItem {
+  color: ~colors.blueberry_90;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 8px;
+  font-weight: ~fontWeight.bold;
+  white-space: nowrap;
+  background: ~colors.white;
+  border: 1px solid ~colors.blueberry;
+  text-transform: uppercase;
+}
+
+.comboMessage {
+  width: 70%;
+  font-size: ~fontSize.small;
+}
+
+.offerDiscountText {
+  padding: 0 8px;
+  color: ~colors.red;
+}
+
+.rupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.smallerRupeeIcon {
+  font-size: 10px;
+  font-weight: ~fontWeight.bold;
+}
+
+.conditionComplete {
+  padding-left: 33px;
+}
+
+.comboCompleteIcon {
+  position: absolute;
+  left: 4px;
+  height: 24px;
+  font-size: 30px;
+  width: 24px;
+}
+
+.comboComplete .comboCompleteIcon {
+  top: 0px;
+}
+
+.conditionComplete .comboMessage {
+  width: 100%;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.freeGiftTextContainer {
+  margin-left: 12px;
+}
+
+.freeGiftTitle {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.freeGiftContainer {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px ~colors.black;
+  background: ~colors.white;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+}
+
+.freeGiftHeaderContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.conditionCompleteTitle {
+  color: ~colors.mynt;
+}
+
+.conditionCompleteContainer {
+  margin: 4px 0 16px 4px;
+}
+
+.footerContainer {
+  margin-top: 12px;
+}
+
+.freeGiftText {
+  color: ~colors.mynt !important;
+  padding: 0px 0px 0px 2px;
+}
+
+.rightIcon {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.androidImage {
+  padding-bottom: 4px;
+}
+
+.modalCloseIcon {
+  top: 28px;
+  right: 16px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1),
+  screen and (min-device-width: 1200px) and (max-device-width: 1600px),
+  screen and (min-device-width: 1200px) {
+  .comboInComplete {
+    padding: 0 0 10px 0;
+  }
+
+  .comboHeaderText {
+    font-size: ~fontSize.medium;
+  }
+}
+
+@media (max-width: 320px) {
+  .comboContainer {
+    padding-left: 0px;
+  }
+  .comboHeaderText {
+    width: 60%;
+  }
+}

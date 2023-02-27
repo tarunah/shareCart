@@ -1,0 +1,111 @@
+.header1 {
+  font-size: ~fontSize.large;
+  line-height: 19px;
+}
+
+.header2 {
+  font-size: 32px;
+  font-weight: ~fontWeight.bold;
+  line-height: 39px;
+}
+
+.inputDetails {
+  vertical-align: top;
+  padding-right: 15px;
+}
+
+.label {
+  display: block;
+  position: absolute;
+  top: 13px;
+  transition-property: top;
+  transition-duration: 0.1s;
+  background: ~colors.white;
+  padding: 0px 3px;
+  color: ~colors.blueberry_50;
+}
+
+.top .label {
+  top: -12px;
+  left: 10px;
+  transition-property: top;
+  transition-duration: 0.1s;
+}
+
+.inputContainer {
+  margin-top: 16px;
+}
+
+.inputContainer:nth-child(2) {
+  margin-top: 22px;
+}
+
+.inputContainer:nth-child(4) {
+  margin-top: 36px;
+}
+
+.inputRow {
+  position: relative;
+  padding: 12px;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+}
+
+.selected {
+  border-color: ~colors.blueberry;
+}
+
+.selected .label {
+  color: ~colors.blueberry;
+}
+
+.input {
+  width: 100%;
+  border: none;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+.error {
+  border-color: ~colors.red;
+}
+
+.errorMessage {
+  color: ~colors.red;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-left: 12px;
+  font-size: ~fontSize.small;
+}
+
+.charCount {
+  display: inline-block;
+  float: right;
+  color: ~colors.blueberry_50;
+}
+
+.note {
+  color: ~colors.blueberry_80;
+  margin: 16px 0px;
+}
+
+.noteLabel {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.salmon;
+}
+
+@media (min-width: 760px) {
+  .details {
+    min-height: 412px;
+  }
+
+  .inputDetails {
+    display: inline-block;
+    border-right: 1px solid ~colors.blueberry_30;
+    width: 50%;
+  }
+}

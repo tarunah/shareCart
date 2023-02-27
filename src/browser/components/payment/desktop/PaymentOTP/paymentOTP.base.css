@@ -1,0 +1,40 @@
+.pageBackground {
+  background-color: ~colors.blueberry_5;
+  padding: 15px 0 40px;
+  height: calc(100vh - 78px);
+}
+
+.container {
+  padding: 24px 0 24px;
+  margin: auto;
+  width: 57%;
+  min-width: 300px;
+  min-height: 420px;
+  box-shadow: 0 2px 8px 0 ~colors.blueberry_30;
+  border-radius: 4px;
+  background-color: ~colors.white;
+}
+
+.redirectToBank {
+  padding: 10px 15px;
+  width: 328px;
+  margin: auto;
+  background-color: ~colors.blueberry_5;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.redirectIcon {
+  position: absolute;
+  color: ~colors.blueberry_70;
+  top: 19px;
+  right: 15px;
+}
+
+.timeoutText {
+  text-align: center;
+  margin-top: 8px;
+  font-size: ~fontSize.tiny_xl;
+  color: ~colors.blueberry_80;
+}

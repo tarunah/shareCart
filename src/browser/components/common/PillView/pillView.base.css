@@ -1,0 +1,44 @@
+.pillsContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.pillsMobileContainer {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.pillsDesktopContainer {
+  flex-wrap: wrap;
+}
+
+.normalPill {
+  border: 1px solid ~colors.blueberry_20;
+  color: ~colors.blueberry;
+}
+
+.activePill {
+  border: 1px solid ~colors.watermelon;
+  color: ~colors.watermelon;
+}
+
+.pill {
+  cursor: pointer;
+  border-radius: 40px;
+  margin: 0px 8px 12px 0px;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.otherField {
+  margin: 0 0 8px 0;
+}
+
+.textStyle {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  line-height: 1.15;
+}

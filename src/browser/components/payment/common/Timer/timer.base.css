@@ -1,0 +1,5 @@
+.timer {
+  display: inline-block;
+  color: ~colors.red;
+  font-weight: ~fontWeight.bold;
+}

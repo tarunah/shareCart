@@ -1,0 +1,89 @@
+.offersContainer {
+  margin-bottom: 12px;
+}
+
+.pillContainer {
+  display: flex;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.pillContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.pill {
+  margin-right: 8px;
+}
+
+.offerContent {
+  padding: 5px 12px;
+  background: ~colors.white;
+  display: flex;
+  align-items: center;
+  font-size: ~fontSize.medium;
+}
+
+.multiOffersContent {
+  width: 250px;
+  border: 1px solid ~colors.grey_1;
+}
+
+.modal {
+  width: 100%;
+}
+
+.desktopModalContainer {
+  max-width: 441px;
+  max-height: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+}
+
+.cancel {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_70;
+  float: right;
+}
+
+.discountIcon {
+  position: absolute;
+}
+
+.hcTitle {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding: 25px 16px 0px;
+}
+
+.hcBody {
+  font-size: ~fontSize.medium;
+  padding: 20px 16px 12px;
+}
+
+.heading {
+  position: relative;
+  bottom: 2px;
+  left: 30px;
+}
+
+.hcContainer {
+  padding: 5px 25px;
+}
+
+.pillMsg {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  width: 80%;
+  padding-left: 10px;
+}

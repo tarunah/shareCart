@@ -1,0 +1,40 @@
+.container {
+  padding: 22px 36px 22px 44px;
+  border: 1px solid ~colors.blueberry_10;
+  font-weight: ~fontWeight.bold;
+  position: relative;
+  line-height: 16px;
+  background: ~colors.white;
+}
+
+.title {
+  display: inline-block;
+  font-size: ~fontSize.medium;
+}
+
+.apply {
+  color: ~colors.watermelon;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+}
+
+.giftIcon {
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  width: 18px;
+  height: 17px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    border: none;
+    padding: 20px 16px 20px 44px;
+  }
+  .giftIcon {
+    top: 20px;
+  }
+}

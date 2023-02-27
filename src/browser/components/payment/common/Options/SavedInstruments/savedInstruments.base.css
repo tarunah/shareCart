@@ -1,0 +1,41 @@
+.savedInstrumentMobileHeading {
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.savedInstrumentDesktopHeading {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  margin-bottom: 16px;
+}
+
+.savedInstrumentContainer {
+  background-color: ~colors.white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.showMore {
+  text-align: center;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  padding: 16px;
+  background-color: ~colors.white;
+  position: relative;
+  font-size: ~fontSize.medium;
+  cursor: pointer;
+}
+
+.fullWidth {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

@@ -1,0 +1,32 @@
+.buttonContainer {
+  position: relative;
+  color: ~colors.white;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background: ~colors.watermelon;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3px;
+  margin: 0 auto;
+}

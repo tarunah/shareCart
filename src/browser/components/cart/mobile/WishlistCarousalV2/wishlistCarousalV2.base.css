@@ -1,0 +1,100 @@
+.container {
+  background: ~colors.white;
+  overflow: auto;
+  margin-top: 16px;
+}
+
+.headerContainer {
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding: 16px 0 14px 16px;
+  border-bottom: 1px ~colors.blueberry_5 solid;
+  display: flex;
+  align-items: center;
+}
+
+.headerText {
+  margin-left: 7px;
+}
+
+.iconFill {
+  fill: ~colors.grey_60;
+}
+
+.productContainer {
+  padding: 0 12px;
+}
+
+.wishlistCarousalHeading {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding: 10px;
+}
+
+.wishlistCarousalHeading div {
+  display: inline-block;
+}
+
+.product {
+  padding: 12px 0;
+  border-bottom: 1px ~colors.blueberry_5 solid;
+}
+
+.product:last-child {
+  border-bottom: 0px;
+}
+
+.productWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemDetailsContainer {
+  margin-left: 16px;
+}
+
+.brandName {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  line-height: 1;
+}
+
+.productName {
+  margin-top: 4px;
+  font-size: ~fontSize.small;
+}
+
+.priceComponent {
+  margin-top: 7px;
+}
+
+.urgencyText {
+  margin-top: 6px;
+  font-weight: ~fontWeight.bold;
+}
+
+.priceDropped {
+  color: ~colors.mynt_20;
+}
+
+.fewLeft {
+  color: ~colors.watermelon;
+}
+
+.buttonContainer {
+  margin-top: 12px;
+  border: ~colors.grey_25 solid 1px;
+  border-radius: 2px;
+}
+
+.button {
+  background: ~colors.white;
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  letter-spacing: 0.22px;
+  padding: 9px 0;
+  line-height: 1;
+  min-height: 32px !important;
+}

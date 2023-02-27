@@ -1,0 +1,50 @@
+.phContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.ph {
+  height: 15px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+.div1 {
+  width: 127px;
+}
+
+.div2 {
+  width: 43px;
+}
+
+.div3 {
+  width: 54px;
+}
+
+.div4 {
+  width: 27px;
+}
+
+.infoContainer {
+  display: flex;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid ~colors.grey_10;
+}
+
+.infoIcon {
+  margin-right: 8px;
+  margin-top: 2px;
+  height: 13px;
+  width: 13px;
+}
+
+.infoMessage {
+  width: calc(100% - 24px);
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}

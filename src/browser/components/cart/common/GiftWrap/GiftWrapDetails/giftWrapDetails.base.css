@@ -1,0 +1,52 @@
+.header {
+  font-size: ~fontSize.large;
+  position: relative;
+  margin-bottom: 24px;
+  height: 21px;
+}
+
+.title {
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+}
+
+.header .title {
+  padding-right: 10px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+}
+
+.content {
+  padding-right: 14px;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-top: 1px solid #979797;
+}
+
+.row {
+  margin-bottom: 24px;
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry_80;
+  padding-left: 67px;
+  position: relative;
+}
+
+.row .title {
+  margin-bottom: 4px;
+  font-size: ~fontSize.medium;
+  line-height: 16px;
+}
+
+.info {
+  line-height: 15px;
+}
+
+.sprite {
+  position: absolute;
+  left: 0px;
+}

@@ -1,0 +1,276 @@
+.container {
+  padding: 12px;
+  background: ~colors.white;
+  margin-bottom: 12px;
+  font-size: ~fontSize.medium;
+}
+
+.desktopContainer {
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 4px;
+}
+
+.itemContainer {
+  background-color: ~colors.blueberry;
+  color: ~colors.white;
+  padding: 16px 0px 0px 16px;
+  border-radius: 4px;
+}
+
+.itemDetails {
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  margin-left: 12px;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding-right: 12px;
+}
+
+.title {
+  margin-top: 4px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.light;
+}
+
+.rupeeIcon {
+  fill: ~colors.white;
+}
+
+.btnContainer {
+  display: flex;
+  /* justify-content: center; */
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin-top: 16px;
+  border-top: 1px solid #ffffff1a;
+  padding: 16px 0;
+}
+
+.actionBtn {
+  padding: 0px 20px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.actionBtn:first-child {
+  border-right: 1px solid #ffffff1a;
+}
+
+.actionIcon {
+  border: 1px solid ~colors.white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: ~fontSize.icon_small;
+  margin-right: 8px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.infoContainer {
+  padding: 20px 8px 8px;
+}
+
+.infoMessage {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  white-space: pre;
+}
+
+.infoMessage:first-child {
+  margin-top: 0px;
+}
+
+.checkIcon {
+  fill: ~colors.mynt;
+  border: 1px solid ~colors.mynt;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  padding: 4px;
+  margin-right: 12px;
+}
+
+.errorInfo {
+  background-color: ~colors.salmon_50;
+  padding: 12px;
+  margin-top: 6px;
+}
+
+.modalContainer {
+  width: 100%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.desktopModal {
+  max-width: 420px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+}
+
+.modalHeader {
+  padding: 16px;
+  font-size: ~fontSize.large_xl;
+  font-weight: ~fontWeight.bold;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.modalBody {
+  font-size: ~fontSize.large;
+  background-color: ~colors.blueberry_10;
+}
+
+.modalFooter {
+  padding: 16px;
+  border-top: 1px solid ~colors.blueberry_10;
+}
+
+.cancelExchangeContainer {
+  padding: 16px;
+  background-color: ~colors.white;
+}
+
+.itemDetailInModal {
+  background-color: ~colors.blueberry_5;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.titleInModal {
+  margin-left: 16px;
+  font-size: ~fontSize.medium;
+}
+
+.cancelMsg {
+  white-space: pre-line;
+}
+
+.note {
+  background-color: ~colors.blueberry_10;
+  padding: 12px;
+  font-size: ~fontSize.medium;
+  margin-top: 12px;
+}
+
+.actionBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnNo {
+  border: 1px solid ~colors.blueberry_10;
+  background-color: ~colors.white;
+  width: calc(50% - 6px);
+  color: ~colors.blueberry;
+  border-radius: 4px;
+}
+
+.btnYes {
+  width: calc(50% - 6px);
+  border-radius: 4px;
+}
+
+.howContainer {
+  padding: 16px;
+  background-color: ~colors.white;
+}
+
+.bannerImage {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.stepsContainer {
+  font-size: ~fontSize.large;
+  padding: 0 16px 20px;
+  background-color: ~colors.white;
+}
+
+.stepCard {
+  display: flex;
+  padding-top: 24px;
+}
+
+.stepCount {
+  font-size: ~fontSize.xEnlarged;
+  color: ~colors.watermelon;
+  opacity: 0.3;
+  font-weight: ~fontWeight.bold;
+  margin-right: 32px;
+  min-width: 28px;
+  line-height: 40px;
+}
+
+.faqsContainer {
+  margin-top: 12px;
+  background-color: ~colors.white;
+  padding: 0pc 16px 24px;
+}
+
+.faqsHeader {
+  padding: 20px 0px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+  font-weight: ~fontWeight.bold;
+}
+
+.faqCard {
+  font-size: ~fontSize.medium;
+  margin-top: 20px;
+}
+
+.buttonStyle {
+  border-radius: 4px;
+}
+
+.itemInfoMessage {
+  background-color: ~colors.light_salmon;
+  padding: 12px 22px 12px 12px;
+  margin-top: 6px;
+  font-size: ~fontSize.medium;
+}
+
+.addressErrorDescription {
+  padding: 16px 20px 16px 16px;
+  font-size: ~fontSize.large;
+  border-bottom: 1px solid ~colors.blueberry_10;
+  background-color: ~colors.white;
+}
+
+.desktopModal .addressErrorDescription {
+  padding-bottom: 40px;
+}
+
+.highlightedText {
+  font-weight: ~fontWeight.bold;
+}
+
+.addressErrorCta {
+  width: 100%;
+}
+
+.addressErrorCta .cta2 {
+  margin-top: 12px;
+  border: solid 1px ~colors.blueberry_20;
+  background: ~colors.white;
+  color: ~colors.blueberry;
+}

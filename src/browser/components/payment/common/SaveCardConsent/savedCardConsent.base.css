@@ -1,0 +1,125 @@
+.header {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.large;
+  text-align: center;
+}
+
+.consentModal {
+  padding: 16px 16px 30px;
+}
+
+.caption {
+  margin: 15px 0;
+}
+
+.caption,
+.bulletinText {
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+}
+
+.bulletinText {
+  margin-top: 5px;
+}
+
+.bulletinList {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.bulletinList li::before {
+  content: '\2022';
+  color: ~colors.blueberry_20;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.linkText {
+  font-size: ~fontSize.small;
+}
+
+.linkTextUrl {
+  color: ~colors.watermelon;
+  cursor: pointer;
+}
+
+.faq {
+  font-size: ~fontSize.small;
+  margin: 15px 0;
+}
+
+.tncUrl {
+  text-decoration: underline;
+}
+
+.tnc {
+  font-size: ~fontSize.tiny_xl;
+  margin: 10px 0;
+}
+
+.container {
+  box-shadow: 0 0 8px 0 rgba(40, 44, 63, 0.1);
+  display: flex;
+  flex-direction: row;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  padding: 16px;
+}
+
+.consentGivenBtn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid ~colors.watermelon;
+  color: ~colors.white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.consentNotGivenBtn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid ~colors.blueberry_20;
+  margin-right: 8px;
+  color: ~colors.blueberry;
+  background: ~colors.white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.defaultCard {
+  transform: scale(1.6);
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 30px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.shieldDashed {
+  transform: scale(1.2);
+  margin: 0 10px;
+}
+
+.stopScroll {
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+}
+
+.desktopModalContainer {
+  top: 25%;
+  width: 25%;
+  min-width: 360px;
+}
+
+.modalContainer {
+  z-index: 14;
+}

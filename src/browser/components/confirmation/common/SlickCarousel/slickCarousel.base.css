@@ -1,0 +1,44 @@
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.paymentConatiner {
+  overflow: hidden;
+  position: relative;
+  margin-top: 5px;
+}
+
+.slides {
+  white-space: nowrap;
+  transform: translate(-100%);
+  will-change: transform;
+}
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid ~colors.blueberry_60;
+  margin-right: 4px;
+  background: ~colors.white;
+}
+
+.circleOCP {
+  width: 10px;
+  height: 10px;
+}
+
+.circlePayment {
+  width: 4px;
+  height: 4px;
+}
+
+.dots {
+  text-align: center;
+  width: 100%;
+  top: 90%;
+}
+
+.dots .circle:first-child {
+  background: ~colors.grey_50;
+}

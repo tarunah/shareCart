@@ -1,0 +1,123 @@
+/* Styles For Price Change Modal */
+
+.priceChangeContainer {
+  width: 100%;
+}
+
+.priceDropModal {
+  width: 100%;
+}
+
+.cancel {
+  width: 14px;
+  height: 14px;
+  top: 16px;
+  right: 16px;
+}
+
+.priceDropAlertContainer {
+  padding: 16px;
+  font-size: ~fontSize.medium;
+}
+
+.priceDropAlertContainer b {
+  font-weight: ~fontWeight.bold;
+}
+
+.priceDropAlertContainer h4 {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  margin: 0 0 8px 0;
+}
+
+.priceDropAlertContainer > p {
+  width: 80%;
+  padding-bottom: 16px;
+}
+
+.priceChangedProducts {
+  padding: 16px 0 0 0;
+  border-top: 1px dashed ~colors.blueberry_40;
+}
+
+.productPriceAlert {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.imgWrapper {
+  width: 33px;
+  height: 44px;
+}
+
+/* 
+    Overriding the lazy loaded component with the actual size we want, reason being we are 
+    resusing the same image url used in cart for faster loading, but the size is big, hence reducing it here
+*/
+.imgWrapper > div,
+.imgWrapper > div > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.productPriceAlert:last-child {
+  margin-bottom: 0;
+}
+
+.productInfo {
+  flex: 1 1 auto;
+  padding-left: 8px;
+}
+
+.productInfo > h4 {
+  margin: 0;
+}
+
+.priceChangeMsg {
+  display: flex;
+  align-items: center;
+}
+
+.priceDropIcon {
+  fill: ~colors.mynt;
+  margin: 2px;
+}
+
+.priceIncIcon {
+  fill: ~colors.salmon;
+  transform: rotate(180deg);
+  margin: 2px;
+}
+
+/* Styles for Price Drop Strip on Cart */
+
+.priceDropStrip {
+  background: ~colors.white;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.priceDropStrip span {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  margin-left: 4px;
+}
+
+.priceDropStrip .priceDropIcon {
+  margin-right: 10px;
+}
+
+.priceDropStrip b {
+  font-weight: ~fontWeight.bold;
+  margin-left: 2px;
+}
+
+.rupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  height: 9px;
+}

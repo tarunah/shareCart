@@ -1,0 +1,869 @@
+.moveSC {
+  color: ~colors.watermelon;
+}
+
+.priceDropIcon {
+  fill: ~colors.mynt;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+}
+
+.sellerData {
+  font-size: ~fontSize.small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 62%;
+  display: inline;
+  color: ~colors.blueberry_50;
+}
+
+.selectionIconContainer {
+  display: flex;
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+}
+
+.toolTipContainer {
+  position: absolute;
+  background-color: ~colors.blueberry;
+  color: ~colors.white;
+  font-size: ~fontSize.medium;
+  bottom: 56px;
+  left: 7px;
+  width: 220px;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.toolTipContainer + div {
+  width: 0px;
+  height: 0px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: ~colors.blueberry;
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  z-index: 10;
+}
+
+.toolTipCTA {
+  font-weight: ~fontWeight.bold;
+  margin-top: 8px;
+  float: right;
+}
+
+.sellerContainer {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+.price {
+  display: inline-block;
+  color: ~colors.blueberry;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.price.strike {
+  color: ~colors.blueberry_50;
+  padding: 0px 8px;
+}
+
+.strike .rupeeIcon {
+  fill: ~colors.blueberry_50;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.size {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 2px 8px;
+  background: ~colors.grey_10;
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  margin-right: 12px;
+  border-radius: 2px;
+  line-height: 16px;
+}
+
+.quantityHighlight {
+  background-color: ~colors.salmon_50;
+}
+
+.quantity {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 2px 8px;
+  background: ~colors.grey_10;
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  border-radius: 2px;
+  line-height: 16px;
+}
+
+.quantityValue {
+  background-color: ~colors.grey_10;
+  padding: 2px 14px;
+}
+
+.quantityAction {
+  padding: 0 8px;
+}
+
+.quantityActionDisabled {
+  color: ~colors.blueberry_40;
+}
+
+.quantityHighlight .quantityValue {
+  background-color: ~colors.salmon_05;
+}
+
+.rupeeIcon {
+  font-size: ~fontSize.small;
+  fill: ~colors.blueberry;
+}
+
+.rupeeBoldIcon {
+  margin-right: 1px;
+  height: 9px;
+}
+
+.rupeeIconTooltip {
+  composes: rupeeIcon;
+  fill: ~colors.white;
+}
+
+.returnLeftIcon {
+  margin: 0px 10px 3px 2px;
+  height: 12px;
+  width: 12px;
+  vertical-align: middle;
+}
+
+.dropDown {
+  font-size: ~fontSize.large;
+  color: ~colors.blueberry;
+  cursor: pointer;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.dimColor {
+  color: ~colors.blueberry;
+}
+
+.infoModal {
+  width: 30%;
+  top: 25%;
+  min-width: 288px;
+}
+
+.warningModal {
+  width: 374px;
+  top: 25%;
+  min-width: 288px;
+}
+
+.removeDialogContent {
+  padding: 20px 0 0 12px;
+  width: 80%;
+}
+
+.modelDialogImage {
+  float: left;
+  border: 1px solid ~colors.blueberry_10;
+}
+
+.removeDialogText {
+  margin-left: 55px;
+  padding: 0 0 0 15px;
+  min-height: 90px;
+}
+
+.freeGiftRemoveDialogText {
+  margin-left: 55px;
+  padding: 0 0 0 12px;
+  min-height: 90px;
+}
+
+.freeGiftRemoveDialogTextHeading {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  line-height: 1.2;
+}
+
+.removeDialogTextHeading {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry_90;
+  line-height: 1.2;
+}
+
+.removeDialogTextSubHeading {
+  color: ~colors.blueberry_70;
+}
+
+.removeDialogActionSC:first-child {
+  width: 32%;
+}
+
+.removeDialogActionSC:last-child {
+  width: 68%;
+  border-left: 1px solid ~colors.blueberry_20;
+}
+
+.benefitsLostDialogActionSC:first-child {
+  width: 32%;
+}
+
+.benefitsLostDialogActionSC:last-child {
+  width: 68%;
+  border-left: 1px solid ~colors.blueberry_20;
+}
+
+.inlineButton {
+  font-size: ~fontSize.small;
+  line-height: 20px;
+}
+
+.closeIcon {
+  font-size: 20px;
+  color: ~colors.blueberry_70;
+  float: right;
+  margin: 20px 20px 0px 20px;
+}
+
+.earlybird {
+  padding-top: 5px;
+  color: ~colors.orange;
+  font-weight: ~fontWeight.bold;
+  display: inline-block;
+}
+
+.urgency {
+  border: 1px solid ~colors.blueberry_30;
+  padding: 2px 8px;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  display: inline-block;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.returnInfoContainer {
+  height: 22px;
+}
+
+.returnPolicyMessage {
+  font-size: ~fontSize.small;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.returnPolicyMessage .highlight {
+  font-weight: ~fontWeight.bold;
+}
+
+.priceChangeTooltip {
+  left: -61px !important;
+}
+
+.priceChangeTooltip + div {
+  left: 15px !important;
+}
+
+.itemDiscount {
+  color: ~colors.red;
+}
+
+.itemComboDiscount {
+  margin-top: 4px;
+  color: ~colors.mynt;
+  padding-bottom: 2px;
+}
+
+.itemPersonalizedDiscount {
+  color: ~colors.blueberry_50;
+}
+
+.itemPersonalizedDiscount span {
+  text-transform: uppercase;
+}
+
+.itemCouponDiscount {
+  color: ~colors.mynt;
+  padding: 4px 0px 2px 0px;
+}
+
+.itemCouponDiscountNA {
+  padding: 4px 0px 2px 0px;
+  color: ~colors.red;
+}
+
+.comboRupeeIcon {
+  fill: ~colors.mynt;
+}
+
+.tradeRupeeIcon {
+  fill: ~colors.red;
+}
+
+.essentialTag {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: ~fontSize.small;
+  border: 1px solid ~colors.blueberry;
+  padding: 2px 8px 3px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.preOrderTag {
+  display: inline-block;
+  color: white;
+  background-color: rgba(255, 63, 108, 0.65);
+  border-radius: 10px;
+  padding: 2px 9px;
+  font-size: 9px;
+  font-weight: ~fontWeight.bold;
+}
+
+.unavailable {
+  text-decoration: line-through;
+}
+
+.availabilityMessage {
+  color: ~colors.salmon;
+  font-weight: ~fontWeight.bold;
+}
+
+.sizeNotAvailable,
+.oosMessage,
+.lowUnitCount {
+  font-size: ~fontSize.tiny_xl;
+  padding: 1px 4px;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  color: ~colors.salmon;
+  font-weight: ~fontWeight.bold;
+  border: 1px solid ~colors.salmon;
+}
+
+.styleOffersPopup {
+  padding: 16px;
+}
+
+.offerIcon {
+  margin-left: 3px;
+}
+
+.offersPopupHeading {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 11px;
+}
+
+.offerList {
+  padding-left: 16px;
+}
+
+.offerModalCancel {
+  top: 16px;
+  right: 16px;
+}
+
+.melonBold {
+  display: block;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  margin: 8px 0px 16px;
+}
+
+.listItem {
+  font-size: 13px;
+}
+
+.listItem:first-child {
+  margin-top: 11px;
+}
+
+.gotItButton {
+  padding: 10px 10px 20px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  float: right;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.gray {
+  color: ~colors.blueberry_50;
+}
+
+.strikedAmount {
+  display: inline-block;
+}
+
+.price + .strikedAmount,
+.strikedAmount + .price {
+  margin: 0px 8px;
+}
+
+.strikedAmount .rupeeIcon {
+  height: 9px;
+}
+
+.benefitsAlertText {
+  margin-bottom: 3px;
+}
+
+.benefitsLoseText {
+  font-weight: ~fontWeight.bold;
+}
+
+.rupeeIconGreen {
+  fill: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  height: 9px;
+}
+
+.itemSavingValue {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+}
+
+.rupeeIconGrey {
+  fill: ~colors.blueberry_60;
+  font-size: ~fontSize.tiny_xl;
+}
+
+.toolTipText {
+  padding: 4px;
+}
+
+.toolTipIcon {
+  fill: ~colors.blueberry_50;
+  margin: 2px 0 0 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.sellerToolTip {
+  width: 182px;
+  min-height: 52px;
+  left: -88px !important;
+  padding: 12px;
+  font-size: ~fontSize.small;
+}
+
+.tipStyle {
+  top: -6px !important;
+}
+
+.activeProduct {
+  fill: ~colors.watermelon;
+  background: ~colors.white;
+  border-radius: 2px;
+}
+
+.reduceOpacity {
+  animation: fadeIcon 0.5s;
+}
+
+@keyframes fadeIcon {
+  from {
+    fill-opacity: 1;
+  }
+
+  to {
+    fill-opacity: 0.5;
+  }
+}
+
+.inactiveProduct {
+  fill: ~colors.white;
+  stroke: ~colors.blueberry;
+  fill-opacity: 0.5;
+}
+
+.noOpacity {
+  fill-opacity: 1;
+}
+
+.invisibleBackDrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 10;
+  left: 0px;
+}
+
+.modalMobile {
+  width: 100%;
+  padding: 16px 16px 0px 16px;
+}
+
+.modalDesktop {
+  width: 360px;
+  top: 33%;
+  transform: translateY(-50%);
+  min-width: 288px;
+  padding: 16px 16px 0px 16px;
+}
+
+.freeGiftModalDesktop {
+  width: 360px;
+  top: 33%;
+  transform: translateY(-50%);
+  min-width: 288px;
+}
+
+.freeGiftModalMobile {
+  width: 100%;
+}
+
+.modalMoveOutOfBag {
+  padding: 12px 12px 0px 12px;
+}
+
+.rightButton {
+  color: ~colors.watermelon !important;
+}
+
+.modalCloseIcon {
+  width: 14px;
+  height: 14px;
+  top: 13px;
+  right: 13px;
+}
+
+.comboText {
+  margin-right: 32px;
+  height: 84px;
+}
+
+.animationContainer {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 18px;
+  left: 14px;
+}
+
+.selectionHighlight svg {
+  position: relative;
+  z-index: 2;
+}
+
+.selectionHighlight::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border: 3px solid ~colors.watermelon_faded;
+  border-radius: 100%;
+  animation-name: rippleOne;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 2;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: 1;
+}
+
+.selectionHighlight::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border: 5px solid ~colors.watermelon_50;
+  border-radius: 100%;
+  animation-name: rippleTwo;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 2;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: 1;
+}
+
+@keyframes rippleOne {
+  from {
+    opacity: 1;
+    transform: scale3d(1.4, 1.4, 1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(3, 3, 1);
+  }
+}
+
+@keyframes rippleTwo {
+  from {
+    opacity: 1;
+    transform: scale3d(1.9, 1.9, 1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(3, 3, 1);
+  }
+}
+
+.messageContainer {
+  margin-top: 4px;
+}
+
+.deliveryIconStyle {
+  height: 21px;
+}
+
+.deliveryDateContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.message {
+  color: ~colors.blueberry;
+  font-size: ~fontSize.small;
+  letter-spacing: -0.1px;
+  margin-bottom: 8px;
+  line-height: 15px;
+  white-space: pre-wrap;
+}
+
+.messageText {
+  display: inline-block;
+}
+
+.highlightedMessage {
+  font-weight: ~fontWeight.bold;
+}
+
+.speed11Highlight {
+  color: ~colors.mynt;
+}
+
+.checkIcon {
+  fill: ~colors.mynt;
+  margin-right: 8px;
+  margin-left: 5px;
+  height: 10px;
+  width: 12px;
+  vertical-align: middle;
+}
+
+.greenTruckIcon {
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+.orderByTimer {
+  color: ~colors.blueberry;
+}
+
+.serviceabilityErrorMessage {
+  color: ~colors.salmon;
+  font-size: ~fontSize.small;
+  line-height: 15px;
+  margin-top: 10px;
+  font-weight: ~fontWeight.bold;
+}
+
+@media (max-width: 350px) {
+  .sellerToolTip {
+    left: -110px !important;
+  }
+}
+
+.currencyValue {
+  display: inline-block;
+}
+
+.warningHeading {
+  margin-top: 19px;
+  margin-left: 12px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+}
+
+.warningContent {
+  padding: 20px 0 0 12px;
+  margin-right: 32px;
+  width: unset;
+}
+
+.warningButton {
+  width: 50%;
+}
+
+.warningButton:last-child {
+  border-left: unset;
+  width: 50%;
+}
+
+.removeInlineButton {
+  font-size: ~fontSize.medium;
+  line-height: 20px;
+  color: ~colors.blueberry;
+}
+
+.removeInlineButton2 {
+  font-size: ~fontSize.medium;
+  line-height: 20px;
+  color: ~colors.watermelon;
+}
+
+.warningTextSubHeading {
+  display: flex;
+  color: ~colors.blueberry_70;
+  margin-top: 13px;
+}
+
+.freeGiftWarningTextSubHeading {
+  display: flex;
+  color: ~colors.blueberry;
+  margin-top: 12px;
+}
+
+.warningIcon {
+  display: inline-block;
+  background-position: -115px -185px;
+  width: 40px;
+  height: 24px;
+  margin-right: 9px;
+  margin-top: 3px;
+}
+
+.warningDescription {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.warningTextMargin {
+  margin-left: 15px;
+}
+
+.offerAmount {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+}
+
+.cartViewsContainer {
+  display: flex;
+  margin-top: 8px;
+}
+
+.cartViewCount {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  padding-left: 2px;
+}
+
+.cartViewText {
+  font-size: ~fontSize.icon_small;
+  margin-top: 1px;
+  padding-left: 2px;
+  opacity: 0.5;
+}
+
+.previousAmount {
+  display: inline-block;
+}
+
+.giftIconContainer {
+  position: absolute;
+  z-index: 2;
+  border-radius: 4px 0px 0px 0px;
+}
+
+.giftIcon {
+  padding: 4px 0px 0px 6px;
+  position: absolute;
+}
+
+.giftIcon path {
+  stroke: ~colors.white;
+}
+
+.expressText {
+  font-style: italic;
+  font-size: ~fontSize.tiny_xl;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.grey_60;
+  margin-right: 4px;
+}
+
+.expressIcon {
+  margin-right: 2px;
+  vertical-align: top;
+}
+
+.discountStrikedAmount {
+  margin: 0 2px;
+}
+
+.mexpressPlus {
+  position: relative;
+  margin-right: 16px;
+}
+
+.mexpressPlus::after {
+  content: '';
+  border: 0.5px solid ~colors.grey_400;
+  position: absolute;
+  top: 0px;
+  left: 49px;
+  height: 100%;
+}
+
+.expressPlusIcon {
+  position: absolute;
+  bottom: 2px;
+  left: 40px;
+}
+
+.mexpressplusDeliverTime {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.mynt;
+}
+
+.orderWithinTimer {
+  font-size: ~fontSize.small;
+  margin-top: -9px;
+}
+
+.plusicon {
+  fill: ~colors.watermelon;
+}

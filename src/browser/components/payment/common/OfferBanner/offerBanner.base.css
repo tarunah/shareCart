@@ -1,0 +1,101 @@
+.offerContainer {
+  margin-top: 12px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+.hide {
+  display: none;
+}
+
+.offerSlide {
+  border-radius: 4px;
+  display: inline-block;
+  width: 100%;
+  border: solid ~colors.grey_5 1px;
+  border-radius: 2px;
+}
+
+.offerHeading {
+  height: 20px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  line-height: 20px;
+  color: ~colors.blueberry;
+  margin-bottom: 4px;
+}
+
+.offerBody {
+  white-space: normal;
+  width: 85%;
+  margin: 0;
+  float: left;
+  margin: 8px 12px 8px 12px;
+  padding-right: 2%;
+}
+
+.offerMessage {
+  font-weight: ~fontWeight.light;
+  font-size: ~fontSize.small;
+  line-height: 16px;
+  color: ~colors.grey_60;
+}
+
+.infoIcon {
+  padding: 8%;
+}
+
+.modal {
+  width: 100%;
+}
+
+.desktopModalContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 70%;
+  max-width: 400px;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+}
+
+.mobileModalContainer {
+  max-height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 26px;
+}
+
+.cancel {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_70;
+  float: right;
+}
+
+.tncHeading {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  line-height: 22px;
+  margin: 17px;
+  color: ~colors.blueberry;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.tncBody {
+  padding: 5px;
+  margin-right: 5%;
+}
+
+.mobileCard {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}

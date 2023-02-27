@@ -1,0 +1,28 @@
+.confirmationOption {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.checkIcon {
+  margin-right: 8px;
+  font-size: 20px;
+  vertical-align: text-bottom;
+}
+
+.minimizeIcon {
+  float: right;
+  font-size: 20px;
+}
+
+.checked {
+  fill: ~colors.watermelon;
+}
+
+.agreeText {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+}
+
+.selectionBlock {
+  display: inline-block;
+}

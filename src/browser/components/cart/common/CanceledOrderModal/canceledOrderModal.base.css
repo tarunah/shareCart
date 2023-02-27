@@ -1,0 +1,43 @@
+.modalContainer {
+  width: 100%;
+  padding: 18px 24px 24px 24px;
+  cursor: default;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.desktopContainer {
+  width: 360px;
+  padding: 18px 24px 24px 24px;
+  cursor: default;
+  top: 20%;
+}
+
+.cancelIcon {
+  top: 22px;
+  right: 30px;
+}
+
+.modalHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 20px;
+  color: ~colors.blueberry;
+}
+
+.modalDesc {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  line-height: 20sp;
+}
+
+.modalSubDesc {
+  margin-top: 20px;
+}
+
+.contactUS,
+.contactUS:hover {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  text-decoration: none;
+}

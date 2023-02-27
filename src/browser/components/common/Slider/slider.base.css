@@ -1,0 +1,25 @@
+.view {
+  transform: translateX(0%);
+}
+
+.viewRight {
+  transform: translateX(100%);
+}
+
+.viewLeft {
+  transform: translateX(-100%);
+}
+
+.viewLeft,
+.viewRight {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.view,
+.viewLeft,
+.viewRight {
+  transition: transform 0.5s ease;
+}

@@ -1,0 +1,33 @@
+.retryBtn {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}
+
+.cashbackInfo {
+  clear: both;
+  color: ~colors.watermelon;
+  padding: 0px;
+}
+
+.cashbackMessage {
+  clear: both;
+  color: ~colors.mynt;
+  margin-top: 12px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.cashbackError {
+  clear: both;
+  padding: 5px 0;
+  font-size: ~fontSize.small;
+}
+
+.cashbackMessageInline {
+  clear: both;
+  color: ~colors.mynt;
+  margin-top: 12px;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}

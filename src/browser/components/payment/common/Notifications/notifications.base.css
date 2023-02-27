@@ -1,0 +1,20 @@
+.heading {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.info {
+  font-size: ~fontSize.medium;
+  letter-spacing: 0.3px;
+}
+
+.infoContainer {
+  padding: 12px 18px 14px 12px;
+  margin: 10px 0px;
+  color: ~colors.blueberry_70;
+  background: ~colors.white;
+  border: 1px solid ~colors.blueberry_10;
+  border-left: 3px solid ~colors.yellow;
+  border-radius: 4px;
+  white-space: normal;
+}

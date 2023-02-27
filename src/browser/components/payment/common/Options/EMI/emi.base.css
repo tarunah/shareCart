@@ -1,0 +1,10 @@
+.emiContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+.heading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 20px;
+}

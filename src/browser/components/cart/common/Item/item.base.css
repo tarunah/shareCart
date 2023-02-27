@@ -1,0 +1,8 @@
+.item {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.item:last-child {
+  margin-bottom: 0px;
+}

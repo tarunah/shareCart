@@ -1,0 +1,54 @@
+.container {
+  background: ~colors.white;
+  margin-bottom: 10px;
+  padding: 15px 12px;
+  border: 1px solid ~colors.blueberry_10;
+  border-left: 3px solid ~colors.mynt;
+  border-radius: 4px;
+  font-size: ~fontSize.medium;
+}
+
+.title {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  padding-bottom: 2px;
+}
+
+.message {
+  padding-left: 15px;
+  text-indent: -15px;
+  list-style: none;
+  white-space: normal;
+  padding-bottom: 2px;
+}
+
+li.message::before {
+  content: '•';
+  color: ~colors.blueberry_20;
+  padding-right: 8px;
+}
+
+.more {
+  padding-left: 17px;
+  margin-top: 4px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  text-transform: capitalize;
+  color: ~colors.blue;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon {
+  width: 5px;
+  margin-left: 4px;
+  vertical-align: middle;
+  fill: ~colors.blue;
+}
+
+.link {
+  margin-left: 5px;
+  color: ~colors.blue;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}

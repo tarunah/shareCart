@@ -1,0 +1,22 @@
+.mobileModalContainer {
+  padding: 26px 16px;
+}
+
+.desktopModalContainer {
+  padding: 26px 16px;
+  max-width: 445px;
+  top: 35%;
+}
+
+.modalHeader {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 12px;
+  color: ~colors.blueberry;
+}
+
+.modalDesc {
+  font-size: ~fontSize.medium;
+  margin-bottom: 24px;
+  color: ~colors.blueberry;
+}

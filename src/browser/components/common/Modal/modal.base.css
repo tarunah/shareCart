@@ -1,0 +1,49 @@
+.container {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 13;
+}
+
+.modal {
+  background: ~colors.white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid ~colors.blueberry_20;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.halfCard {
+  background: ~colors.white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.hide {
+  display: none;
+}
+
+.cancelIcon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+:global(.ios) .iosHalfCard {
+  padding-bottom: 48px;
+}
+
+.stopScroll {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}

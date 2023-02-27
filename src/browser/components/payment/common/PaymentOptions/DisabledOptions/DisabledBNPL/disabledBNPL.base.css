@@ -1,0 +1,39 @@
+.modal {
+  top: 30%;
+  width: 30%;
+  padding: 20px;
+}
+
+.header {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: ~colors.blueberry;
+}
+
+.notAvailable {
+  font-size: ~fontSize.small;
+}
+
+.why {
+  color: ~colors.blue;
+  margin-left: 5px;
+  font-weight: ~fontWeight.bold;
+}
+
+.message {
+  font-size: ~fontSize.small;
+}
+
+.okay {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  float: right;
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 60%;
+  }
+}

@@ -1,0 +1,48 @@
+.rowContainer {
+  padding: 16px 0px;
+  border-bottom: 1px dashed ~colors.blueberry_5;
+}
+
+.rowContainer:last-child {
+  border-bottom: none;
+}
+
+.radioContainer {
+  padding: 0px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: ~fontSize.medium;
+  height: 40px;
+}
+
+.spacingInRow {
+  justify-content: space-between;
+}
+
+.imageLeft {
+  margin-right: 12px;
+}
+
+.imageRight {
+  margin-right: 0;
+}
+
+.icon {
+  margin-top: 14px;
+}
+
+.selected {
+  font-weight: ~fontWeight.bold;
+}
+
+.disabledSprite {
+  opacity: 0.5;
+}
+
+.disabledName {
+  color: ~colors.blueberry_40;
+}

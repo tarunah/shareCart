@@ -1,0 +1,122 @@
+.desktopHeader {
+  /* margin-bottom: 24px; */
+  margin: 12px 0px 24px;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry_80;
+}
+
+.desktopBodyContainer {
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.mobileHeader {
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry_80;
+}
+
+.mobileBodyContainer {
+  padding: 16px 16px 8px 16px;
+}
+
+.bodyContainer {
+  background: ~colors.white;
+  width: 100%;
+  font-size: ~fontSize.medium;
+  border-bottom: 1px solid ~colors.grey;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  font-weight: ~fontWeight.bold;
+}
+
+.icon {
+  margin-right: 16px;
+}
+
+.watermelon {
+  fill: ~colors.watermelon;
+}
+
+.pillContainer {
+  margin: 20px 0 8px 0;
+}
+
+.pill {
+  line-height: 1.15;
+  margin: 0 12px 8px 0 !important;
+}
+
+.mobileKnowMore {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  margin-left: auto;
+}
+
+.desktopKnowMore {
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.emailContainer {
+  margin-bottom: 16px;
+}
+
+.footer {
+  border-top: 1px solid ~colors.grey_5;
+  padding-top: 8px;
+  margin-bottom: 0px !important;
+}
+
+.input {
+  border: 0;
+  caret-color: ~colors.watermelon;
+  width: 44px;
+  line-height: 1.15;
+  font-weight: ~fontWeight.bold;
+  padding: 0;
+}
+
+.bodyText {
+  margin-top: 4px;
+}
+
+.inputMobile {
+  width: 86px;
+}
+
+.selectedInput {
+  color: ~colors.watermelon;
+  max-width: 44px;
+}
+
+.input::-webkit-input-placeholder {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.input:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.input:-ms-input-placeholder {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}

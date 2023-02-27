@@ -1,0 +1,20 @@
+.modelDialogImage {
+  float: left;
+  border: 1px solid ~colors.blueberry_10;
+}
+
+.modalText {
+  line-height: 17px;
+  margin-left: 63px;
+  height: 76px;
+  margin-right: 12px;
+}
+
+.buttonClass {
+  line-height: 1.15px;
+}
+
+.modalTitle {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 2px;
+}

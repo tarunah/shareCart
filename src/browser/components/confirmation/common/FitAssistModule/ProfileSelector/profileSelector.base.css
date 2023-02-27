@@ -1,0 +1,160 @@
+.profileButton {
+  border: 1px solid ~colors.blueberry_20;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: ~fontSize.medium;
+  text-align: center;
+  margin-right: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 5px 16px;
+}
+
+.selected {
+  border-color: ~colors.watermelon;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}
+
+.fadeInOut {
+  animation: fadeInOutAnim 1s;
+}
+
+.profilesBlock {
+  margin-top: 6px;
+  padding-left: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  scrollbar-width: none;
+  width: calc(100% - 80px);
+}
+
+.tip {
+  font-size: 13px;
+  text-align: center;
+  color: ~colors.blueberry_80;
+  padding: 0 28px;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.nudge {
+  color: ~colors.blueberry;
+  font-size: ~fontSize.large;
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.arrowLine {
+  display: flex;
+  align-items: flex-end;
+}
+
+.leftLine {
+  border-top: 1px solid ~colors.grey_5;
+  width: 30px;
+}
+
+.rightLine {
+  border-top: 1px solid ~colors.grey_5;
+  width: calc(100% - 42px);
+}
+
+.triangle {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  transform-origin: center center;
+  border-top: 1px solid ~colors.grey_5;
+  border-left: 1px solid ~colors.grey_5;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: -5px;
+}
+
+.inCompleteMessageBlock {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inCompleteText {
+  color: ~colors.blueberry_80;
+  margin-bottom: 4px;
+}
+
+.inCompleteProfile {
+  color: ~colors.blueberry;
+  font-weight: ~fontWeight.bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 3px;
+}
+
+.addDetails {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+}
+
+.allTaggedBlock {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.allTaggedMessage {
+  padding: 0 40px;
+}
+
+.mfaLogo {
+  transform: scale(0.6);
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.shoppingLink {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  margin-top: 10px;
+  font-size: ~fontSize.medium;
+}
+
+.disabled {
+  color: ~colors.blueberry_10;
+  border-color: ~colors.blueberry_10;
+}
+
+@keyframes fadeInOutAnim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.profileSelectorContainer {
+  min-height: 64px;
+  margin-bottom: 0;
+  padding: 10px 16px 16px;
+}
+
+.profileTagsContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.boughtFor {
+  font-size: ~fontSize.small;
+  width: 80px;
+}

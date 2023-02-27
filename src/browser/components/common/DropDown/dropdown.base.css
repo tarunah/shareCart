@@ -1,0 +1,16 @@
+.dropDown {
+  background-color: ~colors.white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.13);
+  position: absolute;
+  padding: 8px 12px 4px;
+  z-index: 15;
+}
+
+.dropDownShimmer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 14;
+}

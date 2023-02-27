@@ -1,0 +1,82 @@
+.addressLayout {
+  max-width: 1000px;
+  margin: 0 auto 24px;
+  display: flex;
+}
+
+.left {
+  width: 67.5%;
+  vertical-align: top;
+  padding-right: 35px;
+  padding-top: 12px;
+}
+
+.center {
+  border-right: 1px solid ~colors.blueberry_10;
+}
+
+.right {
+  width: 32.5%;
+  vertical-align: top;
+  padding-top: 8px;
+}
+
+.marginLeft {
+  margin-left: 16px;
+  padding-left: 0px;
+}
+
+.divider:nth-of-type(2) {
+  border-bottom: ~colors.grey_10 1px solid;
+  margin: 0px 16px 8px;
+}
+
+.specialOffer {
+  margin: 12px 0 12px 0;
+}
+
+.continueBtn {
+  margin-top: 10px;
+}
+
+.disabledBtn {
+  color: ~colors.white;
+  background: ~colors.blueberry_20 !important;
+  margin-top: 10px;
+}
+
+.notServiceableTip {
+  color: ~colors.red;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.addAddressContainer {
+  width: 450px;
+  margin: auto;
+  border: 1px solid ~colors.blueberry_10;
+  margin-top: 20px;
+  position: relative;
+}
+
+.headerClass {
+  padding-bottom: 0px;
+}
+
+.removeMargin {
+  margin-top: 0px !important;
+}
+
+.priceBlock {
+  padding-left: 16px;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+.priceBlock:first-child {
+  padding-top: 0px;
+}
+
+.notServiceableHeader {
+  margin-bottom: 16px;
+}

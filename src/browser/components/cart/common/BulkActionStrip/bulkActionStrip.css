@@ -1,0 +1,134 @@
+.mobileContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: ~fontWeight.bold;
+  padding: 0 0 0 4px;
+  color: ~colors.blueberry_80;
+  height: 24px;
+}
+
+.mobileButtonContainer {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.iconDiv {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  width: 32px;
+  justify-content: center;
+  margin-right: 9px;
+}
+
+.selectionIcon {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  width: 32px;
+  justify-content: center;
+}
+
+.desktopContainer {
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  padding: 0 12px 0 10px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  color: ~colors.blueberry;
+}
+
+.desktopButton {
+  border-top: 0px;
+  margin-left: auto;
+}
+
+.desktopActionButton {
+  width: auto;
+  margin: 0px;
+}
+
+.desktopBulkRemove {
+  color: ~colors.blueberry_80;
+  padding: 6px 24px 6px 0;
+  height: 32px;
+}
+
+.desktopBulkWishlist {
+  padding: 6px 0 6px 24px;
+  color: ~colors.blueberry_80;
+  height: 32px;
+}
+
+.message {
+  margin-left: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itemSelected {
+  margin-right: 3px;
+}
+
+.activeIcon {
+  fill: ~colors.watermelon;
+  background: ~colors.white;
+  border-radius: 2px;
+}
+
+.inActiveIcon {
+  fill: ~colors.white;
+  fill-opacity: 0.5;
+  stroke: ~colors.blueberry;
+}
+
+.confirmationTitle {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  margin-bottom: 8px;
+}
+
+.desktopTitle {
+  margin-bottom: 12px;
+}
+
+.desktopCloseIcon {
+  top: 16px;
+}
+
+.confirmationText {
+  margin-bottom: 24px;
+  font-weight: ~fontWeight.light;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+}
+
+.confirmationModalMobile {
+  width: 100%;
+  padding: 24px 16px 0px 16px;
+}
+
+.confirmationModalDesktop {
+  width: 360px;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 288px;
+  padding: 20px 12px 0px 12px;
+}
+
+.rupeeIcon {
+  fill: ~colors.blueberry_80;
+  font-size: ~fontSize.icon_small;
+  height: 9px;
+}
+
+.waterMelon {
+  color: ~colors.watermelon;
+  fill: ~colors.watermelon;
+}

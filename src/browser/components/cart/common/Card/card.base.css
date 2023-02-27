@@ -1,0 +1,30 @@
+.card {
+  text-align: left;
+  background-color: ~colors.white;
+  padding: 12px 0;
+  margin-bottom: 12px;
+}
+
+.cardHeader {
+  text-transform: capitalize;
+  font-size: ~fontSize.tiny_xl;
+  font-weight: ~fontWeight.bold;
+  letter-spacing: 1px;
+  color: ~colors.blueberry_70;
+  margin: 0 0 12px 12px;
+}
+
+.cardContents {
+  overflow-x: scroll;
+  padding-right: 12px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  background-color: transparent;
+}
+
+.cardContainer {
+  padding-top: 14px;
+  background-color: ~colors.blueberry_10;
+}

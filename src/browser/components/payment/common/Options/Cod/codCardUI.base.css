@@ -1,0 +1,34 @@
+.content {
+  margin-top: 15px;
+}
+
+.helpText {
+  font-size: ~fontSize.small;
+  margin-top: 8px;
+  color: ~colors.blueberry;
+}
+
+.infoMessage {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 30px;
+}
+
+.errorMessage {
+  color: ~colors.red;
+  margin-bottom: 5px;
+  font-weight: ~fontWeight.bold;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 50%;
+}
+
+.actionButton {
+  margin-top: 15px;
+}

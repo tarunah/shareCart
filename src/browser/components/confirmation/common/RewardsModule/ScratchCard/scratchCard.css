@@ -1,0 +1,234 @@
+.scratchWrapper {
+  position: relative;
+  border: 10px solid ~colors.white;
+  background: ~colors.white;
+  border-radius: 40px;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.addAnimations {
+  opacity: 0;
+  transform: scale(3) rotate(270deg);
+  transition: 0.5s cubic-bezier(0.64, 0.57, 0.67, 1.53) 2.5s;
+  transition-property: opacity, transform;
+  will-change: transform;
+}
+.scratchWrapper.animateScratchCard {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+.scratched {
+  border-color: ~colors.peach;
+}
+
+.border1 {
+  border-color: ~colors.blue_5;
+}
+
+.border2 {
+  border-color: ~colors.mynt_30;
+}
+
+.border3 {
+  border-color: ~colors.peach;
+}
+
+.border4 {
+  border-color: ~colors.mynt_30;
+}
+
+.border5 {
+  border-color: ~colors.grey_25;
+}
+
+.border6 {
+  border-color: ~colors.red;
+}
+
+.contentWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  will-change: transform;
+}
+
+.logo {
+  display: block;
+  height: 80px;
+  width: 80px;
+  margin: 22px auto 16px;
+}
+
+.rewardTitle {
+  font-size: ~fontSize.icon_enlarged;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  opacity: 0.9;
+  margin: 0 15px 22px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.noCoupon {
+  line-height: 38px;
+}
+
+#canvas {
+  border-radius: 32px;
+  position: relative;
+  z-index: 102;
+}
+
+/* Coupon code box */
+
+.couponBox {
+  border: 2px dashed ~colors.blueberry;
+  padding: 8px 12px;
+  position: relative;
+  width: calc(100% - 44px);
+  margin: 0 auto;
+}
+
+.couponHeading {
+  font-size: 14px;
+  color: ~colors.blueberry;
+}
+
+.couponText {
+  font-size: ~fontSize.xl;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+  text-overflow: ellipsis;
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.copy {
+  position: absolute;
+  right: 8px;
+  bottom: 9px;
+  padding: 3px 8px 4px;
+  font-size: ~fontSize.small;
+  color: ~colors.white;
+  background: ~colors.blueberry;
+  border-radius: 14px;
+  font-weight: ~fontWeight.bold;
+}
+
+.footer {
+  font-size: ~fontSize.small;
+  color: ~colors.grey_60;
+  margin: 20px auto 14px;
+  text-align: center;
+}
+
+.claimedLabel {
+  background: ~colors.green_600;
+  border-radius: 14px;
+  padding: 3px 8px 4px;
+  font-size: ~fontSize.small;
+  margin-left: 5px;
+  color: ~colors.white;
+}
+
+.claimedBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expiredLabel {
+  background: ~colors.salmon_20;
+  border-radius: 14px;
+  padding: 3px 8px 4px;
+  font-size: ~fontSize.small;
+  color: ~colors.white;
+  margin-left: 5px;
+  font-weight: ~fontWeight.bold;
+}
+
+.disableFilter {
+  filter: grayscale(100%);
+}
+
+.disableText {
+  color: ~colors.blueberry_50;
+}
+
+.borderDisable {
+  border-color: ~colors.blueberry_50;
+}
+
+.expiredText {
+  color: ~colors.salmon_20;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.svgElm {
+  position: absolute;
+  left: 50px;
+  z-index: 200;
+  right: 0;
+  margin: 0 auto;
+  top: 10px;
+}
+
+.fontBig {
+  font-size: ~fontSize.icon_enlarged;
+}
+
+.scratchWrapper.spinCard {
+  transition: none;
+  animation: scaleDown 0.3s cubic-bezier(0.65, 0, 0.35, 1) 0.5s,
+    rotate 0.3s cubic-bezier(0.32, 0, 0.67, 0) 0.8s,
+    scaleOut 0.3s cubic-bezier(0.65, 0, 0.35, 1) 1.1s,
+    resetOut 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) 1.4s;
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(0.8) rotate(0);
+  }
+  100% {
+    transform: scale(0.8) rotate(360deg);
+  }
+}
+
+@keyframes scaleOut {
+  0% {
+    transform: scale(0.8) rotate(360deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(360deg);
+  }
+}
+
+@keyframes resetOut {
+  0% {
+    transform: scale(1.1) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}

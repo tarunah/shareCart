@@ -1,0 +1,24 @@
+.container {
+  padding: 10px;
+  background: #e8faf7;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.info {
+  font-size: ~fontSize.small;
+  padding-top: 4px;
+}
+
+.rupeeIcon {
+  height: 9px;
+}
+
+.mfuCoin {
+  position: relative;
+  top: 2px;
+}

@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.optionsContainer {
+  background-color: ~colors.white;
+}
+
+.deliveryOption {
+  border-bottom: solid 1px ~colors.grey_10;
+  padding: 16px;
+}
+
+.deliveryOption:last-child {
+  border-bottom: none;
+}
+
+.radioIcon {
+  margin-top: 10px;
+}
+
+.boldRupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}

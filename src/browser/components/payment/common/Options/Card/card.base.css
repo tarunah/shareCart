@@ -1,0 +1,27 @@
+.heading {
+  font-weight: ~fontWeight.bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.actionButton {
+  margin-top: 36px;
+}
+
+.ecomContainer {
+  margin-bottom: 10px;
+}
+
+.desktopContainer {
+  margin-top: 10px;
+}
+
+.ecomText {
+  font-size: ~fontSize.medium;
+}
+
+.ecomKnowMore {
+  font-size: ~fontSize.small;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+}

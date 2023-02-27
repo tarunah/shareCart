@@ -1,0 +1,60 @@
+.fadeIn {
+  animation: fadein 1s linear forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeout 0.5s linear forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.up {
+  animation: upAnimation 0.3s linear forwards;
+}
+
+@keyframes upAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.down {
+  animation: downAnimation 0.5s linear forwards;
+}
+
+@keyframes downAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.cloneSticky {
+  position: fixed;
+  top: 0;
+}

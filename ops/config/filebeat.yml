@@ -1,0 +1,43 @@
+filebeat.prospectors:
+- type: log
+  enabled: true
+  paths:
+  enabled: true
+  paths:
+    - /myntra/nodeuser/checkoutui/releases/current/logs/pm2-checkoutui-out.log
+    - /myntra/nodeuser/checkoutui/releases/current/logs/pm2-checkoutui-err.log
+  exclude_files: ['.gz$']
+  fields:
+    log_topic: checkoutui_logs
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+queue:
+  mem:
+    events: 4096000
+    flush.min_events: 2048000
+    flush.timeout: 1s
+max_procs: 8
+processors:
+- drop_fields:
+    fields: ["beat","offset","prospector"]
+output.kafka:
+  hosts: ["pas-rabbitgraylogkafka0:9092","pas-rabbitgraylogkafka1:9092","pas-rabbitgraylogkafka2:9092"]
+  topic: '%{[fields.log_topic]}'
+  enabled: true
+  partition.round_robin:
+    reachable_only: true
+  required_acks: 1
+  compression: gzip
+  max_message_bytes: 100000000
+  channel_buffer_size: 256000
+  worker: 10
+  bulk_max_size: 2048000
+  max_message_bytes: 100000000
+  channel_buffer_size: 256000
+  worker: 10
+  bulk_max_size: 2048000
+  logging.level: info
+  logging.selectors: ["*"]
+http.enabled: true
+http.host: ${HTTP_HOST}

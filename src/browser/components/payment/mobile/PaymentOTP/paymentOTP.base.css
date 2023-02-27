@@ -1,0 +1,22 @@
+.container {
+  height: 100vh;
+  background-color: ~colors.blueberry_5;
+}
+
+.redirectToBank {
+  background-color: ~colors.white;
+  padding: 15px 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.redirectIcon {
+  position: absolute;
+  color: ~colors.blueberry_70;
+  top: 24px;
+  right: 40px;
+}
+
+.timeoutText {
+  display: none;
+}

@@ -1,0 +1,188 @@
+.attachProductContainer {
+  font-size: ~fontSize.medium;
+  line-height: 18px;
+  background: ~colors.white;
+  position: relative;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+
+.desktopContainer {
+  margin-bottom: 4px;
+  padding: 8px 0px 8px 2px;
+}
+
+.innerContainer {
+  background: ~colors.salmon_05;
+  border-radius: 4px;
+}
+
+.innerContainerApplied {
+  background: ~colors.lightmintgreen_10;
+  border-radius: 4px;
+}
+
+.attachProductIcon {
+  position: absolute;
+  left: 19px;
+  top: 15px;
+  font-size: ~fontSize.icon_large;
+  background-position: -115px -185px;
+  width: 24px;
+  height: 24px;
+}
+
+.desktopContainer .attachProductIcon {
+  position: absolute;
+  left: 5px;
+  font-size: ~fontSize.icon_large;
+}
+
+.attachProductArrowIcon {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+}
+
+.attachCoupon {
+  padding: 10px 16px 12px 52px;
+  cursor: pointer;
+}
+
+.desktopContainer .attachCoupon {
+  padding: 10px 16px 12px 35px;
+}
+
+.modalCloseIcon {
+  top: 28px;
+  right: 16px;
+}
+
+.modalWidth {
+  width: 100%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.desktopContainer .modalWidth {
+  width: 370px;
+  top: 21%;
+  cursor: default;
+}
+
+.modalHeading {
+  font-size: ~fontSize.large;
+  padding: 16px 16px 11px 16px;
+  font-weight: ~fontWeight.bold;
+  transition: box-shadow 0.5s;
+}
+
+.modalHeadingScroll {
+  box-shadow: 0 0 2px 0 ~colors.black_50;
+}
+
+.modalSubText {
+  font-size: ~fontSize.medium;
+  font-weight: normal;
+  margin-top: 8px;
+}
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: auto;
+  max-height: 430px;
+  padding-top: 16px;
+}
+
+.modalContainer {
+  width: 360px;
+  margin: auto;
+}
+
+.desktopContainer .modalContainer {
+  width: 100%;
+}
+
+.offerContainer {
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.offers {
+  border-radius: 4px;
+  width: 156px;
+  margin: 8px;
+  display: inline-block;
+  white-space: pre-line;
+  box-shadow: 0px 0px 2px 0px ~colors.black_50;
+}
+
+.offerHeader {
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+
+.offerText {
+  width: 100%;
+  text-align: center;
+  font-size: ~fontSize.small;
+  padding-right: 4px;
+  padding-left: 5px;
+  line-height: normal;
+}
+
+.myntraIcon {
+  width: 58px;
+  height: 42px;
+  margin: 15px 45px 0px 50px;
+}
+
+.offerHeaderText {
+  text-align: center;
+  font-weight: ~fontWeight.bold;
+  position: absolute;
+}
+
+.viewItem {
+  margin: 10px 0px 12px 0px;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  white-space: unset;
+}
+
+.viewItemCTA,
+.viewItemCTA:hover {
+  color: ~colors.watermelon;
+}
+
+.applied {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  margin: 10px 0px 12px 21px;
+  display: flex;
+}
+
+.appliedIcon {
+  height: 13px;
+  width: 13px;
+}
+
+.appliedText {
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.backgroundIcon {
+  z-index: 9;
+  background-position: -230px -215px;
+  width: 156px;
+  height: 90px;
+}
+
+.title {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}

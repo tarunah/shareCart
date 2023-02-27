@@ -1,0 +1,54 @@
+.addressList {
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.addressOption {
+  background-color: ~colors.white;
+  margin-bottom: 1px;
+  color: ~colors.blueberry;
+  font-size: ~fontSize.medium;
+  padding: 12px 16px;
+}
+
+.radioIcon {
+  margin-top: 4px;
+}
+
+.locationDetailsContainer {
+  background-color: ~colors.blueberry_5;
+}
+
+.locationDetailTitle {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: ~colors.white;
+}
+
+.flexDisplay {
+  display: flex;
+}
+
+.addressLocationIcon {
+  margin-top: 4px;
+  margin-right: 12px;
+  fill: ~colors.blueberry;
+  width: 26px;
+}
+
+.userInstruction {
+  color: ~colors.darkgrey;
+  font-size: ~fontSize.small;
+  padding: 8px 0 12px 16px;
+}
+
+.addLocationButtonContainer {
+  padding: 8px 16px;
+  background-color: ~colors.white;
+}
+
+.inactiveButton {
+  background-color: ~colors.blueberry_40;
+}

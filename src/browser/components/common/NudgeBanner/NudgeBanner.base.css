@@ -1,0 +1,9 @@
+.text {
+  font-size: ~fontSize.medium;
+}
+
+.cta {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+}

@@ -1,0 +1,100 @@
+.content {
+  margin-top: 15px;
+}
+
+.mobileNumberHeading {
+  font-size: ~fontSize.medium;
+  margin-bottom: 16px;
+}
+
+.extension {
+  color: ~colors.blueberry_30;
+  font-size: ~fontSize.medium;
+}
+
+.input {
+  border: none;
+  margin-left: 5px;
+  width: 80%;
+  font-size: ~fontSize.medium;
+}
+
+.input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: ~colors.blueberry_30;
+}
+
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: ~colors.blueberry_30;
+}
+
+.input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: ~colors.blueberry_30;
+}
+
+.input:-moz-placeholder {
+  /* Firefox 18- */
+  color: ~colors.blueberry_30;
+}
+
+.inputError {
+  border: 1px solid ~colors.red;
+}
+
+.rupeeIcon {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.amount {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  margin-top: 12px;
+}
+
+.tncModal {
+  top: 10%;
+  height: 80%;
+  width: 420px;
+  padding: 30px;
+}
+
+.error {
+  margin-top: 4px;
+  color: ~colors.red;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+}
+
+.confirmContainer {
+  background-color: ~colors.blueberry_5;
+  padding: 12px;
+  font-size: ~fontSize.medium;
+  border-radius: 4px;
+}
+
+.mobileNumberInput {
+  border: 1px solid ~colors.blueberry_30;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+}
+
+.actionButton {
+  margin-top: 15px;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border: 1px solid ~colors.blueberry_10;
+  border-radius: 50%;
+}
+
+.lowSRMessage {
+  margin-top: 4px;
+}

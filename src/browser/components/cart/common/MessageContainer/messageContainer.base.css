@@ -1,0 +1,189 @@
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 12px 16px;
+  text-align: left;
+  line-height: ~fontSize.medium;
+  font-size: ~fontSize.medium;
+  background: ~colors.white;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.messageText {
+  word-break: break-word;
+  display: flex;
+  align-items: center;
+}
+
+.highlightText {
+  font-weight: ~fontWeight.bold;
+  margin-left: 4px;
+}
+
+.nonServiceableIcon {
+  background-position: -665px -80px;
+  width: 26px;
+  height: 20px;
+  margin-right: 12px;
+  min-width: 26px;
+  margin-top: -4px;
+}
+
+.priceChangeIcon {
+  margin-right: 12px;
+  min-width: 17px;
+  margin-top: 2px;
+}
+
+.oosIcon {
+  margin-right: 12px;
+  min-width: 17px;
+  margin-top: -2px;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.btnClassName {
+  color: ~colors.watermelon;
+  font-size: ~fontSize.small;
+  background: none;
+  padding: 0;
+  margin-right: 32px;
+}
+
+.priceDropIcon {
+  fill: ~colors.mynt;
+  margin-right: 12px;
+}
+
+.rupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  height: 9px;
+}
+
+.viewDetails {
+  color: ~colors.watermelon;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin-left: auto;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.combinedMessageContainer {
+  font-size: ~fontSize.medium;
+  background: ~colors.white;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+
+.combinedMessageStrip {
+  background-color: ~colors.salmon_05;
+  padding: 8px 12px;
+  border: 1px solid ~colors.salmon;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobileModalContainer {
+  width: 100%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+}
+
+.desktopModalContainer {
+  max-width: 441px;
+  max-height: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+}
+
+.modalHeader {
+  padding: 18px 16px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  background-color: ~colors.white;
+}
+
+.priceDropContainer {
+  background-color: ~colors.white;
+  margin-bottom: 8px;
+}
+
+.priceDropHeader {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+}
+
+.priceDropBody {
+  padding: 8px 0px 20px 0px;
+}
+
+.priceDropCard {
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  background: white;
+}
+
+.priceDropCardDetails {
+  margin-left: 8px;
+}
+
+.priceDropInfo {
+  display: flex;
+  align-items: center;
+  white-space: pre-wrap;
+}
+
+.priceDropInfoIcon {
+  fill: ~colors.mynt;
+}
+
+.priceChangeInfoIcon {
+  fill: ~colors.salmon;
+  transform: rotate(180deg);
+}
+
+@media (min-width: 480px) {
+  .container,
+  .priceDropContainer {
+    border-radius: 4px;
+    border: 1px solid ~colors.blueberry_10;
+    margin-bottom: 8px;
+  }
+
+  .combinedMessageContainer {
+    padding: 0px;
+    margin-bottom: 8px;
+    background-color: transparent;
+  }
+
+  .combinedMessageStrip {
+    justify-content: flex-start;
+  }
+}

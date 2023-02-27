@@ -1,0 +1,373 @@
+.couponsTitle {
+  color: ~colors.blueberry_70;
+  text-transform: uppercase;
+}
+
+.applyCouponContainer {
+  margin-bottom: 8px;
+  padding: 16px 16px 12px 16px;
+  background-color: ~colors.white;
+}
+
+.couponsTitleHighlighted {
+  background-color: ~colors.grey_10;
+  margin-bottom: 5px;
+}
+
+.textInputContainer {
+  position: relative;
+  height: 44px;
+  font-size: ~fontSize.medium;
+  box-sizing: border-box;
+  padding-top: 10px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.textInputContainer .textInput {
+  caret-color: ~colors.watermelon;
+  padding: 0;
+  border: none;
+  width: 75%;
+}
+
+.textInputContainer .applyButton {
+  position: absolute;
+  top: 11px;
+  right: 16px;
+  font-size: ~fontSize.medium;
+  color: ~colors.watermelon_50;
+  font-weight: ~fontWeight.bold;
+  letter-spacing: 1px;
+}
+
+.textInputContainer .enabled {
+  color: ~colors.watermelon;
+}
+
+.errorMessage {
+  text-align: left;
+  color: ~colors.salmon;
+  font-size: ~fontSize.small;
+  min-height: 20px;
+}
+
+.noCouponMessage {
+  padding: 50px 15px;
+  color: ~colors.blueberry_80;
+  text-align: center;
+}
+
+.loaderContainer {
+  position: relative;
+}
+
+.loaderInContainer {
+  position: absolute;
+}
+
+.savingsMessage {
+  height: 40px;
+  padding: 2px 8px 0px 45px;
+  border: 0;
+  background: ~colors.white;
+  width: 40%;
+  float: left;
+}
+
+.savingsMessage .message {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  color: ~colors.blueberry_70;
+  text-align: left;
+}
+
+.savingsMessage .price {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+}
+
+.boldRupeeIcon {
+  margin-right: 1px;
+}
+
+.bannerContainer {
+  background-color: ~colors.amour_90;
+  height: 90px;
+  padding-top: 6px;
+  padding-left: 21px;
+  margin-bottom: 8px;
+}
+
+.bannerContainer div {
+  display: inline-block;
+}
+
+.bannerContent {
+  position: absolute;
+  top: 0;
+  margin-top: 24px;
+  margin-left: 23px;
+  width: 90%;
+}
+
+.bannerContent .boldContent {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  margin-bottom: 4px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.bannerContainer .message {
+  font-size: ~fontSize.small;
+  width: 90%;
+}
+
+.scroll {
+  position: relative;
+}
+
+.arrowIcon {
+  fill: ~colors.watermelon;
+  margin-left: 8px;
+}
+
+.notifyActionDiv {
+  display: inline-block;
+  max-height: 50px;
+  vertical-align: middle;
+  padding: 11px 8px;
+  right: 0;
+  position: absolute;
+}
+
+.retryButton {
+  border: none;
+  background: transparent;
+  font-size: ~fontSize.medium;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  width: auto;
+}
+
+.retryTextContainer {
+  width: 74%;
+  font-size: ~fontSize.medium;
+  color: ~colors.white;
+  text-align: justify;
+  position: relative;
+  display: inline-block;
+  padding: 12px;
+}
+
+.potentialCouponSectionHeader {
+  padding-left: 8px;
+  color: ~colors.blueberry_80;
+  text-align: left;
+  margin: 16px 0px 8px 16px;
+}
+
+.moreOffers {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+@media (min-width: 480px) {
+  .retryMainContainer {
+    left: 0;
+    right: 0;
+    width: 85%;
+    bottom: 26%;
+    max-width: 320px;
+    margin: auto;
+    position: fixed;
+    background: ~colors.blueberry;
+    border-radius: 4px;
+  }
+
+  .applyCouponContainer {
+    margin-bottom: 8px;
+    padding: 24px 24px 16px 24px;
+    background-color: ~colors.white;
+  }
+
+  .couponsPageContainer {
+    background: ~colors.blueberry_5;
+    height: calc(100% - 120px);
+    overflow: auto;
+  }
+
+  .formContainer {
+  }
+
+  .couponsTitle {
+    padding: 10px 20px;
+    font-size: ~fontSize.medium;
+  }
+
+  .textInputContainer {
+    border: 1px solid ~colors.grey_20;
+    padding: 11px 16px 14px;
+  }
+
+  .enabledTextInput {
+    border-color: ~colors.blueberry;
+  }
+
+  .textInputError {
+    border: 1px solid ~colors.salmon;
+    padding: 11px 16px 14px;
+  }
+
+  .errorMessage {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .couponsContainer {
+    overflow: none;
+  }
+
+  .loaderContainer {
+    min-height: 137px;
+  }
+
+  .stickyButton {
+    background: ~colors.white;
+    box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.15);
+    border-top: 0 solid ~colors.grey_20;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .viewApplicable,
+  .viewApplicable:hover {
+    display: flex;
+    align-items: center;
+    color: ~colors.watermelon;
+    size: ~fontSize.small;
+    font-weight: ~fontWeight.bold;
+    margin-top: 12px;
+  }
+
+  .errorPadding {
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .retryMainContainer {
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    width: 85%;
+    margin: auto;
+    position: fixed;
+    background: ~colors.blueberry_90;
+    border-radius: 4px;
+  }
+
+  .formContainer {
+    background: ~colors.white;
+    border-radius: 4px;
+  }
+
+  .couponsTitle {
+    padding: 15px 0px 8px 16px;
+    font-size: ~fontSize.small;
+  }
+
+  .textInputContainer {
+    border: 1px solid ~colors.grey_20;
+    padding: 11px 16px 12px 12px;
+  }
+
+  .enabledTextInput {
+    border-color: ~colors.blueberry;
+  }
+
+  .textInputError {
+    border: 1px solid ~colors.salmon;
+    padding: 11px 16px 12px 12px;
+  }
+
+  .errorMessage {
+    margin-top: 4px;
+  }
+
+  .couponsContainer {
+    overflow: none;
+  }
+
+  .loaderContainer {
+    min-height: 133px;
+  }
+
+  .stickyButton {
+    background: ~colors.white;
+    box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.15);
+    border-top: 0 solid ~colors.grey_20;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .viewApplicable,
+  .viewApplicable:hover {
+    position: relative;
+    color: ~colors.watermelon;
+    size: ~fontSize.small;
+    font-weight: ~fontWeight.bold;
+    margin-top: 12px;
+  }
+
+  .bannerContent {
+    position: absolute;
+    top: 0;
+    margin-top: 19px;
+    margin-left: 20px;
+    width: 70%;
+  }
+
+  .savingsMessage {
+    padding: 2px 8px 0px 28px;
+    border: 0;
+    background: ~colors.white;
+    width: 40%;
+    float: left;
+  }
+}
+
+@media (max-width: 320px) {
+  .bannerContainer {
+    background-color: ~colors.amour_90;
+    height: 90px;
+    padding-top: 6px;
+    padding-left: 12px;
+    margin-bottom: 8px;
+  }
+
+  .bannerContent {
+    position: absolute;
+    top: 0;
+    margin-top: 19px;
+    margin-left: 20px;
+    width: 73%;
+  }
+
+  .savingsMessage {
+    height: 50px;
+    padding: 5px 8px 0px 2px;
+    border: 0;
+    background: ~colors.white;
+    width: 40%;
+    float: left;
+  }
+}

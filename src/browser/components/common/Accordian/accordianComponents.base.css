@@ -1,0 +1,69 @@
+.tabBlock {
+  border-bottom: 1px solid ~colors.blueberry_10;
+  background-color: ~colors.white;
+}
+
+.tabBlock:last-child {
+  border-bottom: 0;
+}
+
+.selectedTabBlock {
+  box-shadow: 0px 0px 6px 0px ~colors.blueberry_50;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.selectedTabBlock:first-child {
+  margin-top: 0;
+}
+
+.selectedTabBlock:last-child {
+  margin-bottom: 0;
+}
+
+.tab {
+  position: relative;
+  padding: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: ~colors.blueberry;
+}
+
+.tabOrderReview {
+  position: relative;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  font-size: ~fontSize.medium;
+  cursor: pointer;
+  color: ~colors.blueberry;
+  height: 76px;
+}
+
+.content {
+  padding: 8px 24px 24px;
+}
+
+.contentOrderReview {
+  padding: 8px 24px;
+}
+
+.icon {
+  position: absolute;
+  top: 24px;
+  right: 22px;
+}
+
+.iconOrderReview {
+  position: absolute;
+  top: 33.5px;
+  right: 17.5px;
+}
+
+.selectedTabBlock .tabLabel {
+  font-weight: ~fontWeight.bold;
+}
+
+.disabledTabLabel {
+  color: ~colors.blueberry_40;
+}

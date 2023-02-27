@@ -1,0 +1,77 @@
+.mainContainer {
+  min-height: 600px;
+  position: relative;
+  background-color: ~colors.white;
+}
+
+.subContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 400px;
+  text-align: center;
+}
+
+.emptyText {
+  text-align: center;
+  font-size: 20px;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 2px;
+}
+
+.emptyDesc {
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry_60;
+}
+
+.addFromWishlist {
+  text-align: center;
+  margin-top: 25px;
+  font-size: ~fontSize.medium;
+}
+
+.addFromWishlist .wishlistButton {
+  background: white;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  border: 1px solid ~colors.watermelon;
+  display: inline-block;
+}
+
+.emptyBagImage {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    min-height: 380px;
+  }
+
+  .subContainer {
+    height: 260px;
+  }
+}
+
+.addFromWishlist .continueShoppingButton {
+  background: ~colors.watermelon;
+  display: inline-block;
+}
+
+.marginTop {
+  margin-top: 30px;
+}
+
+:global(.android) .addFromWishlist,
+:global(.ios) .addFromWishlist {
+  display: none;
+}
+
+:global(.android) .mainContainer,
+:global(.ios) .mainContainer {
+  min-height: 310px;
+}

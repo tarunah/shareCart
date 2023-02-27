@@ -1,0 +1,25 @@
+.errorBlock {
+  position: relative;
+  background-color: ~colors.blueberry_5;
+  padding: 15px 15px 15px 40px;
+  border-radius: 4px;
+}
+
+.errorIcon {
+  position: absolute;
+  fill: ~colors.salmon;
+  left: 12px;
+  top: 18px;
+}
+
+.heading {
+  display: inline-block;
+  color: ~colors.salmon;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: ~fontSize.medium;
+  display: inline;
+}

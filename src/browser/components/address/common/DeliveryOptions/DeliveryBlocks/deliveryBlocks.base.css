@@ -1,0 +1,66 @@
+.deliveryOption {
+}
+
+.title {
+  font-weight: ~fontWeight.bold;
+}
+
+.highlight {
+  color: ~colors.mynt;
+  margin-left: 8px;
+}
+
+.specialOffer {
+  font-weight: ~fontWeight.bold;
+  color: #ff905a;
+  padding-left: 5px;
+  font-size: ~fontSize.small;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.tooltipInfoIcon {
+  position: relative;
+  top: 1px;
+}
+
+.toolTipText {
+  padding: 5px;
+  width: 200px;
+  left: initial;
+  bottom: 26px;
+  right: -25px;
+}
+
+.rupeeIcon {
+  font-size: 11px;
+  height: 9px;
+}
+
+.boldRupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.tryNBuyInfo {
+  color: ~colors.salmon;
+  margin-top: 8px;
+}
+
+.festive {
+  color: ~colors.mynt;
+  font-weight: ~fontWeight.bold;
+  font-size: 13px;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.save {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.mynt;
+  fill: ~colors.mynt;
+}

@@ -1,0 +1,334 @@
+.value {
+  float: right;
+}
+
+.row {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+
+.bankDiscount {
+  margin: 12px 0px;
+  line-height: 16px;
+}
+
+.discount {
+  color: ~colors.mynt;
+}
+
+.discount .icon {
+  fill: ~colors.mynt;
+}
+
+.hideShow {
+  margin-left: 5px;
+  font-weight: ~fontWeight.bold;
+  text-transform: uppercase;
+}
+
+.action {
+  font-size: ~fontSize.medium;
+  color: ~colors.watermelon;
+  cursor: pointer;
+}
+
+.total {
+  font-weight: ~fontWeight.bold;
+  font-size: 15px;
+  padding-top: 16px;
+  border-top: 1px solid ~colors.blueberry_10;
+  color: ~colors.blueberry_90;
+  line-height: 16px;
+}
+
+.icon {
+  height: 9px;
+}
+
+.total .icon {
+  height: 10px;
+}
+
+.code {
+  color: ~colors.blueberry;
+}
+
+.toolTipInfo {
+  padding: 10px;
+  width: 290px;
+  left: -91px;
+}
+
+.toolTipIcon {
+  position: absolute;
+  top: 2px;
+  margin-left: 2px;
+}
+
+.striked {
+  text-decoration: line-through;
+}
+
+.halfCardWidth {
+  width: 100%;
+}
+
+.spaceRight {
+  padding-right: 4px;
+}
+
+.taxModal {
+  top: 20%;
+  width: 370px;
+}
+
+.taxHeader {
+  font-weight: ~fontWeight.bold;
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.taxTitle {
+  font-size: ~fontSize.large;
+  margin-bottom: 20px;
+}
+
+.taxRow {
+  margin-top: 10px;
+}
+
+.productName {
+  text-overflow: ellipsis;
+  width: 60%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.taxByProduct {
+  padding: 0px 20px 20px;
+  overflow: scroll;
+  max-height: 230px;
+}
+
+.infoIcon {
+  position: relative;
+  top: 3px;
+  margin: 0 0 1px 1px;
+  margin-left: 4px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.couponModal {
+  top: 20%;
+  width: 360px;
+}
+
+.couponHeader {
+  padding: 27px 0 26px 24px;
+  border-bottom: 1px solid ~colors.blueberry_10;
+}
+
+.couponTitle {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+}
+
+.couponsListContainer {
+  padding: 12px 24px 24px 24px;
+  overflow: auto;
+  max-height: 230px;
+}
+
+.couponRow {
+  margin-top: 12px;
+}
+
+.closeIcon {
+  top: 28px;
+  font-weight: ~fontWeight.bold;
+}
+.loginImage {
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.loginBlock {
+  margin-top: 5px;
+  background-color: ~colors.blueberry_5;
+  padding: 8px 4px;
+  border-radius: 4px;
+}
+
+.loginText {
+  display: inline-block;
+  width: 80%;
+}
+
+.loginLink {
+  color: ~colors.watermelon;
+  cursor: pointer;
+  font-weight: ~fontWeight.bold;
+}
+
+.loginLink:hover {
+  color: ~colors.watermelon;
+}
+
+.toolTipBankInfo {
+  padding: 8px 12px 12px;
+  width: 197px;
+  left: -91px;
+}
+
+.toolTipBankInfo .content {
+  font-size: ~fontSize.small;
+  line-height: 15px;
+}
+
+.toolTipBankInfo .title {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  line-height: 15px;
+  margin-bottom: 4px;
+}
+
+.infoTextContainer {
+  display: inline-block;
+}
+
+.infoModalMobile {
+  width: 100%;
+  color: ~colors.blueberry;
+  cursor: default;
+}
+
+.infoModalDesktop {
+  width: 360px;
+  color: ~colors.blueberry;
+  top: 20%;
+  cursor: default;
+}
+
+.abuserModal {
+  width: 360px;
+  color: ~colors.blueberry;
+  top: 10%;
+  cursor: default;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.infoModalCloseIcon {
+  top: 16px;
+  right: 16px;
+}
+
+.infoModalHeader {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  padding: 16px;
+}
+
+.infoModalBody {
+  margin: 8px 16px 40px;
+  padding: 16px;
+  background-color: ~colors.grey_10;
+  border-radius: 4px;
+  font-weight: ~fontWeight.light;
+  font-size: ~fontSize.medium;
+}
+
+.infoBodyTitle {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 12px;
+}
+
+.infoFaqs {
+  border-bottom: 1px solid ~colors.grey_20;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  margin-top: 24px;
+}
+
+.infoFaqsAbuser {
+  margin-bottom: 8px;
+  padding: 11px 0px 0px 16px;
+}
+
+.termsofUse {
+  padding: 0px 0px 26px 16px;
+}
+
+.infoLinks {
+  color: ~colors.watermelon;
+  cursor: pointer;
+  font-weight: ~fontWeight.bold;
+}
+
+.infoLinks:hover,
+.infoLinks:focus {
+  color: ~colors.watermelon;
+  text-decoration: none;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .toolTipInfo {
+    width: 280px;
+  }
+
+  .abuserModal {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: ~colors.blueberry;
+    cursor: default;
+    top: auto;
+    max-height: 75%;
+    overflow: auto;
+  }
+
+  .taxModal {
+    top: auto;
+    width: 100%;
+    bottom: 0px;
+    position: absolute !important;
+    border-radius: 0px !important;
+  }
+
+  .couponModal {
+    top: auto;
+    width: 100%;
+    bottom: 0px;
+    position: absolute !important;
+    border-radius: 0px !important;
+  }
+
+  .closeIcon {
+    top: 18px !important;
+  }
+
+  .couponHeader {
+    padding: 16px;
+    border-bottom: 1px solid ~colors.blueberry_10;
+  }
+
+  .couponsListContainer {
+    padding: 4px 16px 16px 16px;
+  }
+
+  .loginImage {
+    vertical-align: bottom;
+  }
+}
+
+:global(.ios) .taxModal {
+  top: 20%;
+  width: 90%;
+  position: relative !important;
+  border-radius: 4px !important;
+}

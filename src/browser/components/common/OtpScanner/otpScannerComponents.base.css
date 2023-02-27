@@ -1,0 +1,173 @@
+.scanContainer {
+  text-align: center;
+  background-color: ~colors.white;
+}
+
+.desktopScanContainer {
+  padding: 22px 0;
+}
+
+.mobileScanContainer {
+  padding: 24px 40px;
+}
+
+.scanBlock {
+  display: inline-block;
+  max-width: 296px;
+}
+
+.amountPayable {
+  margin-bottom: 8px;
+  padding: 16px;
+  font-size: ~fontSize.medium;
+  text-align: center;
+  background-color: ~colors.white;
+}
+
+.otpImage {
+  display: block;
+  margin: auto;
+}
+
+.amountPayableDesktop {
+  font-size: ~fontSize.large;
+}
+
+.rupeeIcon {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.amountValue {
+  font-weight: ~fontWeight.bold;
+}
+
+.otpScannerHeading {
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+}
+
+.otpScannerDesc {
+  font-size: ~fontSize.medium;
+  margin-top: 8px;
+}
+
+.otpInput {
+  padding: 10px;
+  border: 1px solid ~colors.blueberry_60;
+  margin-top: 16px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large_xl;
+}
+
+.otpInput::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.light;
+}
+
+.otpInput::-moz-placeholder {
+  /* Firefox 19+ */
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.light;
+}
+
+.otpInput:-ms-input-placeholder {
+  /* IE 10+ */
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.light;
+}
+
+.otpInput:-moz-placeholder {
+  /* Firefox 18- */
+  color: ~colors.blueberry_50;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.light;
+}
+
+.scanContainer .sendButton {
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 16px;
+  width: 100%;
+  display: inline-block;
+}
+
+.otpScannerButton {
+  margin-top: 16px;
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+  color: ~colors.watermelon;
+}
+
+.resendAttemptsText {
+  font-size: ~fontSize.small;
+}
+
+.resendAllAttemptsText {
+  margin-top: 16px;
+  font-size: ~fontSize.medium;
+}
+
+.sendButton.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.timerBlock {
+  margin: auto;
+  margin-top: 16px;
+  font-size: ~fontSize.medium;
+}
+
+.error {
+  font-size: ~fontSize.small;
+  color: ~colors.red;
+  margin-top: 5px;
+}
+
+.partnerTextBlock {
+  margin-top: 56px;
+}
+
+.partnerTextBlockDesktop {
+  text-align: center;
+  margin-top: 34px;
+}
+
+.partnerTextBlockMobile {
+  text-align: left;
+}
+
+.secureIcon {
+  transform: scale(0.8);
+  margin-right: 8px;
+}
+
+.partnerTextBlockDesktop .secureIcon {
+  margin-bottom: 16px;
+}
+
+.partnerTextBlockDesktop .partnerTextContent {
+  padding: 0 15px;
+}
+
+.partnerTextBlockMobile .partnerTextContent {
+  display: inline-block;
+  width: 83%;
+  text-align: left;
+}
+
+@media (max-width: 371px) {
+  .secureIcon {
+    vertical-align: super;
+  }
+}

@@ -1,0 +1,27 @@
+.actions {
+  border-top: 1px solid ~colors.blueberry_10;
+}
+
+.action {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  margin: 12px 0 12px;
+}
+
+.action:last-child {
+  border-left: 1px solid ~colors.blueberry_20;
+}
+
+.actionButton {
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_70;
+  padding: 0px;
+  height: 20px;
+  font-size: ~fontSize.small;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

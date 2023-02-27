@@ -1,0 +1,13 @@
+.container {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid ~colors.salmon;
+  background: ~colors.salmon_50;
+  line-height: 15px;
+}
+
+.button {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  margin-top: 12px;
+}

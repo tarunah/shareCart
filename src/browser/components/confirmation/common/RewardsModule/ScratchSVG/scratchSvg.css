@@ -1,0 +1,9 @@
+.svgWrapper path {
+  stroke-dashoffset: 320.18280029296875px;
+  stroke-dasharray: 320.18280029296875px;
+  transition: stroke-dashoffset 1s linear 0s;
+}
+
+.svgWrapper.active path {
+  stroke-dashoffset: 0;
+}

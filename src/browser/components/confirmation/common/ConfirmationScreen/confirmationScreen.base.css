@@ -1,0 +1,12 @@
+.confirmationComp {
+  overflow-x: hidden;
+}
+
+.invisible {
+  display: none;
+}
+
+.footer {
+  margin-top: 0;
+  border-top: 16px solid ~colors.blueberry_5;
+}

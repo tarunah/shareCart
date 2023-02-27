@@ -1,0 +1,108 @@
+.addressDetail {
+  margin-top: 12px !important;
+}
+
+.block {
+  border: 1px solid ~colors.blueberry_10;
+  margin-bottom: 8px;
+  vertical-align: top;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.innerBlock {
+  padding: 19px 16px 0 48px;
+}
+
+.block:hover {
+  border: 1px solid ~colors.blueberry_20;
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
+}
+
+.addBlock:hover {
+  border: 1px solid ~colors.blueberry_20;
+}
+
+.block.notServiceable:hover {
+  box-shadow: 0 0 8px rgba(241, 101, 101, 0.4);
+}
+
+.serviceable {
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.2);
+}
+
+.notServiceable {
+  border: 1px solid ~colors.salmon;
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.2);
+}
+
+.serviceable:hover {
+  box-shadow: 0 0 5px rgba(40, 44, 63, 0.15);
+}
+
+.notServiceable:hover {
+  border: 1px solid ~colors.salmon;
+  box-shadow: 0 0 5px rgba(40, 44, 63, 0.15);
+}
+
+.radioIcon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.serviceable .radioIcon {
+  fill: ~colors.watermelon;
+}
+
+.notServiceable .radioIcon {
+  fill: ~colors.salmon;
+}
+
+.btns {
+  position: relative;
+  margin: 16px 0 16px 0;
+}
+
+.remove {
+  float: left;
+  width: 80px;
+  color: ~colors.blueberry;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  letter-spacing: 0.5px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid ~colors.blueberry;
+  border-radius: 4px;
+  padding: 6.5px 16px;
+}
+
+.edit {
+  width: 58px;
+  color: ~colors.blueberry;
+  text-transform: uppercase;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  letter-spacing: 0.5px;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 16px;
+  border: 1px solid ~colors.blueberry;
+  border-radius: 4px;
+  padding: 6.5px 16px;
+}
+
+.error {
+  color: ~colors.salmon;
+  font-size: ~fontSize.medium;
+  margin-top: 16px;
+}
+
+.nudgeContainer {
+  padding: 12px 0px 12px 48px;
+  width: 100%;
+  background-color: ~colors.green_20;
+}

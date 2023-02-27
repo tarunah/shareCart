@@ -1,0 +1,92 @@
+.sellerBox {
+  border: 1px solid ~colors.blueberry_20;
+  margin-bottom: 12px;
+  min-height: 62px;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-size: ~fontSize.medium;
+  position: relative;
+}
+
+.radioButtonSeller {
+  position: relative;
+}
+
+.seller {
+  margin-left: 28px;
+}
+
+.radioIcon {
+  position: absolute;
+  top: 23px;
+}
+
+.selectedRadio {
+  fill: ~colors.watermelon;
+}
+
+.uncheckedRadio {
+  fill: ~colors.blueberry;
+}
+
+.selectedText {
+  font-weight: ~fontWeight.bold;
+}
+
+.button {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  position: absolute;
+  height: 32px;
+  width: 113px;
+}
+
+.unCheckedButton {
+  padding: 8px 0;
+  border-radius: 4px;
+  line-height: initial;
+  min-height: 32px;
+}
+
+.checkedButton {
+  padding: 8px 12px;
+  text-align: center;
+  display: flex;
+  line-height: initial;
+}
+
+.selectedCheckboxIcon {
+  border-radius: 14px;
+  fill: ~colors.mynt;
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  .selectedText {
+    max-width: 62%;
+  }
+
+  .priceContainer {
+    max-width: 62%;
+  }
+}
+
+@media (max-width: 320px) {
+  .button {
+    width: 90px;
+    right: 8px;
+  }
+
+  .checkedButton {
+    padding: 8px 2px;
+  }
+
+  .selectedCheckboxIcon {
+    margin-right: 5px;
+  }
+
+  .sellerBox {
+    padding-right: 8px;
+  }
+}

@@ -1,0 +1,55 @@
+.cancelConfirmModal {
+  width: 22%;
+  top: calc(50% - 70px);
+  min-width: 312px;
+  padding: 16px 18px 14px 16px;
+  font-size: ~fontSize.medium;
+}
+
+.cancelConfirmModalHeader {
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 8px;
+}
+
+.cancelConfirmModalDesc {
+  margin-bottom: 14px;
+}
+
+.cancelConfirmModalButtonGroup {
+  float: right;
+}
+
+.cancelConfirmModal .cancelConfirmModalButton {
+  display: inline-block;
+  background-color: ~colors.white;
+  color: ~colors.watermelon;
+  letter-spacing: 0px;
+}
+
+.cancelConfirmModalButton.firstButton {
+  margin-right: 16px;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.separator {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: ~fontSize.small;
+}
+
+.separatorLine {
+  margin: 0 5px;
+  color: ~colors.blueberry_20;
+}
+
+.bankRedirectHeading {
+  font-size: ~fontSize.medium;
+}
+
+.bankRedirectDesc {
+  font-size: ~fontSize.small;
+}

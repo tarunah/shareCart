@@ -1,0 +1,88 @@
+.modal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+.mainContent {
+  padding: 15px 15px 0;
+}
+
+.modalTitle {
+  margin-bottom: 20px;
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+}
+
+.textInput {
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid ~colors.blueberry_20;
+  font-size: ~fontSize.medium;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.genderHeader {
+  margin: 20px 0 10px;
+  font-size: ~fontSize.large;
+}
+
+.genderLabel {
+  margin-right: 24px;
+}
+
+.radioText {
+  font-size: ~fontSize.large;
+  color: ~colors.blueberry;
+}
+
+.autoSelectGender {
+  color: ~colors.blueberry_50;
+}
+
+.autoSelectText {
+  margin-left: 7px;
+  font-style: italic;
+}
+
+.radioButton {
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  font-size: ~fontSize.large;
+}
+
+.selectedButton {
+  color: ~colors.mynt;
+}
+
+.buttons {
+  margin-top: 18px;
+}
+
+.modalButton {
+  margin: 0;
+  line-height: 26px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modalButton:first-child {
+  width: 40%;
+}
+
+.modalButton:last-child {
+  width: 60%;
+}
+
+.save {
+  color: ~colors.blue;
+}
+
+.error {
+  color: ~colors.red;
+  font-size: ~fontSize.small;
+}

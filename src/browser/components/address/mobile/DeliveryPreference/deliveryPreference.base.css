@@ -1,0 +1,61 @@
+.deliveryPreferenceTitle {
+  margin: 16px 16px 8px;
+  text-transform: uppercase;
+  color: ~colors.blueberry_80;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+}
+
+.tooltipInfoIcon {
+  position: absolute;
+  display: block;
+  font-size: ~fontSize.icon_x_large;
+  top: 2px;
+  left: 4px;
+}
+
+.toolTipText {
+  font-size: ~fontSize.icon;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  font-weight: initial;
+  text-transform: initial;
+}
+
+.toolTipText + div {
+  left: 2px;
+  top: -11px;
+}
+
+.deliveryPreferenceOptions {
+  background-color: ~colors.white;
+  padding: 16px;
+}
+
+.preferenceOption {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.preferenceOption:last-child {
+  padding-bottom: 0;
+}
+
+.preferenceOptionMessage {
+  padding-left: 28px;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry_80;
+}
+
+.radioIcon {
+  top: 1px;
+  position: absolute;
+  color: ~colors.blueberry_30;
+}
+
+.selectedRadioIcon {
+  top: 1px;
+  position: absolute;
+  fill: ~colors.watermelon;
+}

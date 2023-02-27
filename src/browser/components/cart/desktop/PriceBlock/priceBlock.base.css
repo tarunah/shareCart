@@ -1,0 +1,10 @@
+.container {
+  margin-bottom: 16px;
+}
+
+.priceHeader {
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.bold;
+  margin: 24px 0px 16px;
+  color: ~colors.blueberry_80;
+}

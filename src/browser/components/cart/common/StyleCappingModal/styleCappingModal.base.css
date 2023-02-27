@@ -1,0 +1,78 @@
+.mobileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  background-color: ~colors.blueberry_5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  max-height: 75%;
+}
+
+.desktopContainer {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.blueberry_5;
+  cursor: default;
+  top: 20%;
+  max-height: 55%;
+}
+
+.cancelIcon {
+  top: 21px;
+  right: 21px;
+}
+
+.modalHeading {
+  background-color: ~colors.white;
+  padding: 20px 16px 20px 16px;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.contentContainer {
+  overflow-y: auto;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+  padding: 12px 16px 0px 12px;
+  margin-bottom: 64px;
+}
+
+.cardContainer {
+  padding: 12px 12px 1px 12px;
+  margin-bottom: 12px;
+  background-color: ~colors.white;
+}
+
+.contentHeader {
+  font-size: ~fontSize.large;
+  padding-bottom: 16px;
+}
+
+.bold {
+  font-weight: ~fontWeight.bold;
+}
+
+.itemLeft {
+  float: left;
+}
+
+.itemRight {
+  margin-left: 53px;
+  padding-left: 12px;
+  position: relative;
+  min-height: 70px;
+  margin-bottom: 12px;
+}
+
+.footer {
+  position: absolute;
+  background: ~colors.white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  box-shadow: 0px -1px 4px 0px ~colors.black_30;
+}

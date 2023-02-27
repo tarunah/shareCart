@@ -1,0 +1,4 @@
+.lowSRMessage {
+  color: ~colors.salmon;
+  font-size: ~fontSize.small;
+}

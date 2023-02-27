@@ -1,0 +1,86 @@
+.heading {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.large;
+  padding-bottom: 20px;
+}
+
+.checkIcon {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.checked {
+  fill: ~colors.watermelon;
+}
+
+.saveUpiBlock {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.selectedApp {
+  border: 1px solid ~colors.watermelon;
+}
+
+.vpaField {
+  position: relative;
+  margin-top: 16px;
+}
+
+.saveInfoIcon {
+  position: relative;
+  top: 2px;
+  font-size: 24px;
+  margin-left: 4px;
+}
+
+.saveInfo {
+  background-color: ~colors.blueberry_5;
+  margin: 15px auto 0;
+  padding: 10px;
+}
+
+.actionButton {
+  margin-top: 16px;
+}
+
+.inputWithDropdown {
+  margin-top: 16px;
+}
+
+.lowSRMessage {
+  padding-top: 12px;
+}
+
+.displayMain {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cardText {
+  display: -webkit-inline-box;
+  align-items: center;
+}
+
+.inlineOffer {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.small;
+  line-height: 16px;
+  color: ~colors.mynt;
+  margin-left: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.showMore {
+  text-align: center;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.watermelon;
+  padding: 16px;
+  background-color: ~colors.white;
+  position: relative;
+  font-size: ~fontSize.medium;
+  cursor: pointer;
+}

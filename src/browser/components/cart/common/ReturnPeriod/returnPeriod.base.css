@@ -1,0 +1,14 @@
+.returnItem {
+  display: inline-flex;
+  font-size: ~fontSize.small;
+  padding-top: 8px;
+}
+.returnIcon {
+  padding-top: 2px;
+}
+.returnText {
+  margin-left: 6px;
+}
+.returnDays {
+  font-weight: ~fontWeight.bold;
+}

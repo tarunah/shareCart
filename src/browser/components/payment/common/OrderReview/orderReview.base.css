@@ -1,0 +1,40 @@
+.paymentOptionsBlock {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.paymentOptionsBlockBorder {
+  border: solid ~colors.grey_5 1px;
+  border-radius: 4px;
+}
+
+.deliveryDates {
+  font-weight: ~fontWeight.bold;
+}
+
+.heading {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  color: ~colors.blueberry;
+}
+
+.subText {
+  margin-top: 8px;
+  font-weight: ~fontWeight.light;
+  font-size: ~fontSize.small;
+}
+
+.leftHeading {
+  padding-right: 22px;
+  display: inline-block;
+  width: 30%;
+  margin-top: 45px;
+  position: absolute;
+}
+
+.rightHeading {
+  display: inline-block;
+  width: 70%;
+  margin-left: 55px;
+}

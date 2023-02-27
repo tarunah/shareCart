@@ -1,0 +1,71 @@
+.productContainer {
+  border: 1px solid ~colors.blueberry_10;
+  margin-left: 12px;
+  min-height: 200px;
+  width: 152px;
+}
+
+.brandName {
+  font-size: ~fontSize.medium;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.productName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: ~fontSize.small;
+  font-weight: ~fontWeight.light;
+  color: ~colors.blueberry_50;
+  height: 16px;
+  margin-bottom: 4px;
+}
+
+.productData {
+  padding: 6px;
+  overflow: hidden;
+  background-color: ~colors.white;
+}
+
+.priceContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: -8px;
+}
+
+.price {
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry_80;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.originalPrice {
+  color: ~colors.blueberry_50;
+  text-decoration: line-through;
+  font-size: ~fontSize.small;
+  margin-right: 5px;
+}
+
+.rupeeIcon {
+  height: 9px;
+}
+
+.rupeeIconOriginal {
+  height: 9px;
+  fill: ~colors.blueberry_50;
+}
+
+.discPercent {
+  color: ~colors.watermelon;
+  font-size: ~fontSize.tiny_xl;
+  white-space: nowrap;
+}
+
+.contents {
+  display: contents;
+}

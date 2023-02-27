@@ -1,0 +1,94 @@
+.mobileContainer {
+  margin-bottom: 8px;
+  background-color: ~colors.white;
+  padding: 11px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.desktopContainer {
+  margin-bottom: 8px;
+  background-color: ~colors.white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid ~colors.blueberry_10;
+  cursor: pointer;
+}
+
+.paymentContainer {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: ~fontSize.medium;
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title span {
+  text-transform: capitalize;
+  text-transform: capitalize;
+  max-width: 74%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addressName {
+  width: 100%;
+  display: flex;
+  white-space: pre;
+}
+
+.highlight {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+}
+
+.subText {
+  font-size: ~fontSize.small;
+  line-height: 15px;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.mobileModalContainer {
+  width: 100%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+}
+
+.desktopModalContainer {
+  max-width: 441px;
+  max-height: 65%;
+  display: flex;
+  flex-direction: column;
+  background-color: ~colors.grey;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  height: fit-content;
+}
+
+.removeMargin {
+  margin-top: 0px !important;
+}
+
+.addressModal {
+  background-color: ~colors.white;
+  max-height: 80%;
+  height: initial;
+}

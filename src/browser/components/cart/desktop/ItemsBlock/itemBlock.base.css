@@ -1,0 +1,28 @@
+.itemsBlock {
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+
+.item {
+  height: 300px;
+}
+
+.leftBlock {
+  display: inline-block;
+  width: 64%;
+  padding-right: 20px;
+  border-right: 1px solid ~colors.blueberry_10;
+  padding-top: 32px;
+}
+
+.offerContainer {
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.bankOfferTitle {
+  font-size: ~fontSize.medium;
+  font-weight: ~fontWeight.bold;
+  margin: 16px 2px 8px;
+}

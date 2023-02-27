@@ -1,0 +1,175 @@
+.StickyComponent {
+  position: relative;
+  margin-bottom: 40px;
+  border: none;
+  padding-bottom: 44px;
+}
+
+.stickyButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: ~colors.white;
+  border-top: 1px solid ~colors.blueberry_20;
+  -ms-box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.15);
+  z-index: 11;
+}
+
+.priceDetails {
+  display: inline-block;
+  width: 40%;
+  background: ~colors.white;
+  text-align: left;
+  border: 0;
+  padding-top: 5px;
+}
+
+.priceDetailsLeft {
+  text-align: left;
+  padding-left: 6px;
+}
+
+.priceDetailsCenter {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 2px;
+}
+
+.placeOrderButton {
+  width: 60%;
+  padding: 10px;
+  float: right;
+  font-size: ~fontSize.medium;
+  border: none;
+  border-bottom: 1px solid ~colors.blueberry_20;
+  background-color: ~colors.watermelon;
+  color: ~colors.white;
+  border-radius: 4px;
+  height: 50px;
+  font-weight: ~fontWeight.bold;
+  letter-spacing: 1px;
+}
+
+.placeOrderButtonWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.placeOrderDisabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.mfuPriceDetails {
+  display: inline-block;
+  width: 60%;
+  padding: 0px;
+  background: ~colors.white;
+  text-align: left;
+  border: 0;
+}
+
+.mfuPlaceOrderButton {
+  width: 40%;
+  padding: 10px;
+  float: right;
+  font-size: ~fontSize.medium;
+  border: none;
+  border-bottom: 1px solid ~colors.blueberry_20;
+  background-color: ~colors.watermelon;
+  color: ~colors.white;
+  border-radius: 4px;
+  height: 50px;
+  font-weight: ~fontWeight.bold;
+  letter-spacing: 1px;
+}
+
+.mfuInfo {
+  font-size: 10px;
+}
+
+.total {
+  display: inline-block;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  color: ~colors.blueberry;
+}
+
+.totalRupeeIcon {
+  font-weight: ~fontWeight.semi_bold;
+}
+
+.viewDetails {
+  font-size: ~fontSize.small;
+  color: ~colors.watermelon;
+  font-weight: ~fontWeight.bold;
+  cursor: pointer;
+}
+
+.mfuButton {
+  width: 40%;
+}
+
+.mfuDetails {
+  padding: 0px;
+  width: 60%;
+}
+
+.rupee {
+  color: ~colors.blueberry;
+  margin-right: 2px;
+}
+
+.strikeOff {
+  text-decoration: line-through;
+  font-size: ~fontSize.large;
+  color: ~colors.blueberry_50;
+  margin-right: 4px;
+}
+
+.mfuCoin {
+  position: relative;
+  top: 1px;
+}
+
+.priceBlock {
+  font-size: ~fontSize.large;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+}
+
+@media (max-width: 320px) {
+  .viewDetails {
+    font-size: 10px;
+  }
+
+  .strikeOff {
+    font-size: ~fontSize.small;
+  }
+
+  .priceDetails {
+    padding-top: unset;
+  }
+}
+
+.fullWidthButton {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.extraPaddingTop {
+  padding-top: 20px;
+}

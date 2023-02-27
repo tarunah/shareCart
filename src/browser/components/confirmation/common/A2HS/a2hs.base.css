@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin: 15px 0 15px;
+  background: linear-gradient(106deg, ~colors.white, #ffe4da);
+}
+
+.content {
+  width: 60%;
+}
+
+.header {
+  font-weight: ~fontWeight.bold;
+  font-size: ~fontSize.medium;
+  margin-bottom: 3px;
+}
+
+.desc {
+  margin-bottom: 10px;
+  font-size: ~fontSize.small;
+}
+
+.container .button {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: initial;
+}
+
+.screenContainer {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 44, 63, 0.9);
+  z-index: 13;
+  padding: 22% 33px 0 33px;
+}
+
+.screenHeading {
+  color: ~colors.white;
+  font-size: ~fontSize.large;
+  font-weight: ~fontWeight.bold;
+  margin-bottom: 10px;
+}
+
+.aboutPWA {
+  margin-bottom: 30px;
+}
+
+.aboutPWA img {
+  margin-right: 15px;
+}
+
+.aboutPWAlist {
+  color: ~colors.white;
+  font-size: ~fontSize.medium;
+  margin-bottom: 12px;
+}
+
+.installSteps {
+  margin-bottom: 20px;
+}
+
+.installSteps img {
+  margin: 0 4px 2px 4px;
+}
+
+.installStep {
+  color: ~colors.white;
+  margin-bottom: 6px;
+  font-size: ~fontSize.medium;
+  line-height: 1.29;
+}
+
+.arrow {
+  position: absolute;
+  top: 5px;
+  right: 13px;
+}
+
+.screenContainer .screenButton {
+  display: inline-block;
+  line-height: normal;
+  font-size: ~fontSize.small;
+}
