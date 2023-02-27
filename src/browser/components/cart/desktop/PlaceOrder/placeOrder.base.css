@@ -67,6 +67,14 @@
   line-height: 14px;
 }
 
+.productText{
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+  font-weight: 300;
+  line-height: 14px;
+}
+
 .modalFooter{
   background-color: #fff;
   padding: 8px;

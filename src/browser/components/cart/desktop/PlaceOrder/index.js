@@ -34,13 +34,18 @@ class PlaceOrder extends React.Component {
     this.sendCartInfo = this.sendCartInfo.bind(this);
     this.showImportCart = this.showImportCart.bind(this);
     this.hideImportCart = this.hideImportCart.bind(this);
+    this.merge =  this.merge.bind(this);
+    this.move = this.move.bind(this);
+    this.cancelImport = this.cancelImport.bind(this);
     this.state = {
       shareCartModal: false,
       showBanner: false,
       loading: false,
       error: false,
       showOptionModal: false,
-      cartItems: 0
+      cartItems: 0,
+      conflicitingProducts: [],
+      products: []
     };
   }
 
@@ -139,10 +144,11 @@ class PlaceOrder extends React.Component {
         let data = JSON.parse(res.data.text)
         this.setState({
           showOptionModal: data.count > 0? true: false,
-          cartItems: data.count
+          cartItems: data.count,
+          products: data.products
         })
         if (data.count == 0) {
-          window.href.location = 'http://dev.myntra.com:8500/checkout/cart'
+          this.callCartAPI()
         }
       })
       .catch(err=> console.log(err))
@@ -154,12 +160,67 @@ class PlaceOrder extends React.Component {
     })
   }
 
+  callCartAPI() {
+    // let importedCart = []
+    // let products = this.state.products
+    // for(let i=0; i<products.length; i++) {
+    //   let entry = {
+    //     skuId: products[i].skuId,
+    //     quantity: products[i].quantity,
+    //     styleId: products[i].itemId,
+    //     sellerPartnerId: products[i].selectedSeller.partnerId
+    //   }
+    //   importedCart.push(entry)
+    // }
+    // console.log(importedCart)
+    const config = {
+      headers:{
+        'x-mynt-ctx':'storeid=2297;nidx=7ab9d632-760e-11ed-b7d4-06dee4b4ebd9;uidx='+getUidx()
+      }
+    };
+
+    axios.get('http://dev.myntra.com:8500/checkoutproxy/getCart', config)
+      .then(res=> {
+        console.log(JSON.parse(res.data.text).products)
+        //window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
+      })
+      .catch(err=> console.log(err))
+  }
+
   merge() {
-    window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
+    this.callCartAPI()
   }
 
   move() {
-    window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
+    const config = {
+      headers:{
+        'x-mynt-ctx':'storeid=2297;nidx=7ab9d632-760e-11ed-b7d4-06dee4b4ebd9;uidx='+getUidx()
+      }
+    };
+
+    axios.get('http://dev.myntra.com:8500/checkoutproxy/getCart', config)
+      .then(res=> {
+        let products = (JSON.parse(res.data.text)).products
+        let productId = [1677654398, 1677490450, 1677546338]
+        let productNames = products.filter((entry) => {return productId.includes(entry.itemId)}).map((entry) => {return entry.name})
+        console.log(productNames)
+        //products= ['Levis Tshirt', 'Louis Philippe Shirt', 'Tommy Hilfiger jeans']
+        if(products.length > 0){
+          this.setState({
+            conflicitingProducts: productNames
+          })
+        }else {
+          this.callCartAPI()
+        }
+        this.hideImportCart()
+      })
+      .catch(err=> console.log(err))
+  }
+
+  cancelImport() {
+    this.setState({
+      conflicitingProducts: []
+    })
   }
 
   render() {
@@ -291,7 +352,7 @@ class PlaceOrder extends React.Component {
               
               <div className={Styles.modalBody}>
                 <div className={Styles.modalText}>
-                  You have {this.state.cartItems} item/s in your bag. Please select an action
+                  You have {this.state.cartItems} item(s) in your bag. Please select an action
                 </div>
               </div>
               <div className={Styles.modalFooter}>
@@ -301,6 +362,44 @@ class PlaceOrder extends React.Component {
                   </div>
                   <div className={Styles.actionButton2}>
                     <button onClick={this.move} className={Styles.actionButtonStyle2}>Import without merging</button>
+                  </div>
+                
+                
+                </div>
+              </div>
+            </Modal>: null}
+
+            {this.state.conflicitingProducts.length > 0?<Modal
+              cancelCallback={this.hideImportCart}
+              className={Styles.modal}
+              cancelIconConfig={{ show: false, className: Styles.modalCloseIcon }}
+              //halfCard={true}
+            >
+              
+    
+              <div className={Styles.modalBody}>
+                <div className={Styles.productText}>
+                  Similar items are present in your bag
+                </div>
+                <ul>
+                {this.state.conflicitingProducts.map((product, id) => {return(
+                  <li className={Styles.modalText}>
+                    {product}
+                  </li>
+                )})}
+                </ul>
+                <div className={Styles.modalText} style={{fontWeight: '300'}}>
+                  Importing will move your items to wishlist
+                </div>
+
+              </div>
+              <div className={Styles.modalFooter}>
+                <div className={Styles.actionContainer}>
+                  <div className={Styles.actionButton1}>
+                    <button onClick = {this.callCartAPI} className={Styles.actionButtonStyle1}>Proceed to import</button>
+                  </div>
+                  <div className={Styles.actionButton2}>
+                    <button onClick={this.cancelImport} className={Styles.actionButtonStyle2}>cancel</button>
                   </div>
                 
                 

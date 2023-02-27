@@ -149,6 +149,9 @@ router.get(
         //'Access-Control-Allow-Origin': '*'
       }
     };
+
+    const at = get(req, 'myx.tokens.at', null);
+    console.log("@@@@@@AT--->>", at)
     agent
     .get('http://gateway.stage.myntra.com/v1/cart/default')
     .set(config.headers)
