@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"header":"couponsPage-base-header","container":"couponsPage-base-container","headerButtons":"couponsPage-base-headerButtons","footer":"couponsPage-base-footer","actionButton":"couponsPage-base-actionButton","cancelButton":"couponsPage-base-cancelButton","saveButton":"couponsPage-base-saveButton"});
     if(true) {
-      // 1677509871223
+      // 1677568865863
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":true});
       module.hot.dispose(cssReload);
       

@@ -37,6 +37,7 @@ class PlaceOrder extends React.Component {
     this.merge =  this.merge.bind(this);
     this.move = this.move.bind(this);
     this.cancelImport = this.cancelImport.bind(this);
+    this.mergeAndMoveToWishList = this.mergeAndMoveToWishList.bind(this);
     this.state = {
       shareCartModal: false,
       showBanner: false,
@@ -102,6 +103,20 @@ class PlaceOrder extends React.Component {
       })
       .catch(err=> console.log(err))
 
+      axios.get('http://localhost:1050/exportCart')
+      .then(res=> {
+        console.log(res)
+        self.setState({
+          loading: false,
+          showBanner: true
+        })
+        setTimeout(()=> {
+          self.closeModal()
+        }, 2000)
+      })
+      .catch(err=> console.log(err))
+
+
   // RequestManager.handle(
   //   {
   //     method: 'get',
@@ -160,6 +175,8 @@ class PlaceOrder extends React.Component {
     })
   }
 
+
+
   callCartAPI() {
     // let importedCart = []
     // let products = this.state.products
@@ -189,6 +206,28 @@ class PlaceOrder extends React.Component {
 
   merge() {
     this.callCartAPI()
+  }
+
+  mergeAndMoveToWishList() {
+    let importedCart = []
+    let products = this.props.products
+    for(let i=0; i<products.length; i++) {
+      let entry = {
+        skuId: products[i].skuId,
+        quantity: products[i].quantity,
+        styleId: products[i].itemId,
+        sellerPartnerId: products[i].selectedSeller.partnerId
+      }
+      importedCart.push(entry)
+    }
+    console.log(importedCart)
+
+    axios.post('http://dev.myntra.com:8500/mergeAndMovetoWishlist', importedCart)
+      .then(res=> {
+        console.log(res)
+        window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
+      })
+      .catch(err=> console.log(err))
   }
 
   move() {
@@ -396,7 +435,7 @@ class PlaceOrder extends React.Component {
               <div className={Styles.modalFooter}>
                 <div className={Styles.actionContainer}>
                   <div className={Styles.actionButton1}>
-                    <button onClick = {this.callCartAPI} className={Styles.actionButtonStyle1}>Proceed to import</button>
+                    <button onClick = {this.mergeAndMoveToWishList} className={Styles.actionButtonStyle1}>Proceed to import</button>
                   </div>
                   <div className={Styles.actionButton2}>
                     <button onClick={this.cancelImport} className={Styles.actionButtonStyle2}>cancel</button>

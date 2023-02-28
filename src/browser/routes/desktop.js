@@ -9,6 +9,7 @@ import Cart from '../components/cart/desktop';
 import ImportCart from '../components/cart/desktop/importCart.js'
 
 import CartPageHoc from '../components/cart/common/CartPageHoc';
+import NewCartPageHoc from '../components/cart/common/CartPageHoc/newCartPageHoc';
 import AddressPage from '../components/address/common/AddressPage';
 import PaymentPage from '../components/payment/common/PaymentPage';
 import OtpPage from '../components/payment/common/OtpPage';
@@ -52,7 +53,7 @@ const Address = loadComponent('address');
 const Payment = loadComponent('payment');
 const Confirmation = loadComponent('confirmation');
 const CartPage = CartPageHoc(Cart);
-const ImportCartPage = CartPageHoc(ImportCart)
+const ImportCartPage = NewCartPageHoc(ImportCart)
 
 const routes = (
   <Page

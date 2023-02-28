@@ -149,12 +149,96 @@ router.get(
         //'Access-Control-Allow-Origin': '*'
       }
     };
-
-    const at = get(req, 'myx.tokens.at', null);
-    console.log("@@@@@@AT--->>", at)
     agent
     .get('http://gateway.stage.myntra.com/v1/cart/default')
     .set(config.headers)
+    .then(r => {
+      res.status(200).send(r)
+    })
+    .catch(e => {
+      res.status(500)
+    });
+  }
+);
+
+
+router.post(
+  '/mergeCart',
+  [
+    authToken,
+    require('@myntra/myx/lib/server/ware/servejs'),
+    require('@myntra/myx/lib/server/ware/apps'),
+    require('@myntra/myx/lib/server/ware/device'),
+    require('../middlewares/userDetails'),
+    abtestCookieMiddlewares,
+    ...middlewares('UI')
+  ],
+  async function(req, res) {
+    
+    
+    const config = {
+      headers:{
+        'x-mynt-ctx': req.headers['x-mynt-ctx'], //'storeid=2297;nidx=7ab9d632-760e-11ed-b7d4-06dee4b4ebd9;uidx=062484f1.319f.453f.b9b3.a85f0385f858gDJZmfaG8c',
+        'pagesource': 'cart',
+        'x-myntra-abtest': 'cart.coupon.nudges=enabled',
+        'Content-Type': 'application/json',
+        //'Access-Control-Allow-Origin': '*'
+      }
+    };
+
+    const at = get(req, 'myx.tokens.at', null);
+    console.log("@@@@@@AT--->>", at)
+    var data = req.body
+    data.at = at
+    agent
+    .post('/mergeCart')
+    .set(config.headers)
+    .send(data)
+    .then(r => {
+      res.status(200).send(r)
+    })
+    .catch(e => {
+      res.status(500)
+    });
+  }
+);
+
+
+router.post(
+  '/mergeAndMovetoWishlist',
+  [
+    authToken,
+    require('@myntra/myx/lib/server/ware/servejs'),
+    require('@myntra/myx/lib/server/ware/apps'),
+    require('@myntra/myx/lib/server/ware/device'),
+    require('../middlewares/userDetails'),
+    abtestCookieMiddlewares,
+    ...middlewares('UI')
+  ],
+  async function(req, res) {
+    
+    
+    const config = {
+      headers:{
+        'x-mynt-ctx': req.headers['x-mynt-ctx'], //'storeid=2297;nidx=7ab9d632-760e-11ed-b7d4-06dee4b4ebd9;uidx=062484f1.319f.453f.b9b3.a85f0385f858gDJZmfaG8c',
+        'pagesource': 'cart',
+        'x-myntra-abtest': 'cart.coupon.nudges=enabled',
+        'Content-Type': 'application/json',
+        //'Access-Control-Allow-Origin': '*'
+      }
+    };
+
+    const at = get(req, 'myx.tokens.at', null);
+    console.log("@@@body-->", req.body)
+    console.log("@@@@@@AT--->>", at)
+    console.log("@@@body-->", req.headers.payload)
+    
+    var data = req.body
+    data.at = at
+    agent
+    .post('/mergeAndMovetoWishlist')
+    .set(config.headers)
+    .send(data)
     .then(r => {
       res.status(200).send(r)
     })

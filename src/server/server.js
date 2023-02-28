@@ -23,6 +23,7 @@ app.use(
 );
 
 app.use(routes);
+app.use(express.json())
 
 setupCircuitBreakerSwitchUpdate(nodeCircuitBreaker);
 

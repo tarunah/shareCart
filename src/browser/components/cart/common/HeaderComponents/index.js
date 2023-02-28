@@ -84,16 +84,16 @@ export class PriceChange extends React.Component {
   }
 
   getPriceIncreaseWithSellerChange() {
-    return (
-      <div className={Styles.container}>
-        <SellerChange className={Styles.priceDropIcon} />
-        <div className={Styles.header}>Seller has changed</div>
-        <div>
-          Seller of one or more items in your bag has changed. Please review
-          them before proceeding.
-        </div>
-      </div>
-    );
+    // return (
+    //   <div className={Styles.container}>
+    //     <SellerChange className={Styles.priceDropIcon} />
+    //     <div className={Styles.header}>Seller has changed</div>
+    //     <div>
+    //       Seller of one or more items in your bag has changed. Please review
+    //       them before proceeding.
+    //     </div>
+    //   </div>
+    // );
   }
 
   getPriceConflict() {
@@ -113,8 +113,8 @@ export class PriceChange extends React.Component {
     if (priceIncreaseStatus || !isPriceConflicted) {
       if (sellerChange) return this.getPriceIncreaseWithSellerChange();
     } else {
-      if (sellerChange) return this.getPriceDropWithSellerChange();
-      else return this.getPriceDrop();
+      // if (sellerChange) return this.getPriceDropWithSellerChange();
+      // else return this.getPriceDrop();
     }
     return null;
   }

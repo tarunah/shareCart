@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"totalSavingsContainer":"pastOrderSavingsModule-base-totalSavingsContainer","greenBackground":"pastOrderSavingsModule-base-greenBackground","messageContainer":"pastOrderSavingsModule-base-messageContainer","savingsMessage":"pastOrderSavingsModule-base-savingsMessage","savingsValuePlaceholder":"pastOrderSavingsModule-base-savingsValuePlaceholder"});
     if(true) {
-      // 1677509921650
+      // 1677568921420
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"locals":true});
       module.hot.dispose(cssReload);
       
