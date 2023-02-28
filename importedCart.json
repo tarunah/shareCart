@@ -1,0 +1,1212 @@
+{
+    "id": "47471da6-b89f-4832-9a4d-5c6e5adf702d",
+    "createdBy": "062484f1.319f.453f.b9b3.a85f0385f858gDJZmfaG8c",
+    "context": "DEFAULT",
+    "count": 5,
+    "cartMergeState": "NOT_MERGED",
+    "exchangeProductDetail": null,
+    "serviceability": null,
+    "giftOrder": {
+        "active": false,
+        "data": null
+    },
+    "createdAt": "1677580212776",
+    "modifiedAt": "1677581155765",
+    "conflict": {
+        "state": "CONFLICTED",
+        "oldPrice": 0,
+        "price": {
+            "state": "NOT_CONFLICTED",
+            "oldPrice": 0
+        },
+        "seller": {
+            "state": "CONFLICTED",
+            "oldSeller": null
+        }
+    },
+    "flags": {
+        "cashbackApplicable": {
+            "value": false,
+            "remark": ""
+        },
+        "walletApplicable": {
+            "value": false,
+            "remark": ""
+        },
+        "loyaltyPointsApplicable": {
+            "value": true,
+            "remark": ""
+        },
+        "giftwrapApplicable": {
+            "value": false,
+            "remark": ""
+        },
+        "giftcardApplicable": {
+            "value": true,
+            "remark": ""
+        },
+        "tryNBuyApplicable": {
+            "value": false,
+            "remark": "UNSERVICEABLE"
+        },
+        "valueShippingApplicable": {
+            "value": false,
+            "remark": ""
+        },
+        "valueReturnApplicable": {
+            "value": false,
+            "remark": ""
+        },
+        "checkoutReady": {
+            "value": true,
+            "remark": "ALL_OK"
+        },
+        "myntApplicable": {
+            "value": false,
+            "remark": ""
+        },
+        "coverFeeApplicable": {
+            "value": false,
+            "remark": "No Active CoverFee charge found for tenant 2297"
+        },
+        "codChargeApplicable": {
+            "value": false,
+            "remark": ""
+        }
+    },
+    "shippingData": {
+        "method": "NORMAL",
+        "text": "",
+        "meta": {
+            "minMore": "",
+            "shippingLimit": "",
+            "info": "",
+            "categories": ""
+        },
+        "shippingApplicableCharge": 99,
+        "shippingChargeLimit": 799
+    },
+    "price": {
+        "mrp": 8895,
+        "totalSavings": 0,
+        "total": 8895,
+        "subTotal": 8895,
+        "userAction": "PAY",
+        "effectiveExchangeItemPrice": 0,
+        "effectiveTotalPrice": 8895,
+        "discounts": {
+            "data": [
+                {
+                    "name": "discount",
+                    "value": 0,
+                    "meta": null,
+                    "effectiveDiscountValue": 0,
+                    "effectiveDiscountMeta": null
+                },
+                {
+                    "name": "mynts",
+                    "value": 0,
+                    "meta": null,
+                    "effectiveDiscountValue": 0,
+                    "effectiveDiscountMeta": null
+                },
+                {
+                    "name": "coupon",
+                    "value": 0,
+                    "meta": null,
+                    "effectiveDiscountValue": 0,
+                    "effectiveDiscountMeta": null
+                },
+                {
+                    "name": "bag",
+                    "value": 0,
+                    "meta": null,
+                    "effectiveDiscountValue": 0,
+                    "effectiveDiscountMeta": null
+                }
+            ]
+        },
+        "charges": {
+            "data": [
+                {
+                    "name": "tax",
+                    "value": 0
+                }
+            ]
+        },
+        "instruments": {
+            "data": [
+                {
+                    "name": "loyaltypoints",
+                    "value": 0
+                },
+                {
+                    "name": "giftcard",
+                    "value": 0
+                }
+            ]
+        }
+    },
+    "coupons": [],
+    "applicableCoupons": [],
+    "potentialCoupons": [],
+    "attachedProductOffers": {
+        "appliedOffers": [],
+        "applicableOffers": [],
+        "totalOfferAmount": 0
+    },
+    "products": [
+        {
+            "id": 18074826,
+            "selectedForCheckout": true,
+            "name": "Levis Men Blue Light Fade Stretchable tapered Fit Casual  Jeans",
+            "brand": "Levis",
+            "gender": "Men",
+            "itemAddTime": 1677580212,
+            "skuId": 55624322,
+            "itemId": 1677489668,
+            "articleType": "Jeans",
+            "articleTypeId": 70,
+            "masterCategoryTypeName": "Apparel",
+            "masterCategoryTypeCode": "APPAREL",
+            "quantity": 1,
+            "activeSlot": 0,
+            "landingPageUrl": "Jeans/Levis/Levis-Men-Blue-Light-Fade-Stretchable-tapered-Fit-Casual--Jeans/18074826/buy",
+            "tryAndBuyOpted": false,
+            "returnPeriod": 30,
+            "valueReturnOpted": false,
+            "valueReturnApplicableDiscount": 0,
+            "styleOffers": [],
+            "appliedCoupons": [],
+            "personalisedPricing": {
+                "coupon": "",
+                "discount": 0
+            },
+            "virtualBundleInfo": {
+                "virtualBundleConflict": false,
+                "virtualConflictItemId": 0
+            },
+            "discountInfo": {
+                "type": null,
+                "text": null,
+                "discountTimerStartTime": null,
+                "discountTimerEndTime": null
+            },
+            "conflict": {
+                "state": "NOT_CONFLICTED",
+                "oldPrice": 0,
+                "price": {
+                    "state": "NOT_CONFLICTED",
+                    "oldPrice": 2899
+                },
+                "seller": {
+                    "state": "NOT_CONFLICTED",
+                    "oldSeller": null
+                }
+            },
+            "images": [
+                {
+                    "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/18074826/2022/6/7/ec442cd0-28aa-4f7a-b56e-3427d733e8bd1654604244241-Levis-Men-Jeans-641654604243613-1.jpg",
+                    "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/18074826/2022/6/7/ec442cd0-28aa-4f7a-b56e-3427d733e8bd1654604244241-Levis-Men-Jeans-641654604243613-1.jpg"
+                }
+            ],
+            "flags": {
+                "exchangeable": true,
+                "returnable": true,
+                "pickupEnabled": true,
+                "tryable": true,
+                "large": false,
+                "hazmat": false,
+                "fragile": false,
+                "jewellery": false,
+                "couponApplicable": false,
+                "codEnabled": true,
+                "comforter": false,
+                "personalised": false,
+                "preOrderEnabled": false,
+                "myntsEnabled": true,
+                "freeItem": false,
+                "preLaunchProduct": false,
+                "expirable": false
+            },
+            "selectedSeller": {
+                "id": 47,
+                "partnerId": 4215,
+                "name": "Vision Star",
+                "inventory": 1,
+                "warehouses": "309",
+                "supplyType": "ON_HAND",
+                "expiryDate": "0",
+                "earlierExpiryDate": false
+            },
+            "sizes": [
+                {
+                    "label": "34",
+                    "skuId": 55624320,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "36",
+                    "skuId": 55624322,
+                    "available": true,
+                    "inventory": 1,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 47,
+                                "partnerId": 4215,
+                                "name": "Vision Star",
+                                "inventory": 1,
+                                "warehouses": "309",
+                                "supplyType": "ON_HAND",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 2899,
+                                "subTotal": 2899,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "38",
+                    "skuId": 55624324,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "28",
+                    "skuId": 55624314,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "30",
+                    "skuId": 55624316,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "32",
+                    "skuId": 55624318,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                }
+            ],
+            "price": {
+                "mrp": 2899,
+                "total": 2899,
+                "subTotal": 2899,
+                "discounts": {
+                    "data": [
+                        {
+                            "name": "discount",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "coupon",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "bag",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "personalised",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        }
+                    ]
+                },
+                "charges": {
+                    "data": [
+                        {
+                            "name": "tax",
+                            "value": 0
+                        },
+                        {
+                            "name": "mrp",
+                            "value": 2899
+                        }
+                    ]
+                },
+                "instruments": {
+                    "data": [
+                        {
+                            "name": "loyaltypoints",
+                            "value": 0
+                        },
+                        {
+                            "name": "giftcard",
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            "offerId": "",
+            "urgencyInfo": {
+                "pdpCount": 0,
+                "pdpCountPtile": 0,
+                "addToCollectionCount": 0,
+                "addToCollectionCountPtile": 0,
+                "addToCartCount": 0,
+                "addToCartCountPtile": 0,
+                "quantitySold": 0,
+                "quantitySoldPtile": 0,
+                "values": [],
+                "displayOnCart": false
+            },
+            "ratings": {
+                "avgRating": 0,
+                "totalCount": 0
+            },
+            "systemAttributes": [
+                {
+                    "attribute": "VTR_Available",
+                    "value": "Yes"
+                },
+                {
+                    "attribute": "SA_XT_OOS",
+                    "value": "1 Days"
+                },
+                {
+                    "attribute": "MP_High_Depth_Intent",
+                    "value": "High_Depth_Intent"
+                },
+                {
+                    "attribute": "MP_High_Depth",
+                    "value": "High_Depth"
+                }
+            ],
+            "giftCardConfig": "",
+            "productServiceabilityInfo": null
+        },
+        {
+            "id": 16532688,
+            "selectedForCheckout": true,
+            "name": "HIGHLANDER Men White Slim Fit Casual Shirt",
+            "brand": "HIGHLANDER",
+            "gender": "Men",
+            "itemAddTime": 1677580456,
+            "skuId": 51915109,
+            "itemId": 1677460760,
+            "articleType": "Shirts",
+            "articleTypeId": 85,
+            "masterCategoryTypeName": "Apparel",
+            "masterCategoryTypeCode": "APPAREL",
+            "quantity": 1,
+            "activeSlot": 0,
+            "landingPageUrl": "Shirts/HIGHLANDER/HIGHLANDER-Men-White-Slim-Fit-Casual-Shirt/16532688/buy",
+            "tryAndBuyOpted": false,
+            "returnPeriod": 30,
+            "valueReturnOpted": false,
+            "valueReturnApplicableDiscount": 0,
+            "styleOffers": [],
+            "appliedCoupons": [],
+            "personalisedPricing": {
+                "coupon": "",
+                "discount": 0
+            },
+            "virtualBundleInfo": {
+                "virtualBundleConflict": false,
+                "virtualConflictItemId": 0
+            },
+            "discountInfo": {
+                "type": null,
+                "text": null,
+                "discountTimerStartTime": null,
+                "discountTimerEndTime": null
+            },
+            "conflict": {
+                "state": "NOT_CONFLICTED",
+                "oldPrice": 0,
+                "price": {
+                    "state": "NOT_CONFLICTED",
+                    "oldPrice": 1399
+                },
+                "seller": {
+                    "state": "NOT_CONFLICTED",
+                    "oldSeller": null
+                }
+            },
+            "images": [
+                {
+                    "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/16532688/2021/12/16/b9944013-0b1b-4d7d-8278-4fafd118da351639640786257Shirts1.jpg",
+                    "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/16532688/2021/12/16/b9944013-0b1b-4d7d-8278-4fafd118da351639640786257Shirts1.jpg"
+                }
+            ],
+            "flags": {
+                "exchangeable": true,
+                "returnable": true,
+                "pickupEnabled": true,
+                "tryable": true,
+                "large": false,
+                "hazmat": false,
+                "fragile": false,
+                "jewellery": false,
+                "couponApplicable": false,
+                "codEnabled": true,
+                "comforter": false,
+                "personalised": false,
+                "preOrderEnabled": false,
+                "myntsEnabled": true,
+                "freeItem": false,
+                "preLaunchProduct": false,
+                "expirable": false
+            },
+            "selectedSeller": {
+                "id": 40,
+                "partnerId": 4214,
+                "name": "Flashstar Commerce",
+                "inventory": 1,
+                "warehouses": "27235",
+                "supplyType": "ON_HAND",
+                "expiryDate": "0",
+                "earlierExpiryDate": false
+            },
+            "sizes": [
+                {
+                    "label": "XL",
+                    "skuId": 51915112,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "S",
+                    "skuId": 51915109,
+                    "available": true,
+                    "inventory": 1,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 40,
+                                "partnerId": 4214,
+                                "name": "Flashstar Commerce",
+                                "inventory": 1,
+                                "warehouses": "27235",
+                                "supplyType": "ON_HAND",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 1399,
+                                "subTotal": 1399,
+                                "discountText": ""
+                            }
+                        },
+                        {
+                            "seller": {
+                                "id": 17924,
+                                "partnerId": 17924,
+                                "name": "S & S Marketing",
+                                "inventory": 10,
+                                "warehouses": "27325",
+                                "supplyType": "ON_HAND",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 1399,
+                                "subTotal": 1399,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "M",
+                    "skuId": 51915110,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "L",
+                    "skuId": 51915111,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                }
+            ],
+            "price": {
+                "mrp": 1399,
+                "total": 1399,
+                "subTotal": 1399,
+                "discounts": {
+                    "data": [
+                        {
+                            "name": "discount",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "coupon",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "bag",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "personalised",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        }
+                    ]
+                },
+                "charges": {
+                    "data": [
+                        {
+                            "name": "tax",
+                            "value": 0
+                        },
+                        {
+                            "name": "mrp",
+                            "value": 1399
+                        }
+                    ]
+                },
+                "instruments": {
+                    "data": [
+                        {
+                            "name": "loyaltypoints",
+                            "value": 0
+                        },
+                        {
+                            "name": "giftcard",
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            "offerId": "",
+            "urgencyInfo": {
+                "pdpCount": 0,
+                "pdpCountPtile": 0,
+                "addToCollectionCount": 0,
+                "addToCollectionCountPtile": 0,
+                "addToCartCount": 0,
+                "addToCartCountPtile": 0,
+                "quantitySold": 0,
+                "quantitySoldPtile": 0,
+                "values": [],
+                "displayOnCart": false
+            },
+            "ratings": {
+                "avgRating": 0,
+                "totalCount": 0
+            },
+            "systemAttributes": [
+                {
+                    "attribute": "Custom_Label2",
+                    "value": "SA_FD_Label2"
+                }
+            ],
+            "giftCardConfig": "",
+            "productServiceabilityInfo": null
+        },
+        {
+            "id": 20474766,
+            "selectedForCheckout": true,
+            "name": "H&M Women Green Motif-Detail Hat",
+            "brand": "H&M",
+            "gender": "Women",
+            "itemAddTime": 1677580459,
+            "skuId": 64032590,
+            "itemId": 1677535755,
+            "articleType": "Hat",
+            "articleTypeId": 209,
+            "masterCategoryTypeName": "Accessories",
+            "masterCategoryTypeCode": "ACCESSORIES",
+            "quantity": 2,
+            "activeSlot": 0,
+            "landingPageUrl": "Hat/HM/HM-Women-Green-Motif-Detail-Hat/20474766/buy",
+            "tryAndBuyOpted": false,
+            "returnPeriod": 30,
+            "valueReturnOpted": false,
+            "valueReturnApplicableDiscount": 0,
+            "styleOffers": [],
+            "appliedCoupons": [],
+            "personalisedPricing": {
+                "coupon": "",
+                "discount": 0
+            },
+            "virtualBundleInfo": {
+                "virtualBundleConflict": false,
+                "virtualConflictItemId": 0
+            },
+            "discountInfo": {
+                "type": null,
+                "text": null,
+                "discountTimerStartTime": null,
+                "discountTimerEndTime": null
+            },
+            "conflict": {
+                "state": "NOT_CONFLICTED",
+                "oldPrice": 0,
+                "price": {
+                    "state": "NOT_CONFLICTED",
+                    "oldPrice": 699
+                },
+                "seller": {
+                    "state": "NOT_CONFLICTED",
+                    "oldSeller": null
+                }
+            },
+            "images": [
+                {
+                    "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/20474766/2022/10/20/de790eb9-b26d-4b53-b6af-6f99b71d248b1666274993137HMWomenGreenMotif-DetailHat1.jpg",
+                    "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/20474766/2022/10/20/de790eb9-b26d-4b53-b6af-6f99b71d248b1666274993137HMWomenGreenMotif-DetailHat1.jpg"
+                }
+            ],
+            "flags": {
+                "exchangeable": true,
+                "returnable": true,
+                "pickupEnabled": true,
+                "tryable": true,
+                "large": false,
+                "hazmat": false,
+                "fragile": false,
+                "jewellery": false,
+                "couponApplicable": false,
+                "codEnabled": true,
+                "comforter": false,
+                "personalised": false,
+                "preOrderEnabled": false,
+                "myntsEnabled": true,
+                "freeItem": false,
+                "preLaunchProduct": false,
+                "expirable": false
+            },
+            "selectedSeller": {
+                "id": 6771,
+                "partnerId": 6771,
+                "name": "H & M Hennes & Mauritz Retail Private Limited",
+                "inventory": 10,
+                "warehouses": "910",
+                "supplyType": "ON_HAND",
+                "expiryDate": "0",
+                "earlierExpiryDate": false
+            },
+            "sizes": [
+                {
+                    "label": "ONESIZE",
+                    "skuId": 64032590,
+                    "available": true,
+                    "inventory": 10,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 6771,
+                                "partnerId": 6771,
+                                "name": "H & M Hennes & Mauritz Retail Private Limited",
+                                "inventory": 10,
+                                "warehouses": "910",
+                                "supplyType": "ON_HAND",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 699,
+                                "subTotal": 699,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "mrp": 1398,
+                "total": 1398,
+                "subTotal": 1398,
+                "discounts": {
+                    "data": [
+                        {
+                            "name": "discount",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "coupon",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "bag",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "personalised",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        }
+                    ]
+                },
+                "charges": {
+                    "data": [
+                        {
+                            "name": "tax",
+                            "value": 0
+                        },
+                        {
+                            "name": "mrp",
+                            "value": 1398
+                        }
+                    ]
+                },
+                "instruments": {
+                    "data": [
+                        {
+                            "name": "loyaltypoints",
+                            "value": 0
+                        },
+                        {
+                            "name": "giftcard",
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            "offerId": "",
+            "urgencyInfo": {
+                "pdpCount": 0,
+                "pdpCountPtile": 0,
+                "addToCollectionCount": 0,
+                "addToCollectionCountPtile": 0,
+                "addToCartCount": 0,
+                "addToCartCountPtile": 0,
+                "quantitySold": 0,
+                "quantitySoldPtile": 0,
+                "values": [],
+                "displayOnCart": false
+            },
+            "ratings": {
+                "avgRating": 0,
+                "totalCount": 0
+            },
+            "systemAttributes": [],
+            "giftCardConfig": "",
+            "productServiceabilityInfo": null
+        },
+        {
+            "id": 18074920,
+            "selectedForCheckout": true,
+            "name": "Levis Men Blue 512 Tapered Fit Heavy Fade Stretchable Jeans",
+            "brand": "Levis",
+            "gender": "Men",
+            "itemAddTime": 1677580463,
+            "skuId": 55624898,
+            "itemId": 1677714127,
+            "articleType": "Jeans",
+            "articleTypeId": 70,
+            "masterCategoryTypeName": "Apparel",
+            "masterCategoryTypeCode": "APPAREL",
+            "quantity": 1,
+            "activeSlot": 0,
+            "landingPageUrl": "Jeans/Levis/Levis-Men-Blue-512-Tapered-Fit-Heavy-Fade-Stretchable-Jeans/18074920/buy",
+            "tryAndBuyOpted": false,
+            "returnPeriod": 30,
+            "valueReturnOpted": false,
+            "valueReturnApplicableDiscount": 0,
+            "styleOffers": [],
+            "appliedCoupons": [],
+            "personalisedPricing": {
+                "coupon": "",
+                "discount": 0
+            },
+            "virtualBundleInfo": {
+                "virtualBundleConflict": false,
+                "virtualConflictItemId": 0
+            },
+            "discountInfo": {
+                "type": null,
+                "text": null,
+                "discountTimerStartTime": null,
+                "discountTimerEndTime": null
+            },
+            "conflict": {
+                "state": "CONFLICTED",
+                "oldPrice": 0,
+                "price": {
+                    "state": "NOT_CONFLICTED",
+                    "oldPrice": 3199
+                },
+                "seller": {
+                    "state": "CONFLICTED",
+                    "oldSeller": null
+                }
+            },
+            "images": [
+                {
+                    "src": "http://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/18074920/2022/9/22/0e2a97f2-c9da-4906-b705-682e129ce01b1663826601044-Levis-Men-Blue-512-Tapered-Fit-Heavy-Fade-Stretchable-Jeans--1.jpg",
+                    "secureSrc": "https://assets.myntassets.com/h_($height),q_($qualityPercentage),w_($width)/v1/assets/images/18074920/2022/9/22/0e2a97f2-c9da-4906-b705-682e129ce01b1663826601044-Levis-Men-Blue-512-Tapered-Fit-Heavy-Fade-Stretchable-Jeans--1.jpg"
+                }
+            ],
+            "flags": {
+                "exchangeable": true,
+                "returnable": true,
+                "pickupEnabled": true,
+                "tryable": true,
+                "large": false,
+                "hazmat": false,
+                "fragile": false,
+                "jewellery": false,
+                "couponApplicable": false,
+                "codEnabled": true,
+                "comforter": false,
+                "personalised": false,
+                "preOrderEnabled": false,
+                "myntsEnabled": true,
+                "freeItem": false,
+                "preLaunchProduct": false,
+                "expirable": false
+            },
+            "selectedSeller": {
+                "id": 47,
+                "partnerId": 4215,
+                "name": "Vision Star",
+                "inventory": 10,
+                "warehouses": "81,207,309,22499",
+                "supplyType": "ON_HAND",
+                "expiryDate": "0",
+                "earlierExpiryDate": false
+            },
+            "sizes": [
+                {
+                    "label": "30",
+                    "skuId": 55624896,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 47,
+                                "partnerId": 4215,
+                                "name": "Vision Star",
+                                "inventory": 0,
+                                "warehouses": "",
+                                "supplyType": "",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        },
+                        {
+                            "seller": {
+                                "id": 86,
+                                "partnerId": 86,
+                                "name": "Levi Strauss India Pvt Ltd",
+                                "inventory": 0,
+                                "warehouses": "",
+                                "supplyType": "",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "32",
+                    "skuId": 55624898,
+                    "available": true,
+                    "inventory": 10,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 47,
+                                "partnerId": 4215,
+                                "name": "Vision Star",
+                                "inventory": 10,
+                                "warehouses": "81,207,309,22499",
+                                "supplyType": "ON_HAND",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "34",
+                    "skuId": 55624900,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 47,
+                                "partnerId": 4215,
+                                "name": "Vision Star",
+                                "inventory": 0,
+                                "warehouses": "",
+                                "supplyType": "",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "36",
+                    "skuId": 55624902,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 47,
+                                "partnerId": 4215,
+                                "name": "Vision Star",
+                                "inventory": 0,
+                                "warehouses": "",
+                                "supplyType": "",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "38",
+                    "skuId": 55624904,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": []
+                },
+                {
+                    "label": "28",
+                    "skuId": 55624894,
+                    "available": false,
+                    "inventory": 0,
+                    "sellers": [
+                        {
+                            "seller": {
+                                "id": 47,
+                                "partnerId": 4215,
+                                "name": "Vision Star",
+                                "inventory": 0,
+                                "warehouses": "",
+                                "supplyType": "",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        },
+                        {
+                            "seller": {
+                                "id": 86,
+                                "partnerId": 86,
+                                "name": "Levi Strauss India Pvt Ltd",
+                                "inventory": 0,
+                                "warehouses": "",
+                                "supplyType": "",
+                                "expiryDate": "0",
+                                "earlierExpiryDate": false
+                            },
+                            "price": {
+                                "mrp": 3199,
+                                "subTotal": 3199,
+                                "discountText": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "price": {
+                "mrp": 3199,
+                "total": 3199,
+                "subTotal": 3199,
+                "discounts": {
+                    "data": [
+                        {
+                            "name": "discount",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "coupon",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "bag",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        },
+                        {
+                            "name": "personalised",
+                            "value": 0,
+                            "meta": null,
+                            "effectiveDiscountValue": 0,
+                            "effectiveDiscountMeta": null
+                        }
+                    ]
+                },
+                "charges": {
+                    "data": [
+                        {
+                            "name": "mrp",
+                            "value": 3199
+                        },
+                        {
+                            "name": "tax",
+                            "value": 0
+                        }
+                    ]
+                },
+                "instruments": {
+                    "data": [
+                        {
+                            "name": "loyaltypoints",
+                            "value": 0
+                        },
+                        {
+                            "name": "giftcard",
+                            "value": 0
+                        }
+                    ]
+                }
+            },
+            "offerId": "",
+            "urgencyInfo": {
+                "pdpCount": 0,
+                "pdpCountPtile": 0,
+                "addToCollectionCount": 0,
+                "addToCollectionCountPtile": 0,
+                "addToCartCount": 0,
+                "addToCartCountPtile": 0,
+                "quantitySold": 0,
+                "quantitySoldPtile": 0,
+                "values": [],
+                "displayOnCart": false
+            },
+            "ratings": {
+                "avgRating": 0,
+                "totalCount": 0
+            },
+            "systemAttributes": [
+                {
+                    "attribute": "SA_XT_New",
+                    "value": "NEW"
+                },
+                {
+                    "attribute": "SA_XT_New_Season",
+                    "value": "NEW SEASON"
+                },
+                {
+                    "attribute": "MP_High_Depth_Intent",
+                    "value": "High_Depth_Intent"
+                },
+                {
+                    "attribute": "MP_High_Depth",
+                    "value": "High_Depth"
+                }
+            ],
+            "giftCardConfig": "",
+            "productServiceabilityInfo": null
+        }
+    ],
+    "offers": [],
+    "virtualBundleConflict": false,
+    "coverFeeOpted": false,
+    "orderAddressId": null,
+    "userDetails": {
+        "isReturnAbuser": false,
+        "returnAbuser": {
+            "level": "DEFAULT",
+            "type": "DEFAULT",
+            "showTnc": false,
+            "returns": "",
+            "multiplier": ""
+        },
+        "email": {
+            "isFake": false
+        },
+        "cod": {
+            "minCod": 1,
+            "maxCod": 2000000
+        },
+        "isFakeEmail": false,
+        "minCOD": 0,
+        "maxCOD": 0,
+        "reasonCOD": "",
+        "isFirstTimeCustomer": false,
+        "isUserSlotActive": false
+    },
+    "codOpted": false,
+    "codApplicableCharge": 0,
+    "coverFeeApplicableCharge": 0,
+    "unifiedAddressId": null
+}

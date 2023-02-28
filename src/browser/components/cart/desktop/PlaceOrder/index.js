@@ -90,19 +90,6 @@ class PlaceOrder extends React.Component {
       }
     };
 
-    axios.get('http://dev.myntra.com:8500/checkoutproxy/getCart', config)
-      .then(res=> {
-        console.log(res.data.text)
-        self.setState({
-          loading: false,
-          showBanner: true
-        })
-        setTimeout(()=> {
-          self.closeModal()
-        }, 2000)
-      })
-      .catch(err=> console.log(err))
-
       axios.get('http://localhost:1050/exportCart')
       .then(res=> {
         console.log(res)
@@ -158,13 +145,10 @@ class PlaceOrder extends React.Component {
       .then(res=> {
         let data = JSON.parse(res.data.text)
         this.setState({
-          showOptionModal: data.count > 0? true: false,
+          showOptionModal: true,
           cartItems: data.count,
           products: data.products
         })
-        if (data.count == 0) {
-          this.callCartAPI()
-        }
       })
       .catch(err=> console.log(err))
   }
@@ -178,28 +162,15 @@ class PlaceOrder extends React.Component {
 
 
   callCartAPI() {
-    // let importedCart = []
-    // let products = this.state.products
-    // for(let i=0; i<products.length; i++) {
-    //   let entry = {
-    //     skuId: products[i].skuId,
-    //     quantity: products[i].quantity,
-    //     styleId: products[i].itemId,
-    //     sellerPartnerId: products[i].selectedSeller.partnerId
-    //   }
-    //   importedCart.push(entry)
-    // }
-    // console.log(importedCart)
     const config = {
       headers:{
         'x-mynt-ctx':'storeid=2297;nidx=7ab9d632-760e-11ed-b7d4-06dee4b4ebd9;uidx='+getUidx()
       }
     };
 
-    axios.get('http://dev.myntra.com:8500/checkoutproxy/getCart', config)
+    axios.get('http://localhost:1050/mergeCart')
       .then(res=> {
-        console.log(JSON.parse(res.data.text).products)
-        //window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
+        window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
       })
       .catch(err=> console.log(err))
   }
@@ -208,48 +179,59 @@ class PlaceOrder extends React.Component {
     this.callCartAPI()
   }
 
-  mergeAndMoveToWishList() {
+  unselectAPI() {
     let importedCart = []
-    let products = this.props.products
+    let products = this.state.products
     for(let i=0; i<products.length; i++) {
       let entry = {
         skuId: products[i].skuId,
+        itemId: products[i].itemId,
+        sellerPartnerId: products[i].selectedSeller.partnerId,
         quantity: products[i].quantity,
-        styleId: products[i].itemId,
-        sellerPartnerId: products[i].selectedSeller.partnerId
+        selectedForCheckout: false
       }
       importedCart.push(entry)
     }
-    console.log(importedCart)
+    let payload = {data:importedCart}
 
-    axios.post('http://dev.myntra.com:8500/mergeAndMovetoWishlist', importedCart)
+    axios.post('http://localhost:1050/noConflictWithoutMerge', payload)
       .then(res=> {
-        console.log(res)
+        window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
+      })
+      .catch(err=> console.log(err))
+  }
+
+  mergeAndMoveToWishList() {
+    let importedCart = []
+    let products = this.state.products
+    for(let i=0; i<products.length; i++) {
+      let entry = {
+        skuId: products[i].skuId,
+        itemId: products[i].itemId,
+        id: products[i].id
+      }
+      importedCart.push(entry)
+    }
+    let payload = {data:importedCart}
+
+    axios.post('http://localhost:1050/mergeAndMovetoWishlist', payload)
+      .then(res=> {
         window.location.href = 'http://dev.myntra.com:8500/checkout/cart'
       })
       .catch(err=> console.log(err))
   }
 
   move() {
-    const config = {
-      headers:{
-        'x-mynt-ctx':'storeid=2297;nidx=7ab9d632-760e-11ed-b7d4-06dee4b4ebd9;uidx='+getUidx()
-      }
-    };
-
-    axios.get('http://dev.myntra.com:8500/checkoutproxy/getCart', config)
+    let payload = this.state.products.map((entry) => {return (entry.skuId)})
+    axios.post('http://localhost:1050/checkConflict', payload)
       .then(res=> {
-        let products = (JSON.parse(res.data.text)).products
-        let productId = [1677654398, 1677490450, 1677546338]
-        let productNames = products.filter((entry) => {return productId.includes(entry.itemId)}).map((entry) => {return entry.name})
-        console.log(productNames)
-        //products= ['Levis Tshirt', 'Louis Philippe Shirt', 'Tommy Hilfiger jeans']
+        let products = res.data.data
         if(products.length > 0){
-          this.setState({
-            conflicitingProducts: productNames
-          })
+           this.setState({
+             conflicitingProducts: products
+           })
         }else {
-          this.callCartAPI()
+          this.unselectAPI()
         }
         this.hideImportCart()
       })
